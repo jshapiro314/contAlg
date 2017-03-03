@@ -24,15 +24,24 @@ public class ConcCalc {
 	double s = 0.01;
 
 	// Set final time:
-	double endTime = 0.1;
+	double endTime = 1;
+
+	// Functions
+	Function a = new Function("A");
+	Function b = new Function("B");
+	Function c = new Function("C");
 
 	// Compute.
 	while (t < endTime) {
 
 	    // Compute the new values at time t+s:
-	    A =     // INSERT YOUR CODE HERE
-	    B =     // INSERT YOUR CODE HERE
-	    C =     // INSERT YOUR CODE HERE
+	    A =  A + s*(K_c*C-K_ab*A*B);   // INSERT YOUR CODE HERE
+	    B =  B + s*(K_c*C-K_ab*A*B);   // INSERT YOUR CODE HERE
+	    C =  C + s*(K_ab*A*B-K_c*C);   // INSERT YOUR CODE HERE
+
+	    a.add(t, A);
+	    b.add(t, B);
+	    c.add(t, C);
 
 	    // Print out the values to screen:
 	    System.out.println ("At time t=" + df.format(t) + ":  A(t)=" + df.format(A) + "   B=" + df.format(B) + "   C(t)=" + df.format(C));
@@ -40,6 +49,10 @@ public class ConcCalc {
 	    // Change t, and repeat.
 	    t = t + s;
 	}
+
+	a.show();
+	b.show();
+	c.show();
 
     }
 

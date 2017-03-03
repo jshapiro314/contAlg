@@ -10,7 +10,7 @@ import javax.swing.event.*;
 public class Winch4 extends JPanel {
 
     // Set this to true to make vertical case with gravity.
-    static boolean isVertical = false;
+    static boolean isVertical = true;
 
     double g = 9.8;              // Set g=0 for horizonal case.
 
@@ -35,8 +35,8 @@ public class Winch4 extends JPanel {
 
     // Control variables and parameters.
     double V = 10000;              // Voltage.
-    double kP = 5;               // Constant for proportional term.
-    double kD = 0;               // Constant for differential term.
+    double kP = 100;               // Constant for proportional term.
+    double kD = 250;               // Constant for differential term.
     double kI = 0;               // Constant for integral term.
     double S = 0;                // For integration.
 
@@ -120,7 +120,7 @@ public class Winch4 extends JPanel {
         t = t + delT;
 
         // PID.
-        // V = kP * (yMax - y) + kD * (yVel) + kI * S;
+        V = kP * (yMax - y) - kD * (yVel);
 
         // Assume that torque is proportional to voltage with const=1
         double torque = V;
@@ -261,7 +261,7 @@ public class Winch4 extends JPanel {
 
     public static void main (String[] argv)
     {
-	new Winch().makeFrame() ;
+	new Winch4().makeFrame() ;
     }
 
 }

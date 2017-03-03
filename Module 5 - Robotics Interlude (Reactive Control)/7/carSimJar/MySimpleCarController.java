@@ -63,13 +63,20 @@ public class MySimpleCarController implements CarController {
             return;
         }
         BasicSensorPack sPack = (BasicSensorPack) sensors;
-        
+	vel = 10;
+	phi = 0;
         double dN = sPack.sonarDistances[0];   // Forward distance.
 
         // Use these in later exercises.
         double dNE = sPack.sonarDistances[7];  // Distance along NE direction.
         double dSE = sPack.sonarDistances[5];  // Distance along SE direction.
-
+	if (dN < 15+15) {
+	    vel = 0;
+	    System.out.println("theta = " + sensors.getTheta());
+	    if (((Math.PI / 2) - sensors.getTheta()) > 0.01) {
+		phi = (Math.PI / 2) / 0.2;
+	    }
+	}
 
         // INSERT YOUR CODE HERE 
     }

@@ -10,7 +10,7 @@ import javax.swing.event.*;
 public class Winch extends JPanel {
 
     // Set this to true to make vertical case with gravity.
-    static boolean isVertical = false;
+    static boolean isVertical = true;
 
     double g = 9.8;              // Set g=0 for horizonal case.
 
@@ -34,7 +34,7 @@ public class Winch extends JPanel {
 
 
     // Control variables and parameters.
-    double V = 10000;              // Voltage.
+    double V = 100000;              // Voltage.
     double kP = 5;               // Constant for proportional term.
     double kD = 0;               // Constant for differential term.
     double kI = 0;               // Constant for integral term.
