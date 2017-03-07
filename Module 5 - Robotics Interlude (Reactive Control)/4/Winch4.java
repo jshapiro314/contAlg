@@ -1,3 +1,4 @@
+// Winch with proportional-derivative control (vertical)
 
 import java.util.*;
 import java.text.*;
@@ -27,7 +28,7 @@ public class Winch4 extends JPanel {
 
     // Load variables (initial y = 0). The location is determined from the wheel.
     double m = 10;               // Mass.
-    double y = 2*R;              // Height of top edge.
+    double y = 3*R;              // Height of top edge.
     double yVel = 0;             // Track load velocity.
     double yMax = 250;           // Target.
     double prevY = 0;            // Record previous y value to estimate y'(t)
@@ -35,9 +36,9 @@ public class Winch4 extends JPanel {
 
     // Control variables and parameters.
     double V = 10000;              // Voltage.
-    double kP = 100;               // Constant for proportional term.
-    double kD = 250;               // Constant for differential term.
-    double kI = 0;               // Constant for integral term.
+    double kP = 500;               // Constant for proportional term.
+    double kD = 200;               // Constant for differential term.
+    double kI = 10;               // Constant for integral term.
     double S = 0;                // For integration.
 
     // GUI variables.
@@ -47,8 +48,6 @@ public class Winch4 extends JPanel {
 
     boolean isStopped = false;
     Function funcY = new Function ("y vs time");
-
-
 
     // When the "go" button is pressed, make a thread and fire off a simulation run.
 
@@ -100,7 +99,7 @@ public class Winch4 extends JPanel {
     {
         t = 0;
         // Initial y = height of load = 2R (by design).
-        y = 2 * R;
+        y = 3 * R;
         prevY = y;
 
         angularVel = 0;
@@ -119,8 +118,8 @@ public class Winch4 extends JPanel {
         // Current time.
         t = t + delT;
 
-        // PID.
-        V = kP * (yMax - y) - kD * (yVel);
+	// Proportional-derivative control:
+	V = kP * (yMax - y) - kD * (yVel);
 
         // Assume that torque is proportional to voltage with const=1
         double torque = V;
@@ -145,6 +144,7 @@ public class Winch4 extends JPanel {
 
 	funcY.add (t, y);
     }
+
 
     void stop ()
     {

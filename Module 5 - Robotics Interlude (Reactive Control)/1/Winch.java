@@ -27,7 +27,7 @@ public class Winch extends JPanel {
 
     // Load variables (initial y = 0). The location is determined from the wheel.
     double m = 10;               // Mass.          
-    double y = 3*R;              // Height of top edge.
+    double y = 2*R;              // Height of top edge.
     double yVel = 0;             // Track load velocity.
     double yMax = 250;           // Target.
     double prevY = 0;            // Record previous y value to estimate y'(t)
@@ -35,9 +35,9 @@ public class Winch extends JPanel {
 
     // Control variables and parameters.
     double V = 10000;              // Voltage.
-    double kP = 500;               // Constant for proportional term.
-    double kD = 1000;               // Constant for differential term.
-    double kI = 10;               // Constant for integral term.
+    double kP = 5;               // Constant for proportional term.
+    double kD = 0;               // Constant for differential term.
+    double kI = 0;               // Constant for integral term.
     double S = 0;                // For integration.
         
     // GUI variables.
@@ -121,7 +121,6 @@ public class Winch extends JPanel {
 
         // PID.
         // V = kP * (yMax - y) + kD * (yVel) + kI * S;
-        V = kP * (yMax - y);
 
         // Assume that torque is proportional to voltage with const=1
         double torque = V;
