@@ -13,11 +13,11 @@ public class CoinExample4 {
 
 	for (int n=0; n<numTrials; n++) {
 
-	    // WRITE YOUR CODE HERE
+	    // WRITE YOUR CODE HERE: what is the probability that, in 3 flips, the third and only the third flip results in heads?
 	    int c1 = coin.flip();
 	    int c2 = coin.flip();
 	    int c3 = coin.flip();
-	    if (c1 == 0 && c2 == 0 && c3 == 0) {
+	    if (c1 == 0 && c2 == 0 && c3 == 1) {
 	    	numSuccesses++;
 	    }
 
