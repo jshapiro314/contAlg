@@ -17,7 +17,7 @@ public class CoinExample4 {
 	    int c1 = coin.flip();
 	    int c2 = coin.flip();
 	    int c3 = coin.flip();
-	    if (c1 == 0 && c2 == 0 && c3 == 0) {
+	    if (c1 == 0 && c2 == 0 && c3 == 1) {
 	    	numSuccesses++;
 	    }
 
