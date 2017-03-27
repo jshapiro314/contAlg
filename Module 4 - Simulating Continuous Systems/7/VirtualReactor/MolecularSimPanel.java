@@ -17,12 +17,12 @@ class Molecule {
     int ID;
 
     // Current location.
-    int x,y;     
+    int x,y;
 
     // Direction of travel.
     double theta = UniformRandom.uniform (0.0, 2*Math.PI);
 
-    public Molecule (int x, int y) 
+    public Molecule (int x, int y)
     {
 	ID = IDcount++;
 	this.x = x;
@@ -33,7 +33,7 @@ class Molecule {
     {
 	return (this.ID == ((Molecule)obj).ID);
     }
-    
+
 } //end-class-Molecule
 
 
@@ -59,8 +59,8 @@ public class MolecularSimPanel extends JPanel {
     JLabel ALabel, BLabel, CLabel;       // Display current concentrations.
     JTextField AField, BField, CField;   // Read in initial concentrations.
 
-    // Display sizes and colors for the three types of molecules.    
-    int sizeA = 10;                      
+    // Display sizes and colors for the three types of molecules.
+    int sizeA = 10;
     int sizeB = 13;
     int sizeC = 18;
     Color colorA = Color.blue;
@@ -83,10 +83,10 @@ public class MolecularSimPanel extends JPanel {
     // Number of simulation runs (for time averages)
     int numRuns = 1;
     JLabel runLabel;
-    JTextField numRunsField;     
+    JTextField numRunsField;
 
     // How often to record statistics.
-    int timeInterval = 1;            
+    int timeInterval = 1;
     JTextField intervalField;
 
     // Animation.
@@ -97,7 +97,7 @@ public class MolecularSimPanel extends JPanel {
     double thetaChangeProb = 0.3;    // How often to change direction.
 
     // For spatial model:
-    int closenessDistance = 100;     // To see if two molecules are close.
+    int closenessDistance = 200;     // To see if two molecules are close.
 
     // A reset is required for each new simulation.
     boolean resetOccurred = false;
@@ -130,7 +130,7 @@ public class MolecularSimPanel extends JPanel {
 
     //------------------------------------------------------------------
     // Screen updates
-    
+
     // Report status messages on screen.
 
     public void status (String msg)
@@ -154,7 +154,7 @@ public class MolecularSimPanel extends JPanel {
 
     // The bottom panel is a collection of fields, labels and buttons.
 
-    JPanel makeBottomPanel () 
+    JPanel makeBottomPanel ()
     {
 	JPanel panel = new JPanel ();
 	panel.setLayout (new GridLayout (5, 1));
@@ -164,7 +164,7 @@ public class MolecularSimPanel extends JPanel {
 	panel.add (makeParameterControls());
 	panel.add (makeSingleRunControls());
 	panel.add (makeSimulationRunControls());
-	
+
 	return panel;
     }
 
@@ -369,9 +369,9 @@ public class MolecularSimPanel extends JPanel {
 	  }
         );
 	panel.add (plotB);
-    
+
 	panel.add (new JLabel ("    "));
-    
+
 	JLabel label = new JLabel ("Speed:");
 	panel.add (label);
 	speedField = new JTextField (4);
@@ -649,7 +649,7 @@ public class MolecularSimPanel extends JPanel {
 
 
     // A reset removes past data, initializes the molecule sets.
-    
+
     void reset ()
     {
 	currentTime = 0;
@@ -722,7 +722,7 @@ public class MolecularSimPanel extends JPanel {
 
 	// Advance time (discrete steps)
 	currentTime ++;
-	    
+
 	// Repaint.
 	redraw ();
     }
@@ -778,7 +778,7 @@ public class MolecularSimPanel extends JPanel {
     }
 
 
-    int sqrDistance (Molecule a, Molecule b) 
+    int sqrDistance (Molecule a, Molecule b)
     {
 	return ( (a.x-b.x)*(a.x-b.x) + (a.y-b.y)*(a.y-b.y) );
     }
@@ -857,7 +857,7 @@ public class MolecularSimPanel extends JPanel {
 	    // Do A+B -> C. Pick one A molecule randomly.
 	    int k = (int) UniformRandom.uniform (0, molA.size()-1);
 	    Molecule a = (Molecule) molA.remove (k);
-	    // Find closest B 
+	    // Find closest B
 	    int closestDistance = Integer.MAX_VALUE;
 	    int indexClosest = -1;
 	    int indexCount = -1;
@@ -879,7 +879,7 @@ public class MolecularSimPanel extends JPanel {
 	    molC.add (c);
 
 	} // end-if
-	else { 
+	else {
 
 	    // C -> A+B
 	    if (molC.size() <= 1) {
@@ -968,7 +968,7 @@ public class MolecularSimPanel extends JPanel {
 
     }
 
-    
+
     // Given a molecule c, count the number of other molecules
     // that are "closeby", i.e., within distance "closenessDistance".
 

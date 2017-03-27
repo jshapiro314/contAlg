@@ -13,13 +13,13 @@ public class ConcCalc {
 	double K_c = 0.5;
 
 	// Initial values:
-	double A = 3.0;  
+	double A = 3.0;
 	double B = 2.0;
 	double C = 1.5;
 
 	// Initialize time:
 	double t = 0;
-	
+
 	// Set our time increment:
 	double s = 0.01;
 
