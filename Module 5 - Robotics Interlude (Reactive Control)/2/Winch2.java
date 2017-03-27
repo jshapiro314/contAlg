@@ -36,7 +36,7 @@ public class Winch2 extends JPanel {
 
     // Control variables and parameters.
     double V = 10000;              // Voltage.
-    double kP = 500;               // Constant for proportional term.
+    double kP = 50;               // Constant for proportional term.
     double kD = 1000;               // Constant for differential term.
     double kI = 10;               // Constant for integral term.
     double S = 0;                // For integration.
@@ -120,7 +120,7 @@ public class Winch2 extends JPanel {
 
 	//INSERT YOUR CODE HERE for proportional control: V = ...
         V = kP * (yMax - y);
-        
+
         // Assume that torque is proportional to voltage with const=1
         double torque = V;
 

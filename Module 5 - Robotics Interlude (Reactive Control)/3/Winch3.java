@@ -36,8 +36,8 @@ public class Winch3 extends JPanel {
 
     // Control variables and parameters.
     double V = 10000;              // Voltage.
-    double kP = 500;               // Constant for proportional term.
-    double kD = 100;               // Constant for differential term.
+    double kP = 50;               // Constant for proportional term.
+    double kD = 1000;               // Constant for differential term.
     double kI = 10;               // Constant for integral term.
     double S = 0;                // For integration.
 

@@ -26,7 +26,7 @@ public class Winch extends JPanel {
     double angularVel = 0;       // angular velocity.
 
     // Load variables (initial y = 0). The location is determined from the wheel.
-    double m = 10;               // Mass.          
+    double m = 10;               // Mass.
     double y = 2*R;              // Height of top edge.
     double yVel = 0;             // Track load velocity.
     double yMax = 250;           // Target.
@@ -39,7 +39,7 @@ public class Winch extends JPanel {
     double kD = 0;               // Constant for differential term.
     double kI = 0;               // Constant for integral term.
     double S = 0;                // For integration.
-        
+
     // GUI variables.
     int sleepTime = 100;
     String terminateMsg = "";
@@ -62,16 +62,16 @@ public class Winch extends JPanel {
             currentThread.interrupt ();
             currentThread = null;
         }
-        
+
 	currentThread = new Thread () {
-		public void run () 
+		public void run ()
 		{
 		    simulate ();
 		}
 	    };
 	currentThread.start ();
     }
-    
+
 
 
     // Perform one simulation run.
@@ -92,7 +92,7 @@ public class Winch extends JPanel {
         }
         terminateMsg = "Final velocity: " + yVel;
     }
-    
+
 
     // Initialize variables at t=0
 
@@ -100,7 +100,7 @@ public class Winch extends JPanel {
     {
         t = 0;
         // Initial y = height of load = 2R (by design).
-        y = 2 * R; 
+        y = 2 * R;
         prevY = y;
 
         angularVel = 0;
@@ -112,7 +112,7 @@ public class Winch extends JPanel {
             g = 9.8;
         }
     }
-    
+
 
     void nextStep ()
     {
@@ -145,7 +145,7 @@ public class Winch extends JPanel {
 
 	funcY.add (t, y);
     }
-    
+
     void stop ()
     {
 	isStopped = true;
@@ -164,20 +164,20 @@ public class Winch extends JPanel {
 	// Background.
 	g.setColor (Color.white);
 	g.fillRect (0,0, D.width, D.height);
-        
+
         Graphics2D g2 = (Graphics2D) g;
         AffineTransform originalTrans = g2.getTransform ();
         // Rotate for horizontal case.
         if (! isVertical) {
             g2.setTransform (AffineTransform.getRotateInstance(Math.PI/2,D.width/2,D.height/2));
         }
-        
+
         // Winch.
         int drawX = (int) (winchX - R);
         int drawY = (int) (winchY + R);
         g.setColor (Color.blue);
         g.fillOval (drawX,D.height-drawY, (int)R*2, (int)R*2);
-        
+
         // Load.
         drawX = (int) winchX;
         drawY = (int) y;
@@ -200,13 +200,13 @@ public class Winch extends JPanel {
 	g.setColor (Color.black);
 	g.drawString (terminateMsg, 500, 500);
     }
-    
+
 
 
     JPanel makeBottomPanel ()
     {
         JPanel panel = new JPanel ();
-        
+
         panel.add (new JLabel ("  "));
 	JButton goB = new JButton ("Go");
 	goB.addActionListener (
@@ -242,7 +242,7 @@ public class Winch extends JPanel {
            }
         );
 	panel.add (quitB);
-        
+
         return panel;
     }
 

@@ -13,7 +13,7 @@ public class MySimpleCarController implements CarController {
 
     ArrayList<Rectangle2D.Double> obstacles;
     SensorPack sensors;
-    
+
     // Is the first control an accelerator?
     boolean isAccelModel = false;
     boolean isUnicycle = true;
@@ -25,9 +25,11 @@ public class MySimpleCarController implements CarController {
     double prevTheta = 0;
     double prevTime = 0;
     boolean firstTime = true;
-    
+
     double endX, endY;
-    
+
+    String state = "start";
+
 
     public void init (double initX, double initY, double initTheta, double endX, double endY, double endTheta, ArrayList<Rectangle2D.Double> obstacles, SensorPack sensors)
     {
@@ -37,7 +39,7 @@ public class MySimpleCarController implements CarController {
         this.endX = endX;
         this.endY = endY;
     }
-    
+
 
     public double getControl (int i)
     {
@@ -63,22 +65,43 @@ public class MySimpleCarController implements CarController {
             return;
         }
         BasicSensorPack sPack = (BasicSensorPack) sensors;
-	vel = 10;
-	phi = 0;
-        double dN = sPack.sonarDistances[0];   // Forward distance.
 
-        // Use these in later exercises.
-        double dNE = sPack.sonarDistances[7];  // Distance along NE direction.
-        double dSE = sPack.sonarDistances[5];  // Distance along SE direction.
-	if (dN < 15+15) {
-	    vel = 0;
-	    System.out.println("theta = " + sensors.getTheta());
-	    if (((Math.PI / 2) - sensors.getTheta()) > 0.01) {
-		phi = (Math.PI / 2) / 0.2;
-	    }
-	}
+        double dN = sPack.sonarDistances[0];
 
-        // INSERT YOUR CODE HERE 
+        //using states:
+
+        switch(state){
+            case "start":
+                if(dN < 30){
+                    state = "turnLeft";
+                    vel = 0;
+                    phi = 10;
+                    break;
+                }
+
+                vel = 10;
+                phi = 0;
+                break;
+            case "turnLeft":
+                if(sPack.getTheta() >= Math.PI/2){
+                    state = "stop";
+                    vel = 0;
+                    phi = 0;
+                    break;
+                }
+
+                vel = 0;
+                phi = 10;
+                break;
+            case "stop":
+                vel = 0;
+                phi = 0;
+                break;
+            default:
+                vel = 0;
+                phi = 0;
+                break;
+        }
     }
 
 

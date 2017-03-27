@@ -13,7 +13,7 @@ public class MySimpleCarController implements CarController {
 
     ArrayList<Rectangle2D.Double> obstacles;
     SensorPack sensors;
-    
+
     // Is the first control an accelerator?
     boolean isAccelModel = false;
     boolean isUnicycle = true;
@@ -25,9 +25,12 @@ public class MySimpleCarController implements CarController {
     double prevTheta = 0;
     double prevTime = 0;
     boolean firstTime = true;
-    
+
     double endX, endY;
-    
+
+    double alpha = 10;
+    double delta = 40;
+
 
     public void init (double initX, double initY, double initTheta, double endX, double endY, double endTheta, ArrayList<Rectangle2D.Double> obstacles, SensorPack sensors)
     {
@@ -37,7 +40,7 @@ public class MySimpleCarController implements CarController {
         this.endX = endX;
         this.endY = endY;
     }
-    
+
 
     public double getControl (int i)
     {
@@ -63,15 +66,24 @@ public class MySimpleCarController implements CarController {
             return;
         }
         BasicSensorPack sPack = (BasicSensorPack) sensors;
-        
+
         double dN = sPack.sonarDistances[0];   // Forward distance.
 
         // Use these in later exercises.
         double dNE = sPack.sonarDistances[7];  // Distance along NE direction.
         double dSE = sPack.sonarDistances[5];  // Distance along SE direction.
 
-
-        // INSERT YOUR CODE HERE 
+        // INSERT YOUR CODE HERE
+        if(Math.abs(dNE-dSE) < alpha && dN > delta){
+            vel = 10;
+            phi = 0;
+        }else if(dNE > dSE){
+            vel = 2;
+            phi = -5;
+        }else{
+            vel = 2;
+            phi = 5;
+        }
     }
 
 
