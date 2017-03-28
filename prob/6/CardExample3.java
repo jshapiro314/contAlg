@@ -3,7 +3,7 @@ public class CardExample3 {
 
     public static void main (String[] argv)
     {
-	double numTrials = 100000000;
+	double numTrials = 100000;
 	double numSuccesses = 0;
 	double tries = 0;
 	for (int n=0; n<numTrials; n++) {
