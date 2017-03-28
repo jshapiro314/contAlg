@@ -120,18 +120,40 @@ Find the place in the code that has the "distance" parameter. What is the distan
 
 14. Why is this true?
 
-15. Why is this true?
+* **If we want to calculate the change in x and change in y of our car, we can simply look at the change in position and then take the x and y components of it. To get the change in position, we need to average the *linear* velocities of the wheels. That is where the $1/2 * R(\omega_L + \omega_R)$ comes from. The sin and cos simply are getting the y and x components respectively.**
+
+15. Why is this true
+
+* **Technically it is not. The real equation should require using sin() and it also requires a right angle. But since the numbers are so small and the angle BAA' is close enough to right, just the ratio of the "opposite" and the "hypotenuse" will yield the change in $\theta$. The "opposite" is the $\omega_LR\Delta t$ and the "hypotenuse" is L.**
 
 16. Write pseudocode for a Dubin car simulator based on these equations.
 
+* **Equations: ($\omega_L$ and $\omega_R$ are the controls input by the user)**
+    * $x = x + 0.5*R(\omega_L + \omega_R)cos(\theta)$
+    * $y = y + 0.5*R(\omega_L + \omega_R)sin(\theta)$
+    * $\theta = \theta + \frac{(\omega_L - \omega_R)}{L}$
+
 17. What additional equation is needed for an accelerative version of the Dubin car?
+
+* **The additional equations would be $\omega_L = \omega_L + \alpha$ and $\omega_R = \omega_R + \alpha$ where $\alpha$ is the acceleration.**
 
 18. CODE: Write down the equations for the Simple-Car which has two controls: forward-velocity $v$ and steering angle $\phi$. Implement a simulator for the Simple-Car in CarSim. (To draw one, merely draw a circle).
 
+* **Equations: (where v and $\phi$ are inputs and t is the time step)**
+    * $\theta = \theta + \phi$
+    * $x = x + v * t * cos(\theta)$
+    * $y = y + v * t * sin(\theta)$
+
 19. Why?
+
+* **Since the load is attached to the winch with a string, any acceleration on the winch will also be present on the load.**
 
 20. Download and examine Winch.java.
     * Identify the code corresponding to the differential equations we derived earlier.
+    * **DONE**
     * Handcode different values of torque to see what value is sufficient to lift the load. Is there a value that will lift the load and yet avert a collision with the winch?
+    * **No**
 
 21. Set isVertical=false in the program and execute. You should see a version without gravity (as if the load were on a frictionless surface). What value of torque is sufficient to pull the load?
+
+* **Since there is no friction, any torque should be enough to move the object. However, when the torque was set to 1000 the simulator began to show signs of movement (at torque = 1 the object doesn't seem to move in the simulation).**
