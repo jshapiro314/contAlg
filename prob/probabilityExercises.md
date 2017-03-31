@@ -1,3 +1,7 @@
+---
+geometry: top=1in, bottom=1in, left=1in, right=1in
+---
+
 ### Probability Exercises | Joshua Shapiro | 30 March 2017
 
 1. CODE: Download Coin.java, CoinExample.java, and RandTools.java. Then compile and execute.
@@ -125,3 +129,33 @@
 
     * **Probability that if a test is positive, the person is well (Pr[well|positive]): (using probabilities calculated above)**
         * $Pr[well|positive] = \frac{Pr[positive|well] * Pr[well]}{Pr[positive]} = \frac{0.03*0.95}{0.078} = 0.365$
+
+19. CODE: Download and execute BusStopExample.java. You will aslo need BusStop.java.
+    * What is Pr[A > 1]? What is Pr[A > 0.5]?
+    * **Pr[A > 1] = 0.367855, Pr[A > 0.5] = 0.606511**
+    * What is an example of an event for the above sample space?
+    * **{1}**
+    * Is {1.0, 1.2, 1.5} an event?
+    * **Yes**
+    * Is the interval [1.0, 3.5] an event?
+    * **Yes**
+
+20. CODE: Download BusStop.java and BusStopExample.java. Then change the type of interarrival by replacing true with false above, and estimate both Pr[first-interarrival > 0.5] and Pr[first-interarrival > 1]. Note: using true results in using exponential interarrivals and using false results in using uniform interarrivals. We'll understand later what these mean.
+
+* **Pr[A > 1] = 0.500319, Pr[A > 0.5] = 0.750251**
+
+21. CODE: Modify the code to estimate the following conditional probability. Let A denote the interarrival time. Estimate Pr[A > 1.0|A > 0.5] for each of the two types of interarrivals (exponential and uniform). What is strange about the result you get for the exponential type? Hint: compare this estimate to that in the pervious exercise; that is, comapre Pr[A > 1.0|A > 0.5]. What is the implication.
+
+* **Pr[A > 1|A > 0.5] = 0.607 for exponential. Pr[A > 1|A > 0.5] = 0.667**
+* **NEED TO DO MORE STUF HERE**
+
+22. Estimate the average interarrival time for each of the two types of interarrivals (exponential and uniform).
+
+23. Why doesn't the following code work?
+
+24. CODE: Modify the above program to estimate the probability that at least 5 buses have gone by.
+
+25. Consider the waiting time: the time from your arrival (at 10.0) to the time the next bus arrives. Estimate your average waiting time.
+    * Does this depend on when you arrive (at 10 vs 20 for example).
+    * Try this for each of the two types of interarrivals (exponential and uniform).
+    * What do you observe is unusual about this wait time?

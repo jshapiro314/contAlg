@@ -1,3 +1,7 @@
+---
+geometry: top=1in, bottom=1in, left=1in, right=1in
+---
+
 ### Module 4 Exercises | Joshua Shapiro | 30 March 2017
 
 1. CODE: Download and unpack this zip file into a new directory. upon unpacking, you will see that it creates a new subdirectory called VirtualReactor. Go into that subdirectory, then compile and execute the VirtualReactor.java file. This will bring up a window. Here's what you do:

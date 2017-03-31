@@ -1,3 +1,7 @@
+---
+geometry: top=1in, bottom=1in, left=1in, right=1in
+---
+
 ### Module 5 Exercises | Joshua Shapiro | 30 March 2017
 
 1. CODE: Recall the winch example: Winch.java. Try different torque values to lift the load to the desired height. You will also need Function.java and SimplePlotPanel.java. Upon clicking "stop" you will see how the distance y varies with time.

@@ -48,7 +48,7 @@ public class jshapiro314PreAStarPlanner implements jshapiro314Planner {
         }
 
         //Now that we've identified the prePlan we are using, we need to change the start state to be the end state of the prePlan.
-        System.out.println("using the preplan that brings the arm to: " + Arrays.toString(closestGoal));
+        System.out.println("using the preplan that bring the arm to: " + Arrays.toString(closestGoal));
         start = prePlans.get(closestGoal).getLast();
     }
 
