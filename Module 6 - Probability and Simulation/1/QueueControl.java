@@ -38,7 +38,7 @@ public class QueueControl extends JPanel {
 
     // Animation and drawing.
     boolean doAnimation = true;
-    Thread currentThread;  
+    Thread currentThread;
     boolean isPaused = false;
     int sleepTime = 50;
     int r = 20;    // 1/2 width of queue.
@@ -122,14 +122,14 @@ public class QueueControl extends JPanel {
 
     int chooseQueue ()
     {
-	// Pick a random queue: 
-        int k = RandTool.uniform (0,1);
+	// Pick a random queue:
+    //    int k = RandTool.uniform (0,1);
 
 	// Shortest queue.
-	//int k = 0;
-	//if (queues[1].size() < queues[0].size()) {
-	//    k = 1;
-        //}
+	int k = 0;
+	if (queues[1].size() < queues[0].size()) {
+	   k = 1;
+    }
 
 	return k;
     }
@@ -137,7 +137,7 @@ public class QueueControl extends JPanel {
 
     void handleDeparture (Event e)
     {
-	// For a departure from a queue, remove the customer from 
+	// For a departure from a queue, remove the customer from
 	// that particular queue, then schedule the next departure
 	// if that queue has waiting customers.
 
@@ -161,7 +161,7 @@ public class QueueControl extends JPanel {
 	double nextArrivalTime = clock + randomInterarrivalTime();
 	eventList.add (new Event (nextArrivalTime, Event.ARRIVAL, 0));
     }
-    
+
 
     void scheduleDeparture (int i)
     {
@@ -211,23 +211,23 @@ public class QueueControl extends JPanel {
             currentThread.interrupt ();
             currentThread = null;
 	}
-        
+
         currentThread = new Thread () {
-                public void run () 
+                public void run ()
                 {
                     simulate ();
                 }
-                
+
         };
         currentThread.start();
     }
 
 
-    void pause () 
+    void pause ()
     {
         isPaused = true;
     }
-    
+
 
     void simulate ()
     {
@@ -236,7 +236,7 @@ public class QueueControl extends JPanel {
             if (! isPaused) {
                 nextStep ();
             }
-            
+
 	    this.repaint ();
 
             try {
@@ -247,7 +247,7 @@ public class QueueControl extends JPanel {
             }
 
 
-        } 
+        }
 
         this.repaint ();
     }
@@ -279,7 +279,7 @@ public class QueueControl extends JPanel {
         g.setColor (Color.black);
         g.drawOval (w,yTop1, 2*r,2*r);
         g.drawOval (w,yTop2, 2*r,2*r);
-        
+
         // Draw waiting areas - top.
         g2.drawLine (w-2*r,yTop1, w-12*r,yTop1);
         g2.drawLine (w-2*r,yTop1+2*r, w-12*r,yTop1+2*r);
@@ -319,12 +319,12 @@ public class QueueControl extends JPanel {
 	g.setColor (Color.darkGray);
 	g.drawString (str, 10, 30);
     }
-    
+
 
     JPanel makeBottomPanel ()
     {
         JPanel panel = new JPanel ();
-        
+
 	JButton resetB = new JButton ("Reset");
 	resetB.addActionListener (
 	   new ActionListener () {
@@ -384,11 +384,11 @@ public class QueueControl extends JPanel {
            }
         );
 	panel.add (quitB);
-        
+
         return panel;
     }
 
-    
+
 
     void makeFrame ()
     {
@@ -421,14 +421,14 @@ public class QueueControl extends JPanel {
 		q.nextStep ();
 	    }
 	}
-    } 
+    }
 
 }
 
 
-// Class Customer (one instance per customer) stores whatever we 
-// need for each customer. Since we collect statistics on waiting 
-// time at the time of departure, we need to record when a 
+// Class Customer (one instance per customer) stores whatever we
+// need for each customer. Since we collect statistics on waiting
+// time at the time of departure, we need to record when a
 // customer arrives.
 
 class Customer {
@@ -479,4 +479,3 @@ class Event implements Comparable {
     }
 
 }
-
