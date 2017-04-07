@@ -5,7 +5,13 @@ public class GaussianCDF {
     public static void main (String[] argv)
     {
         Function F = makeGaussianCDF ();
+        Function G = new Function("DERIVATIVE");
+		double interval = 0.08;
+        for(double i=-1.92;i<=2;i+=interval){
+            G.add(i-interval,(F.get(i)-F.get(i-interval))/interval);
+        }
         F.show ();
+        G.show();
     }
 
     static Function makeGaussianCDF ()
@@ -27,14 +33,14 @@ public class GaussianCDF {
             if (y > b) {
                 y = b;
             }
-            
+
             // Find the right interval:
             int k = (int) Math.floor ((y-a) / delta);
             // Increment the count for every interval above and including k.
             if (k < 0) {
                 System.out.println ("k=" + k + " y=" + y + " (y-a)=" + (y-a));
             }
-            
+
             for (int i=k; i<M; i++) {
                 intervalCounts[i] ++;
             }
@@ -57,5 +63,3 @@ public class GaussianCDF {
     }
 
 }
-
-

@@ -7,6 +7,13 @@ public class UniformCDF2 {
         Function F = makeUniformCDF ();
 
         // INSERT YOUR CODE HERE
+        double sum = 0;
+        double interval = 1.0/50;
+        for(double i = 0;i<1;i+=interval){
+            double midpoint = (i+i+interval)/2;
+            sum += midpoint * (F.get(i+interval) - F.get(i));
+        }
+        System.out.println("Expected value = " + sum);
     }
 
     static Function makeUniformCDF ()
@@ -46,4 +53,3 @@ public class UniformCDF2 {
     }
 
 }
-

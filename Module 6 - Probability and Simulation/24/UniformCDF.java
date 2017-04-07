@@ -6,6 +6,7 @@ public class UniformCDF {
     {
         Function F = makeUniformCDF ();
         F.show ();
+        System.out.println(F.get(1)-F.get(0.75));
     }
 
     static Function makeUniformCDF ()
@@ -45,4 +46,3 @@ public class UniformCDF {
     }
 
 }
-

@@ -7,6 +7,13 @@ public class GaussianCDF2 {
         Function F = makeGaussianCDF ();
 
         // INSERT YOUR CODE HERE
+        double sum = 0;
+		double interval = 4.0/50;
+		for(double i = -2;i<2;i+=interval){
+			double midpoint = (i+i+interval)/2;
+			sum += midpoint * (F.get(i+interval) - F.get(i));
+		}
+		System.out.println("Expected value = " + sum);
     }
 
     static Function makeGaussianCDF ()
@@ -28,14 +35,14 @@ public class GaussianCDF2 {
             if (y > b) {
                 y = b;
             }
-            
+
             // Find the right interval:
             int k = (int) Math.floor ((y-a) / delta);
             // Increment the count for every interval above and including k.
             if (k < 0) {
                 System.out.println ("k=" + k + " y=" + y + " (y-a)=" + (y-a));
             }
-            
+
             for (int i=k; i<M; i++) {
                 intervalCounts[i] ++;
             }
@@ -58,5 +65,3 @@ public class GaussianCDF2 {
     }
 
 }
-
-

@@ -5,7 +5,12 @@ public class UniformCDF {
     public static void main (String[] argv)
     {
         Function F = makeUniformCDF ();
+        Function G = new Function("DERIVATIVE");
+        for(double i=0.02;i<=1;i+=0.02){
+            G.add(i-0.02,(F.get(i)-F.get(i-0.02))/0.02);
+        }
         F.show ();
+        G.show();
     }
 
     static Function makeUniformCDF ()
@@ -45,4 +50,3 @@ public class UniformCDF {
     }
 
 }
-

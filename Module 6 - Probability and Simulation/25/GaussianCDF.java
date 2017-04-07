@@ -5,6 +5,8 @@ public class GaussianCDF {
     public static void main (String[] argv)
     {
         Function F = makeGaussianCDF ();
+        System.out.println("Pr[0 < X ≤ 2] = " + F.get(2)-f.get(0));
+        System.out.println("Pr[X > 0] = " + F.get(2)-f.get(0));
         F.show ();
     }
 
@@ -27,14 +29,14 @@ public class GaussianCDF {
             if (y > b) {
                 y = b;
             }
-            
+
             // Find the right interval:
             int k = (int) Math.floor ((y-a) / delta);
             // Increment the count for every interval above and including k.
             if (k < 0) {
                 System.out.println ("k=" + k + " y=" + y + " (y-a)=" + (y-a));
             }
-            
+
             for (int i=k; i<M; i++) {
                 intervalCounts[i] ++;
             }
@@ -57,5 +59,3 @@ public class GaussianCDF {
     }
 
 }
-
-

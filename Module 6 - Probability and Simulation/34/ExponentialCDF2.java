@@ -12,8 +12,15 @@ public class ExponentialCDF2 {
         double exValue = 0;
 
         // INSERT YOUR CODE HERE.
+		double sum = 0;
+		double interval = delta;
+		for(double i = a;i<b;i+=interval){
+			double midpoint = (i+i+interval)/2;
+			sum += midpoint * (F.get(i+interval) - F.get(i));
+		}
+		//System.out.println("Expected value = " + sum);
 
-        System.out.println ("Exponential ex: " + ex);
+        System.out.println ("Exponential ex: " + sum);
     }
 
     static Function makeExponentialCDF ()
@@ -53,4 +60,3 @@ public class ExponentialCDF2 {
     }
 
 }
-
