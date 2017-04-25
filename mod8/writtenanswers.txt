@@ -1,0 +1,8 @@
+Done in class: 3, 4, 5, 6 (ish), 8, 9, 10
+3. The average value of g(X) is less than the average value of X. 
+4. The range of Y is [0,3].
+8. The X distribution is uniform and the Y distribution is Gaussian. 
+10. Independent
+11. Not independent
+12. They're the same with slightly different range. With randomPoints2, the conditioning y looks different.
+24. The mean estimate is 0.5216167255358847 and the std-dev estimate is 0.28058637197873465.
