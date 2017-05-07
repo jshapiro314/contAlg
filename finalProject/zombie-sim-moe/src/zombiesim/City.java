@@ -32,6 +32,7 @@ public class City
 	//	for graphics
 	private DotPanel dp;
 	private int rate;
+	private int timePeriod;
 
 	/**
 	 * Create a new City and fill it with buildings and people.
@@ -1012,6 +1013,18 @@ public class City
 	}
 
 	/**
+	 * Returns an arraylist of all entities on the screen.
+	 * Effectively unifies all arraylists from this class
+	 */
+	public static ArrayList<? extends Entity>getEntities(){
+		ArrayList<Entity> totalEntities = new ArrayList<Entity>();
+		totalEntities.addAll(humans);
+		totalEntities.addAll(zombies);
+
+		return totalEntities;
+	}
+
+	/**
 	 * Check if a wall exists
 	 * @param x
 	 * @param y
@@ -1082,6 +1095,7 @@ public class City
 		}
 
 		//	safe point to manage human/zombie ratios
+		//	TODO: Modify infect to also switch zombies to humans
 		infect();
 		addFromQueue();
 
@@ -1112,6 +1126,22 @@ public class City
 	}
 
 	/**
+	 * update the time period
+	 */
+	public void changeTimePeriod(int period)
+	{
+		this.timePeriod = period;
+	}
+
+	/**
+	 * get the time period
+	 */
+	public int getTimePeriod()
+	{
+		return timePeriod;
+	}
+
+	/**
 	 * Draw the buildings and all humans. Only clears
 	 * the screen before drawing if traceMode is false
 	 * @param traceMode set to true to leave trails
@@ -1137,13 +1167,18 @@ public class City
 	 */
 	private void drawWalls()
 	{
-		dp.setPenColor(Color.DARK_GRAY);
+
 		for(int r = 0; r < height; r++)
 		{
 			for(int c = 0; c < width; c++)
 			{
-				if(walls[c][r])
+				if(walls[c][r]){
+					dp.setPenColor(Color.DARK_GRAY);
 					dp.drawDot(c, r);
+				}else{
+					dp.setPenColor(Color.BLACK);
+					dp.drawDot(c,r);
+				}
 			}
 		}
 	}

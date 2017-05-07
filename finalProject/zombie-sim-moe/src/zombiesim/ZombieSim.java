@@ -22,9 +22,9 @@ import javax.swing.event.ChangeListener;
 public class ZombieSim extends JFrame
 {
 	private static final long serialVersionUID = 1L;
-	private static final int MAX_X 		= 350;	//	window size in tiles
-	private static final int MAX_Y 		= 252;	//	window size in tiles
-	private static final int DOT_SIZE	= 3;	//	zoom in N times
+	private static final int MAX_X   = 350;    //	window size in tiles
+	private static final int MAX_Y   = 252;    //	window size in tiles
+	private static final int DOT_SIZE = 3;    //	zoom in N times
 
 	private static final String HUMAN_LABEL = "Pause Humans?";
 	private static final String ZOMBIE_LABEL = "Pause Zombies?";
@@ -32,14 +32,14 @@ public class ZombieSim extends JFrame
 	private DotPanel dp;
 	private City world;
 
-	private JCheckBox jcbh;	//	humans
-	private JCheckBox jcbz;	//	zombies
+	private JCheckBox jcbh;    //	humans
+	private JCheckBox jcbz;    //	zombies
 	private JSlider js;
 
 
 	/**
-	 * event handler for all mouse clicks
-	 */
+	* event handler for all mouse clicks
+	*/
 	private class FrameMouseHandler extends MouseAdapter implements MouseListener
 	{
 		public void mouseClicked(MouseEvent e)
@@ -63,9 +63,9 @@ public class ZombieSim extends JFrame
 				JCheckBox jcb = (JCheckBox)e.getComponent();
 
 				if( jcb.getText()==HUMAN_LABEL)
-					world.pauseHumans();
+				world.pauseHumans();
 				else if( jcb.getText()==ZOMBIE_LABEL )
-					world.pauseZombies();
+				world.pauseZombies();
 			}
 		}
 
@@ -76,12 +76,12 @@ public class ZombieSim extends JFrame
 	}
 
 	/**
-	 * create a new instance of the zombie simulator
-	 *
-	 * @param w	width (in tiles)
-	 * @param h	height (in tiles)
-	 * @throws InterruptedException
-	 */
+	* create a new instance of the zombie simulator
+	*
+	* @param w	width (in tiles)
+	* @param h	height (in tiles)
+	* @throws InterruptedException
+	*/
 	public ZombieSim(final int w, final int h) throws InterruptedException
 	{
 		//	gui setup
@@ -133,10 +133,56 @@ public class ZombieSim extends JFrame
 				JSlider source = (JSlider)e.getSource();
 				int rate = (int)source.getValue();
 
-				rate *= 6;			//	our desired fps (default: 5*6=30fps)
-				rate = 1000/rate;	//	our desired ms delay
+				rate *= 6; //	our desired fps (default: 5*6=30fps)
+				rate = 1000/rate; //	our desired ms delay
 
 				world.changeRate(rate);
+			}
+		});
+		jp.add(js);
+
+		//	we want our slider to work like this: left-slow, right-fast
+		//	we will translate 7 values from 1-7 to our final values
+		//	our default will be 1 second steps, 2 is minute, 3, hour, etc
+		js = new JSlider(1,7,1);
+		js.setBackground(Color.DARK_GRAY);
+		js.setForeground(Color.WHITE);
+		js.setMinorTickSpacing(1);
+		js.setPaintTicks(true);
+		js.addChangeListener(new ChangeListener(){
+			public void stateChanged(ChangeEvent e)
+			{
+				JSlider source = (JSlider)e.getSource();
+				int rate = (int)source.getValue();
+
+				//Put in switch statement to convert from 1-7 to day, week, month, etc
+				switch (rate) {
+					//second
+					case 1:  rate = 1;
+					break;
+					//minute
+					case 2:  rate = 60;
+					break;
+					//hour
+					case 3:  rate = 3600;
+					break;
+					//day
+					case 4:  rate = 86400;
+					break;
+					//week
+					case 5:  rate = 604800;
+					break;
+					//month
+					case 6:  rate = 2629746;
+					break;
+					//year
+					case 7:  rate = 31556952;
+					break;
+					//second
+					default: rate = 1;
+					break;
+				}
+				world.changeTimePeriod(rate);
 			}
 		});
 		jp.add(js);
@@ -147,7 +193,7 @@ public class ZombieSim extends JFrame
 			public void actionPerformed(ActionEvent e)
 			{
 				//	reset everything we need reset
-				js.setValue(5);	//	default from above
+				js.setValue(5); //	default from above
 				jcbh.setSelected(false);
 				jcbz.setSelected(false);
 
@@ -183,14 +229,17 @@ public class ZombieSim extends JFrame
 		while(true)
 		{
 			world.draw();
-			world.update();
+			//To control drawing every minute instead of every second
+			for(int i=0; i<world.getTimePeriod(); i++) {
+				world.update();
+			}
 		}
 	}
 
 	/**
-	 * run a zombie infestation simulation
-	 * @throws InterruptedException
-	 */
+	* run a zombie infestation simulation
+	* @throws InterruptedException
+	*/
 	public static void main(String[] args) throws InterruptedException
 	{
 		new ZombieSim(MAX_X,MAX_Y);
