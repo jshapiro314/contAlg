@@ -25,6 +25,7 @@ public class Elliot extends Entity{
 		goalY = 244;
 		goalTime = 100000;
 		drawColor = Color.WHITE;
+		type = "Elliot";
 	}
 
 	/**

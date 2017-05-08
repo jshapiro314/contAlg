@@ -34,4 +34,5 @@ public class Human extends Entity{
 	{
 		super.update(isPaused);
 	}
+
 }

@@ -25,6 +25,7 @@ public class Columbian extends Entity{
 		goalY = 74;
 		goalTime = 100000;
 		drawColor = Color.MAGENTA;
+		type = "Columbian";
 	}
 
 	/**

@@ -14,8 +14,8 @@ public class City
 	public static final int TIME_PERIOD = 1;
 
 	//	our arraylists
-	private static ArrayList<Entity>		humans;
-	private static ArrayList<Zombie>	zombies;
+	public static ArrayList<Entity>		humans;
+	public static ArrayList<Zombie>	zombies;
 	private ArrayList<Entity>	humanQueue;
 	private ArrayList<Zombie>	zombieQueue;
 
@@ -184,7 +184,7 @@ public class City
 		}while( walls[eX][eY] );
 
 		eDir = Helper.nextInt(Entity.MAXDIR);
-		zombies.add(new Zombie(eX,eY,eDir,dp));
+		zombies.add(NEW zOmbie(eX,eY,eDir,dp));
 		*/
 	}
 
@@ -201,7 +201,7 @@ public class City
 			if( humans.get(i).getInfect() )
 			{
 				//	add a zombie
-				zombies.add( new Zombie(humans.get(i).x,humans.get(i).y,humans.get(i).facing,dp) );
+				zombies.add( new Zombie(humans.get(i).x,humans.get(i).y,humans.get(i).facing,dp,humans.get(i).type)); 
 				humans.remove(i);
 
 				//	handle indexes correctly to avoid a fault
@@ -210,6 +210,18 @@ public class City
 			}
 		}
 
+	}
+
+	public void getWell() {
+		int maxZombie = zombies.size();
+		for (int i = 0; i < maxZombie; i++) {
+			if (zombies.get(i).overIt) {
+				zombies.remove(i);
+				maxZombie--;
+				i--;
+			}
+		}
+	
 	}
 
 	/**
@@ -233,7 +245,7 @@ public class City
 		if(b==IS_HUMAN)
 			humanQueue.add( new Human(eX,eY,eDir,dp));
 		else
-			zombieQueue.add( new Zombie(eX,eY,eDir,dp) );
+			zombieQueue.add( new Zombie(eX,eY,eDir,dp, "SEAS") );
 	}
 
 	/**
@@ -1160,6 +1172,7 @@ public class City
 		//	safe point to manage human/zombie ratios
 		//	TODO: Modify infect to also switch zombies to humans
 		infect();
+		getWell();
 		addFromQueue();
 
 		//	update all entities
