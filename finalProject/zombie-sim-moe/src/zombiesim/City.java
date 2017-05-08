@@ -120,18 +120,56 @@ public class City
 			//IA: 2802/19477 = 0.144
 
 			double prob = Helper.nextDouble();
+			double probInfect = Helper.nextDouble();
+			double vacRate = Disease.vaccinatedRate;
 			if(prob < 0.085){
-				humans.add(new Law(eX,eY,eDir,dp));
+				Law l = new Law(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					l.vaccinated = true;
+				} else {
+					l.vaccinated = false;
+				}
+				humans.add(l);
 			}else if(prob < 0.265){
-				humans.add(new Business(eX,eY,eDir,dp));
+				Business b = new Business(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					b.vaccinated = true;
+				} else {
+					b.vaccinated = false;
+				}
+				humans.add(b);
 			}else if(prob < 0.342){
-				humans.add(new SMPA(eX,eY,eDir,dp));
+				SMPA s = new SMPA(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					s.vaccinated = true;
+				} else {
+					s.vaccinated = false;
+				}
+				humans.add(s);
 			}else if(prob < 0.469){
-				humans.add(new SEAS(eX,eY,eDir,dp));
+				SEAS se = new SEAS(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					se.vaccinated = true;
+				} else {
+					se.vaccinated = false;
+				}
+				humans.add(se);
 			}else if(prob < 0.857){
-				humans.add(new Columbian(eX,eY,eDir,dp));
+				Columbian c = new Columbian(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					c.vaccinated = true;
+				} else {
+					c.vaccinated = false;
+				}
+				humans.add(c);
 			}else{
-				humans.add(new Elliot(eX,eY,eDir,dp));
+				Elliot e = new Elliot(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					e.vaccinated = true;
+				} else {
+					e.vaccinated = false;
+				}
+				humans.add(e);
 			}
 		}
 

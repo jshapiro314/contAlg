@@ -36,9 +36,22 @@ public class Zombie extends Entity{
 		ArrayList<? extends Entity> a = City.getArrayList(false);
 		for(Entity h: a)
 		{
-			if(	((x==h.x)&&(y==h.y+1))	||	((x==h.x)&&(y==h.y-1))	||
-				((x==h.x+1)&&(y==h.y))	||	((x==h.x-1)&&(y==h.y))	)
-				h.infect = true;
+			if(((x==h.x)&&(y==h.y+1)) || ((x==h.x)&&(y==h.y-1)) || ((x==h.x+1)&&(y==h.y)) || ((x==h.x-1)&&(y==h.y))) {
+				double prob = Helper.nextDouble();
+				if (h.vaccinated == true) {
+					if (prob < Disease.infectionVacRate) {
+						h.infect = true;
+					} else {
+						System.out.println("hit but not infected");
+					}
+				} else {
+					if (prob < Disease.infectionNoVacRate) {
+						h.infect = true;
+					} else {
+						System.out.println("hit but not infected");
+					}
+				}
+			}
 		}
 
 		super.update(isPaused);
