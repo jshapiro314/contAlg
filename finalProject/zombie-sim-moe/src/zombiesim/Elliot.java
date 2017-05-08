@@ -23,7 +23,7 @@ public class Elliot extends Entity{
 		goalChance = 0.05;
 		goalX = 311;
 		goalY = 244;
-		goalTime = 100000;
+		goalTime = 50000;
 		drawColor = Color.WHITE;
 	}
 
