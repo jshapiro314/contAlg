@@ -27,7 +27,7 @@ public class ZombieSim extends JFrame
 	private static final int DOT_SIZE = 3;    //	zoom in N times
 
 	private static final String HUMAN_LABEL = "Pause Humans?";
-	private static final String ZOMBIE_LABEL = "Pause Zombies?";
+	private static final String ZOMBIE_LABEL = "Pause Infected?";
 
 	private DotPanel dp;
 	private City world;
@@ -221,7 +221,7 @@ public class ZombieSim extends JFrame
 		this.setVisible(true);
 
 		//	standard output
-		System.out.println("Left click to add zombie, right click to add human");
+		System.out.println("Left click to add infected, right click to add human");
 
 		//	begin simulation
 		//world = new City(w,h,60,200,dp);

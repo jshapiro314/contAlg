@@ -11,11 +11,12 @@ public class City
 	public static final Boolean IS_HUMAN	= true;
 	public static final Boolean IS_ZOMBIE	= false;
 	public static final int START_RATE 		= 33;	//	30fps
+	public static final int TIME_PERIOD = 1;
 
 	//	our arraylists
-	private static ArrayList<Human>		humans;
+	private static ArrayList<Entity>		humans;
 	private static ArrayList<Zombie>	zombies;
-	private ArrayList<Human>	humanQueue;
+	private ArrayList<Entity>	humanQueue;
 	private ArrayList<Zombie>	zombieQueue;
 
 	//	the end of the world Booleans
@@ -46,6 +47,7 @@ public class City
 		width = w;
 		height = h;
 		rate = START_RATE;
+		timePeriod = TIME_PERIOD;
 		end = safeEnd = false;
 		walls = new boolean[w][h];
 		this.dp = dp;
@@ -53,7 +55,7 @@ public class City
 		randomBuildings(numB);
 		populate(numP);
 
-		humanQueue = new ArrayList<Human>();
+		humanQueue = new ArrayList<Entity>();
 		zombieQueue = new ArrayList<Zombie>();
 	}
 
@@ -69,6 +71,7 @@ public class City
 		width = w;
 		height = h;
 		rate = START_RATE;
+		timePeriod = TIME_PERIOD;
 		end = safeEnd = false;
 		walls = new boolean[w][h];
 		this.dp = dp;
@@ -77,7 +80,7 @@ public class City
 		createGWBuildings();
 		populate(numP);
 
-		humanQueue = new ArrayList<Human>();
+		humanQueue = new ArrayList<Entity>();
 		zombieQueue = new ArrayList<Zombie>();
 	}
 
@@ -97,7 +100,7 @@ public class City
 
 		//	create humans, do not draw where walls are
 		//	we do not care about overlaps between humans and zombies
-		humans = new ArrayList<Human>(numPeople);
+		humans = new ArrayList<Entity>(numPeople);
 		for( int p=0; p<numPeople; p++ )
 		{
 			do
@@ -107,7 +110,29 @@ public class City
 			}while( walls[eX][eY] );
 
 			eDir = Helper.nextInt(Entity.MAXDIR);
-			humans.add(new Human(eX, eY, eDir,dp));
+			//Depending on breakdown of school, add different types of entities
+			//Percentages of Schools:
+			//Law: 1646/19477 = 0.085
+			//Bus: 3497/19477 = 0.18
+			//SMPA: 1500/19477 = 0.077
+			//SEAS: 2475/19477 = 0.127
+			//Col: 7557/19477 = 0.388
+			//IA: 2802/19477 = 0.144
+
+			double prob = Helper.nextDouble();
+			if(prob < 0.085){
+				humans.add(new Law(eX,eY,eDir,dp));
+			}else if(prob < 0.265){
+				humans.add(new Business(eX,eY,eDir,dp));
+			}else if(prob < 0.342){
+				humans.add(new SMPA(eX,eY,eDir,dp));
+			}else if(prob < 0.469){
+				humans.add(new SEAS(eX,eY,eDir,dp));
+			}else if(prob < 0.857){
+				humans.add(new Columbian(eX,eY,eDir,dp));
+			}else{
+				humans.add(new Elliot(eX,eY,eDir,dp));
+			}
 		}
 
 
@@ -1104,7 +1129,7 @@ public class City
 		{
 			z.update(zombiesPaused);
 		}
-		for( Human h: humans )
+		for( Entity h: humans )
 		{
 			h.update(humansPaused);
 		}
@@ -1154,7 +1179,7 @@ public class City
 		{
 			z.draw();
 		}
-		for( Human h: humans )
+		for( Entity h: humans )
 		{
 			h.draw();
 		}
