@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 /**
  * A class to represent a Zombie.
- * 
+ *
  * 		if( Zombie is adjacent to a Human non-diagonal):
  * 			delete Human and create Zombie in place
- * 
+ *
  * 		if (Zombie sees Human within 10 spaces of facing direction):
  * 			move 1 space towards Human
  *		else:
@@ -17,14 +17,14 @@ import java.util.ArrayList;
  * 			Move in the current direction one space if not blocked by a wall
  */
 public class Zombie extends Entity{
-	
+
 	public Zombie(int x, int y, int facing, DotPanel dp)
 	{
 		super(x,y,facing,dp);
-		turnChance = 100/20;
+		turnChance = 0.2;
 		drawColor = Color.GREEN;
 	}
-	
+
 	/**
 	 * Update the Zombie's position following the rules above.
 	 */
@@ -40,7 +40,7 @@ public class Zombie extends Entity{
 				((x==h.x+1)&&(y==h.y))	||	((x==h.x-1)&&(y==h.y))	)
 				h.infect = true;
 		}
-		
+
 		super.update(isPaused);
 	}
 }

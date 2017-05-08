@@ -18,8 +18,12 @@ public class Entity
 
 	//	attributes
 	protected int x, y;
+	protected int goalX, goalY;
+	protected int goalTime;
+	protected int penalty;
 	protected int facing;
-	protected int turnChance;
+	protected double turnChance;
+	protected double goalChance;
 	protected Color drawColor;
 	protected Boolean infect = false;	//	set to true to remove a human when safe
 
@@ -65,14 +69,16 @@ public class Entity
 		}
 
 
-		//Check if entity should move towards its goal
-		if(Helper.nextInt(goalChance)==0){
-			//implement head to goal here
-		}else{
-			//	check if facing should change
-			if( Helper.nextInt(turnChance)==0 ){
-				facing = Helper.nextInt(MAXDIR);
+		//Check if entity should move towards its goal.
+		if(Helper.nextDouble() < goalChance){
+			if(moveToGoal()){
+				return;
 			}
+		}
+
+		//	check if facing should change
+		if( Helper.nextDouble() < turnChance){
+			facing = Helper.nextInt(MAXDIR);
 		}
 		move(facing,1);
 	}
@@ -143,6 +149,53 @@ public class Entity
 		}
 
 		//	default return
+		return false;
+	}
+
+	/**
+	 * Move the entity towards its goal. Ensure that the entity won't hit a wall. If the entity can't move without hitting a wall, return false, true if the entity does move. If the entity hits the goal, the next 1000 times this method is touched it will return false. This prevents the entities from jsut getting stuck in one location.
+	 */
+	public boolean moveToGoal(){
+		//To begin, we need to check if we are already at the goal. If we are, we return false.
+		if(x == goalX && y == goalY){
+			penalty = goalTime;
+			return false;
+		}
+
+		//Update the time since we've been at the goal.
+		if(penalty > 0){
+			penalty --;
+			return false;
+		}
+		//We need to discover which directions we need to face to get to the goal.
+		//There will be at most 2 directions, but possibly only one.
+		//We will add these potential directions to a list, then choose one at random to move in
+		ArrayList<Integer> potentialDirections = new ArrayList<Integer>();
+		if(x > goalX){
+			potentialDirections.add(LEFT);
+		}else if(x < goalX){
+			potentialDirections.add(RIGHT);
+		}
+		if(y > goalY){
+			potentialDirections.add(UP);
+		}else if(y < goalY){
+			potentialDirections.add(DOWN);
+		}
+
+		//Randomly try the potential directions until one leads to a successful move.
+		while(!potentialDirections.isEmpty()){
+			int index = Helper.nextInt(potentialDirections.size());
+			int direction = potentialDirections.get(index);
+			potentialDirections.remove(index);
+
+			int prevX = x;
+			int prevY = y;
+			move(direction,1);
+			if(prevX != x || prevY != y){
+				return true;
+			}
+		}
+		//If none of the moves were successful, return false
 		return false;
 	}
 

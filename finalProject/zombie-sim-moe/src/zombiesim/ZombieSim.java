@@ -233,6 +233,7 @@ public class ZombieSim extends JFrame
 			for(int i=0; i<world.getTimePeriod(); i++) {
 				world.update();
 			}
+			//System.out.println("UPDATED");
 		}
 	}
 
