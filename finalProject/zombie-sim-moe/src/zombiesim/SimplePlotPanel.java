@@ -62,7 +62,7 @@ public class SimplePlotPanel extends JPanel {
 
   // A set of colors to use.
 
-  static Color colors[] = {Color.red, Color.blue, Color.green, Color.magenta};
+  static Color colors[] = {Color.green, Color.orange, Color.cyan, Color.magenta, Color.black, Color.red, Color.blue};
 
   // Parameters to constructor: total number of curves. Over all curves,
   // the largest number of X values, the largest number of Y values.

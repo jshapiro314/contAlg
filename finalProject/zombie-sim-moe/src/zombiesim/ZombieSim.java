@@ -1,5 +1,7 @@
 package zombiesim;
 
+import java.util.Hashtable;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
@@ -14,6 +16,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
+import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -24,7 +27,7 @@ public class ZombieSim extends JFrame
 	private static final long serialVersionUID = 1L;
 	private static final int MAX_X   = 350;    //	window size in tiles
 	private static final int MAX_Y   = 252;    //	window size in tiles
-	private static final int DOT_SIZE = 3;    //	zoom in N times
+	private static final int DOT_SIZE = 2;    //	zoom in N times
 
 	private static final String HUMAN_LABEL = "Pause Humans?";
 	private static final String ZOMBIE_LABEL = "Pause Infected?";
@@ -88,7 +91,7 @@ public class ZombieSim extends JFrame
 		this.setSize(w*DOT_SIZE,h*DOT_SIZE);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		this.setTitle("Zombie Simulation");
+		this.setTitle("Disease Simulation");
 
 		//	create and set the size of the panel
 		dp = new DotPanel(w, h, DOT_SIZE);
@@ -127,6 +130,12 @@ public class ZombieSim extends JFrame
 		js.setForeground(Color.WHITE);
 		js.setMinorTickSpacing(1);
 		js.setPaintTicks(true);
+		js.setPaintLabels(true);
+		Hashtable labeltable = new Hashtable();
+		JLabel timeLabel = new JLabel("Refresh Rate");
+		timeLabel.setForeground(Color.white);
+		labeltable.put(new Integer(5), timeLabel);
+		js.setLabelTable(labeltable);
 		js.addChangeListener(new ChangeListener(){
 			public void stateChanged(ChangeEvent e)
 			{
@@ -149,6 +158,12 @@ public class ZombieSim extends JFrame
 		js.setForeground(Color.WHITE);
 		js.setMinorTickSpacing(1);
 		js.setPaintTicks(true);
+		js.setPaintLabels(true);
+		Hashtable labeltable2 = new Hashtable();
+		JLabel speedLabel = new JLabel("Time Step");
+		speedLabel.setForeground(Color.white);
+		labeltable2.put(new Integer(4), speedLabel);
+		js.setLabelTable(labeltable2);
 		js.addChangeListener(new ChangeListener(){
 			public void stateChanged(ChangeEvent e)
 			{
