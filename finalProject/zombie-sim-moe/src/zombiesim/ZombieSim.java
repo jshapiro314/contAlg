@@ -27,7 +27,7 @@ public class ZombieSim extends JFrame
 	private static final long serialVersionUID = 1L;
 	private static final int MAX_X   = 350;    //	window size in tiles
 	private static final int MAX_Y   = 252;    //	window size in tiles
-	private static final int DOT_SIZE = 3;    //	zoom in N times
+	private static final int DOT_SIZE = 2;    //	zoom in N times
 
 	private static final String HUMAN_LABEL = "Pause Humans?";
 	private static final String ZOMBIE_LABEL = "Pause Infected?";
