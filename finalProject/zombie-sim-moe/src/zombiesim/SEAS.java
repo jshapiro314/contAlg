@@ -19,6 +19,7 @@ public class SEAS extends Entity{
 		goalY = 56;
 		goalTime = 50000;
 		drawColor = Color.ORANGE;
+		type = "SEAS";
 	}
 
 	/**

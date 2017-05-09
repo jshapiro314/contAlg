@@ -26,9 +26,10 @@ public class Entity
 	protected double goalChance;
 	protected Color drawColor;
 	protected Boolean infect = false;	//	set to true to remove a human when safe
-	protected Boolean vaccinated;
+	protected boolean vaccinated;
+	public String type;
 
-	private DotPanel dp;
+	public DotPanel dp;
 	private int xdp, ydp;	//	for drawing
 
 	private Boolean isPaused;
