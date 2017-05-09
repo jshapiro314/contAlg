@@ -202,12 +202,25 @@ public class ZombieSim extends JFrame
 				//while( !world.safeEnd() );
 
 				//world = new City(w,h,60,200,dp);
-				world = new City(dp,w,h,200,200);
+				world = new City(dp,w,h,1000,200);
 				dp.clear();
 
 			}
 		});
 		jp.add(jb);
+
+		//	reset button
+		JButton jbp = new JButton("Plot");
+		jbp.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e)
+			{
+				//	wait until it is safe for the world to end
+				world.plot();
+				//while( !world.safeEnd() );
+
+			}
+		});
+		jp.add(jbp);
 
 		cPane.add(jp,BorderLayout.SOUTH);
 
@@ -225,7 +238,7 @@ public class ZombieSim extends JFrame
 
 		//	begin simulation
 		//world = new City(w,h,60,200,dp);
-		world = new City(dp,w,h,200,200);
+		world = new City(dp,w,h,1000,200);
 		while(true)
 		{
 			world.draw();

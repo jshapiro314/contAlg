@@ -26,9 +26,13 @@ public class Entity
 	protected double goalChance;
 	protected Color drawColor;
 	protected Boolean infect = false;	//	set to true to remove a human when safe
-	protected Boolean vaccinated;
+	protected Boolean immune = false;	//	If a human gets sick, it can't get sick again
+	protected boolean vaccinated;
+	protected double infectionCount = 0; // How many infected people have infected entity in given timeframe
+	protected double infectionTime = 0; //helps out with calculating infectionCount
+	public String type;
 
-	private DotPanel dp;
+	public DotPanel dp;
 	private int xdp, ydp;	//	for drawing
 
 	private Boolean isPaused;
@@ -63,7 +67,7 @@ public class Entity
 		//	for drawing
 		xdp = x; ydp = y;
 
-		//Check if entity is facing another entity and react appropriatetly (by turning 180 degrees and moving 1 space)
+		//Check if entity is facing another entity and react appropriatetly (by turning 90 degrees and moving 1 space)
 		//If a reaction occurs, standard movement should not
 		if(viewEntity()){
 			return;
@@ -108,7 +112,7 @@ public class Entity
 
 						if( x==e.x&&y-i==e.y )
 						{
-							move(DOWN,1);
+							move(LEFT,1);
 							return true;
 						}
 						break;
@@ -119,7 +123,7 @@ public class Entity
 
 						if( x+i==e.x&&y==e.y )
 						{
-							move(LEFT,1);
+							move(UP,1);
 							return true;
 						}
 						break;
@@ -130,7 +134,7 @@ public class Entity
 
 						if( x==e.x&&y+i==e.y )
 						{
-							move(UP,1);
+							move(RIGHT,1);
 							return true;
 						}
 						break;
@@ -141,7 +145,7 @@ public class Entity
 
 						if( x-i==e.x&&y==e.y )
 						{
-							move(RIGHT,1);
+							move(DOWN,1);
 							return true;
 						}
 						break;
@@ -154,7 +158,7 @@ public class Entity
 	}
 
 	/**
-	 * Move the entity towards its goal. Ensure that the entity won't hit a wall. If the entity can't move without hitting a wall, return false, true if the entity does move. If the entity hits the goal, the next 1000 times this method is touched it will return false. This prevents the entities from jsut getting stuck in one location.
+	 * Move the entity towards its goal. Ensure that the entity won't hit a wall. If the entity can't move without hitting a wall, return false, true if the entity does move. If the entity hits the goal, the next X times this method is touched it will return false. X is set in the goalTime field of the entity. This prevents the entities from jsut getting stuck in one location.
 	 */
 	public boolean moveToGoal(){
 		//To begin, we need to check if we are already at the goal. If we are, we return false.
@@ -196,7 +200,8 @@ public class Entity
 				return true;
 			}
 		}
-		//If none of the moves were successful, return false
+		//If none of the moves were successful, return false and set penalty. This prevents the entity from getting stuck on a wall
+		penalty = 60;
 		return false;
 	}
 

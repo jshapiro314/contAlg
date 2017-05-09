@@ -14,8 +14,8 @@ public class City
 	public static final int TIME_PERIOD = 1;
 
 	//	our arraylists
-	private static ArrayList<Entity>		humans;
-	private static ArrayList<Zombie>	zombies;
+	public static ArrayList<Entity>		humans;
+	public static ArrayList<Zombie>	zombies;
 	private ArrayList<Entity>	humanQueue;
 	private ArrayList<Zombie>	zombieQueue;
 
@@ -34,6 +34,12 @@ public class City
 	private DotPanel dp;
 	private int rate;
 	private int timePeriod;
+
+	// for plots
+	private Function healthyFunction;
+	private Function infectedFunction;
+	public static double time;
+	private boolean plot = false;
 
 	/**
 	 * Create a new City and fill it with buildings and people.
@@ -82,6 +88,11 @@ public class City
 
 		humanQueue = new ArrayList<Entity>();
 		zombieQueue = new ArrayList<Zombie>();
+
+		//Create a plot for people vs infected
+		healthyFunction = new Function("Healthy");
+		infectedFunction = new Function("Infected");
+		time = 0;
 	}
 
 
@@ -120,18 +131,56 @@ public class City
 			//IA: 2802/19477 = 0.144
 
 			double prob = Helper.nextDouble();
+			double probInfect = Helper.nextDouble();
+			double vacRate = Disease.vaccinatedRate;
 			if(prob < 0.085){
-				humans.add(new Law(eX,eY,eDir,dp));
+				Law l = new Law(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					l.vaccinated = true;
+				} else {
+					l.vaccinated = false;
+				}
+				humans.add(l);
 			}else if(prob < 0.265){
-				humans.add(new Business(eX,eY,eDir,dp));
+				Business b = new Business(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					b.vaccinated = true;
+				} else {
+					b.vaccinated = false;
+				}
+				humans.add(b);
 			}else if(prob < 0.342){
-				humans.add(new SMPA(eX,eY,eDir,dp));
+				SMPA s = new SMPA(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					s.vaccinated = true;
+				} else {
+					s.vaccinated = false;
+				}
+				humans.add(s);
 			}else if(prob < 0.469){
-				humans.add(new SEAS(eX,eY,eDir,dp));
+				SEAS se = new SEAS(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					se.vaccinated = true;
+				} else {
+					se.vaccinated = false;
+				}
+				humans.add(se);
 			}else if(prob < 0.857){
-				humans.add(new Columbian(eX,eY,eDir,dp));
+				Columbian c = new Columbian(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					c.vaccinated = true;
+				} else {
+					c.vaccinated = false;
+				}
+				humans.add(c);
 			}else{
-				humans.add(new Elliot(eX,eY,eDir,dp));
+				Elliot e = new Elliot(eX, eY, eDir, dp);
+				if (probInfect < vacRate) {
+					e.vaccinated = true;
+				} else {
+					e.vaccinated = false;
+				}
+				humans.add(e);
 			}
 		}
 
@@ -163,11 +212,23 @@ public class City
 			if( humans.get(i).getInfect() )
 			{
 				//	add a zombie
-				zombies.add( new Zombie(humans.get(i).x,humans.get(i).y,humans.get(i).facing,dp) );
+				zombies.add( new Zombie(humans.get(i).x,humans.get(i).y,humans.get(i).facing,dp,humans.get(i).type));
 				humans.remove(i);
 
 				//	handle indexes correctly to avoid a fault
 				maxHuman--;
+				i--;
+			}
+		}
+
+	}
+
+	public void getWell() {
+		int maxZombie = zombies.size();
+		for (int i = 0; i < maxZombie; i++) {
+			if (zombies.get(i).overIt) {
+				zombies.remove(i);
+				maxZombie--;
 				i--;
 			}
 		}
@@ -195,7 +256,7 @@ public class City
 		if(b==IS_HUMAN)
 			humanQueue.add( new Human(eX,eY,eDir,dp));
 		else
-			zombieQueue.add( new Zombie(eX,eY,eDir,dp) );
+			zombieQueue.add( new Zombie(eX,eY,eDir,dp, "SEAS") );
 	}
 
 	/**
@@ -1100,6 +1161,12 @@ public class City
 	}
 
 	/**
+	 * Plot the graphs while world is running
+	 */
+	public void plot(){
+		plot = true;
+	}
+	/**
 	 * Return the value of safeEnd, needed by the above to end safely
 	 */
 	public Boolean safeEnd()
@@ -1119,9 +1186,16 @@ public class City
 			return;
 		}
 
+		//Plot graphics
+		if(plot){
+			healthyFunction.show(infectedFunction,healthyFunction);
+			plot = false;
+		}
+
 		//	safe point to manage human/zombie ratios
 		//	TODO: Modify infect to also switch zombies to humans
 		infect();
+		getWell();
 		addFromQueue();
 
 		//	update all entities
@@ -1140,6 +1214,11 @@ public class City
 			hc = humans.size();
 			System.out.println(zc+"/"+hc);
 		}
+
+		//Add points to our functions
+		healthyFunction.add(time,humans.size());
+		infectedFunction.add(time,zombies.size());
+		time++;
 	}
 
 	/**

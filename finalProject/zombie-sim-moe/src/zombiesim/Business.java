@@ -25,6 +25,7 @@ public class Business extends Entity{
 		goalY = 99;
 		goalTime = 100000;
 		drawColor = Color.CYAN;
+		type = "Business";
 	}
 
 	/**

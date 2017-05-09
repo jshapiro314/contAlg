@@ -25,6 +25,7 @@ public class SMPA extends Entity{
 		goalY = 56;
 		goalTime = 100000;
 		drawColor = Color.RED;
+		type = "SMPA";
 	}
 
 	/**
