@@ -25,6 +25,7 @@ public class Law extends Entity{
 		goalY = 88;
 		goalTime = 10000;
 		drawColor = Color.BLUE;
+		type = "Law";
 	}
 
 	/**

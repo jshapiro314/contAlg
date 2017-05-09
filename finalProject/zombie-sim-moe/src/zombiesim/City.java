@@ -38,7 +38,7 @@ public class City
 	// for plots
 	private Function healthyFunction;
 	private Function infectedFunction;
-	private double time;
+	public static double time;
 	private boolean plot = false;
 
 	/**
@@ -212,7 +212,7 @@ public class City
 			if( humans.get(i).getInfect() )
 			{
 				//	add a zombie
-				zombies.add( new Zombie(humans.get(i).x,humans.get(i).y,humans.get(i).facing,dp,humans.get(i).type)); 
+				zombies.add( new Zombie(humans.get(i).x,humans.get(i).y,humans.get(i).facing,dp,humans.get(i).type));
 				humans.remove(i);
 
 				//	handle indexes correctly to avoid a fault
@@ -232,7 +232,7 @@ public class City
 				i--;
 			}
 		}
-	
+
 	}
 
 	/**
