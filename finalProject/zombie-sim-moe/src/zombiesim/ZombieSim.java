@@ -52,10 +52,6 @@ public class ZombieSim extends JFrame
 			{
 				world.createEntity(e.getX()/DOT_SIZE, e.getY()/DOT_SIZE,City.IS_ZOMBIE);
 			}
-			else if( SwingUtilities.isRightMouseButton(e) )
-			{
-				world.createEntity(e.getX()/DOT_SIZE, e.getY()/DOT_SIZE,City.IS_HUMAN);
-			}
 		}
 
 		public void mouseReleased(MouseEvent e)
