@@ -2,6 +2,7 @@ package zombiesim;
 
 import java.awt.Color;
 import java.util.ArrayList;
+import java.awt.*; import javax.swing.*;
 
 public class City
 {
@@ -25,6 +26,12 @@ public class City
 	//	counts for output
 	private int zc = 0;		//	zombie count
 	private int hc = 0;		//	human count
+	private int seascount = 0;
+	private int smpacount = 0;
+	private int lawcount = 0;
+	private int ellcount = 0;
+	private int buscount = 0;
+	private int colcount = 0;
 
 	//	for determining motion of humans and zombies
 	private Boolean humansPaused = false;
@@ -37,6 +44,12 @@ public class City
 
 	// for plots
 	private Function healthyFunction;
+	private Function busFunction;
+	private Function colFunction;
+	private Function seasFunction;
+	private Function smpaFunction;
+	private Function ellFunction;
+	private Function lawFunction;
 	private Function infectedFunction;
 	public static double time;
 	private boolean plot = false;
@@ -92,6 +105,15 @@ public class City
 		//Create a plot for people vs infected
 		healthyFunction = new Function("Healthy");
 		infectedFunction = new Function("Infected");
+
+		// Create plots for all populations
+		busFunction = new Function("Business");
+		colFunction = new Function("Columbian");
+		seasFunction = new Function("SEAS");
+		smpaFunction = new Function("SMPA");
+		ellFunction = new Function("Elliot");
+		lawFunction = new Function("Law");
+
 		time = 0;
 	}
 
@@ -1188,7 +1210,8 @@ public class City
 
 		//Plot graphics
 		if(plot){
-			healthyFunction.show(infectedFunction,healthyFunction);
+			healthyFunction.show(infectedFunction, healthyFunction);
+			busFunction.show(infectedFunction, seasFunction, busFunction, colFunction, ellFunction, smpaFunction, lawFunction);
 			plot = false;
 		}
 
@@ -1218,6 +1241,29 @@ public class City
 		//Add points to our functions
 		healthyFunction.add(time,humans.size());
 		infectedFunction.add(time,zombies.size());
+		seascount = smpacount = ellcount = lawcount = buscount = colcount = 0;
+		for (int i = 0; i < humans.size(); i++) {
+			Entity curr = humans.get(i);
+			if (curr instanceof SEAS) {
+				seascount++;
+			} else if (curr instanceof SMPA) {
+				smpacount++;
+			} else if (curr instanceof Elliot) {
+				ellcount++;
+			} else if (curr instanceof Law) {
+				lawcount++;
+			} else if (curr instanceof Business) {
+				buscount++;
+			} else if (curr instanceof Columbian) {
+				colcount++;
+			}
+		}
+		busFunction.add(time, buscount);
+		colFunction.add(time, colcount);
+		ellFunction.add(time, ellcount);
+		lawFunction.add(time, lawcount);
+		smpaFunction.add(time, smpacount);
+		seasFunction.add(time, seascount);
 		time++;
 	}
 
