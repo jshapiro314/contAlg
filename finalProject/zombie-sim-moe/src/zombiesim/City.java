@@ -35,6 +35,12 @@ public class City
 	private int rate;
 	private int timePeriod;
 
+	// for plots
+	private Function healthyFunction;
+	private Function infectedFunction;
+	private double time;
+	private boolean plot = false;
+
 	/**
 	 * Create a new City and fill it with buildings and people.
 	 * @param w width of city
@@ -82,6 +88,11 @@ public class City
 
 		humanQueue = new ArrayList<Entity>();
 		zombieQueue = new ArrayList<Zombie>();
+
+		//Create a plot for people vs infected
+		healthyFunction = new Function("Healthy");
+		infectedFunction = new Function("Infected");
+		time = 0;
 	}
 
 
@@ -1100,6 +1111,12 @@ public class City
 	}
 
 	/**
+	 * Plot the graphs while world is running
+	 */
+	public void plot(){
+		plot = true;
+	}
+	/**
 	 * Return the value of safeEnd, needed by the above to end safely
 	 */
 	public Boolean safeEnd()
@@ -1117,6 +1134,12 @@ public class City
 		{
 			safeEnd = true;
 			return;
+		}
+
+		//Plot graphics
+		if(plot){
+			healthyFunction.show(infectedFunction,healthyFunction);
+			plot = false;
 		}
 
 		//	safe point to manage human/zombie ratios
@@ -1140,6 +1163,11 @@ public class City
 			hc = humans.size();
 			System.out.println(zc+"/"+hc);
 		}
+
+		//Add points to our functions
+		healthyFunction.add(time,humans.size());
+		infectedFunction.add(time,zombies.size());
+		time++;
 	}
 
 	/**
