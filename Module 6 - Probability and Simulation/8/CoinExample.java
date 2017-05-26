@@ -20,7 +20,13 @@ public class CoinExample {
 	for (int n=0; n<numTrials; n++) {
 
             // INSERT YOUR CODE HERE
-
+            if(coin.flip() == 0){
+                if(coin.flip() == 0){
+                    if(coin.flip() == 1){
+                        numSuccesses++;
+                    }
+                }
+            }
 	}
 
         // Estimate. (No need to cast into double's)
@@ -28,5 +34,5 @@ public class CoinExample {
 
 	System.out.println ("Pr[1st h appears on 3rd flip]=" + prob);
     }
- 
+
 }

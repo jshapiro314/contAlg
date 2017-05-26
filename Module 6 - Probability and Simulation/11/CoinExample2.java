@@ -20,13 +20,20 @@ public class CoinExample2 {
 	for (int n=0; n<numTrials; n++) {
 
             // INSERT YOUR CODE HERE
+            int coinCount = 0;
+			for(int i=0;i<10;i++){
+				coinCount += coin.flip();
+			}
+			if(coinCount == 3){
+				numSuccesses++;
+			}
 
 	}
 
         // Estimate. (No need to cast into double's)
 	double prob = numSuccesses / numTrials;
 
-	System.out.println ("Pr[3 H in 5 flips]=" + prob);
+	System.out.println ("Pr[3 H in 10 flips]=" + prob);
     }
- 
+
 }
