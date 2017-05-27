@@ -9,8 +9,7 @@ public class UniformCDF {
         for(double i=0.02;i<=1;i+=0.02){
             G.add(i-0.02,(F.get(i)-F.get(i-0.02))/0.02);
         }
-        F.show ();
-        G.show();
+        Function.show(F,G);
     }
 
     static Function makeUniformCDF ()

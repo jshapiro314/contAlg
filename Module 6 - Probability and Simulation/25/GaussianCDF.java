@@ -5,8 +5,8 @@ public class GaussianCDF {
     public static void main (String[] argv)
     {
         Function F = makeGaussianCDF ();
-        System.out.println("Pr[0 < X ≤ 2] = " + F.get(2)-f.get(0));
-        System.out.println("Pr[X > 0] = " + F.get(2)-f.get(0));
+        System.out.println("Pr[0 < X ≤ 2] = " + (F.get(2)-F.get(0)));
+        System.out.println("Pr[X > 0] = " + (1 - (F.get(0)-F.get(-2))));
         F.show ();
     }
 

@@ -57,24 +57,47 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
     * Pr[X = 3] = 0.216
     * Sketch the CDF on paper.
 
+* **![alt](./images/q19.png)**
+
 23. What is an example of a continuous rv associate with the QueueControl.java application?
+
+* **avgWaitTime**
 
 25. CODE: The program GaussianCDF.java estimates the CDF of a Gaussian rv. Execute the program to plot the CDF. Then, use this CDF to compute the following probabilities:
     * Pr[0 < X $\leq$ 2]
     * Pr[X > 0]
 
+* **Answers:**
+    * **![alt](./images/q25.png)**
+    * **$Pr[0 < X \leq 2] = 0.462294$. In reality this should be 0.5. The error can be explained by the step size of the function.**
+    * **$Pr[X > 0] = 0.512404$. In reality this should be 0.5. The error can be explained by the step size of the function.**
+
 26. CODE: Modify UniformCDF.java and GaussianCDF.java to compute the derivative of each. What is the shape of F'(y) in each case?
+
+* **![alt](./images/q26a.png)**
+* **![alt](./images/q26b.png)**
 
 27. If X denotes the first interarrival time in the bus-stop problem, estimate the CDF of X as follows:
     * Assume that values fall in the range [0,3] (i.e., disregard values outside this range).
     * Use ExponentialCDF.java as a template, and add modified code from UniformCDF.java
     * Next, compute the derivative of this function and display it.
 
+* **![alt](./images/q27.png)**
+
 28. Complete the calculation above. What would you get if Pr[H] = 0.5?
+
+* **Answers:**
+    * **For Pr[H] = 0.6: $E[X] = \sum_{k\in\{0,1,2,3\}}k Pr[X = k] = 0 Pr[X = 0] + 1 Pr[X = 1] + 2 Pr[X = 2] + 3 Pr[X = 3] = 0 * 0.064 + 1 * 0.288 + 2 * 0.432 + 3 * 0.216 = 1.8$**
+    * **For Pr[H] = 0.5: $E[X] = \sum_{k\in\{0,1,2,3\}}k Pr[X = k] = 0 Pr[X = 0] + 1 Pr[X = 1] + 2 Pr[X = 2] + 3 Pr[X = 3] = 0 * 0.125 + 1 * 0.375 + 2 * 0.375 + 3 * 0.125 = 1.5$**
 
 29. How does this relate to the 3-coin-flip example?
 
+* **Since the 3-coin-flip example can be modeled as a Binomial distribution, the formula E[X] = np can be used to find the expectation. When plugging in 0.6 or 0.5, we get the same values we did above (1.8 and 1.5 respectively).**
+
 31. What does $\frac{n_k}{n}$ become in the limit? Unfold the sum for the 3-coin-flip example to see why this is true.
+
+* **It becomes Pr[X = k].**
+* **In the three-coin-flip example, the sum becomes $\sum_{k}k \frac{n_k}{n} = 0 * \frac{n_0}{n} + 1 * \frac{n_1}{n} + 2 * \frac{n_2}{n} + 3 * \frac{n_3}{n} = 0 * Pr[X = 0] + 1 * Pr[X = 1] + 2 * Pr[X = 2] + 3 * Pr[X = 3]$**
 
 32. CODE: Download Coin.java and CoinExample3.java and let X = the number of heads in 3 coin flips.
     * Compute the average value of X using $\frac{1}{n}S_n$
@@ -82,9 +105,21 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
     * Compute $\sum_{k} k \frac{n_k}{n}$ using the estimate of $\frac{n_k}{n}$
     * Compare with the E[X] calculation you made earlier.
 
+* **Average value of X using Sn/n = 1.800082**
+* **Estimated probability of 0 heads: 0.064165**
+* **Estimated probability of 1 heads: 0.287286**
+* **Estimated probability of 2 heads: 0.432851**
+* **Estimated probability of 3 heads: 0.215698**
+* **Summation of k \* nk/n = 1.800082**
+* **These values align closely with the actual probabilities and expected value.**
+
 33. CODE: Use Coin.java and CoinExample4.java and let X = the number of flips needed to go get the first heads when Pr[Heads] = 0.1. Compute the average value of X using $\frac{1}{n}S_n$ as you did in the previous exercise. Compare with the E[X] calculation from earlier.
 
+* **The code produces the average value of X = 10.008696. Using the E[X] formula for geometric distributions, we get E[X] = 10. These answers are within a reasonable distance apart.**
+
 34. CODE: Try this computation with the uniform, Gaussian, and exponential distributions using UniformCDF2.java, GaussianCDF2.java, and ExponentialCDF2.java. Explore what happens when more intervals are used in the expectation computation than in the CDF estimation.
+
+* **Adding more intervals does not change the expectation value.**
 
 40. CODE: Estimate the density of the time spent in the system by a random customer in the QueueControl example. To do this, you need to build a density histogram of values of the variable timeInSystem in QueueControl.java.
 

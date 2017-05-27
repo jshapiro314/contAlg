@@ -10,8 +10,7 @@ public class GaussianCDF {
         for(double i=-1.92;i<=2;i+=interval){
             G.add(i-interval,(F.get(i)-F.get(i-interval))/interval);
         }
-        F.show ();
-        G.show();
+        Function.show(F,G);
     }
 
     static Function makeGaussianCDF ()

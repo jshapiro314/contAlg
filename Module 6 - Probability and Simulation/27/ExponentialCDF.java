@@ -10,8 +10,7 @@ public class ExponentialCDF {
         for(double i=0.06;i<=3;i+=interval){
             G.add(i-interval,(F.get(i)-F.get(i-interval))/interval);
         }
-        F.show ();
-        G.show();
+        Function.show(F,G);
     }
 
     static Function makeExponentialCDF ()
