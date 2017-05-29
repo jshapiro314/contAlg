@@ -123,8 +123,19 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
 
 40. CODE: Estimate the density of the time spent in the system by a random customer in the QueueControl example. To do this, you need to build a density histogram of values of the variable timeInSystem in QueueControl.java.
 
+* **I've implemented this in a way that requires the user to load QueueControl with "animate=true". Press reset, and then press pause to see the histogram.**
+* **![alt](./images/q40.png)**
+
 44. Suppose X ~ Exponential($\gamma$) with CDF F(x). Write down an expression for $F^{-1}$(y), the inverse of F.
+
+* **Answer:**
+    * **$F(x) = 1-e^{-\gamma x} \implies F(x)-1 = -e^{-\gamma x} \implies 1-F(x) = e^{-\gamma x} \implies ln(1-F(x)) = -\gamma x \implies F^{-1}(y) = \frac{ln(1-y}{-\gamma} \blacksquare$**
 
 46. CODE: Add code to DiscreteGenExample.java to implement the above generator, and to test it by building a histogram.
 
+* **![alt](./images/q46.png)**
+
 48. CODE: Add code to ExponentialGenerator.java to implement the above idea. Use the inverse-CDF you computed earlier. The test code is written to produce a histogram. Use your modified version of PropHistogram.java to make a density histogram. Compare the result with the actual density (using $\gamma$ = 4). How do you know your code worked?
+
+* **![alt](./images/q48.png)**
+* **I know the code worked because the density histogram looks like an exponential distribution.**

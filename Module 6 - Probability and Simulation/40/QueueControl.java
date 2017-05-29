@@ -56,7 +56,7 @@ public class QueueControl extends JPanel {
 
     void reset ()
     {
-    histogram = new PropHistogram(0, 1000, 1);
+    histogram = new PropHistogram(0, 15, 15);
 	// The Event class is Comparable, and so can use a Priority Queue directly.
 	eventList = new PriorityQueue<Event> ();
 
@@ -103,7 +103,6 @@ public class QueueControl extends JPanel {
 
 	if (numDepartures % 1000 == 0) {
 	    System.out.println ("After " + numDepartures + " departures: avgWait=" + avgWaitTime + "  avgSystemTime=" + avgSystemTime);
-        histogram.display();
 	}
     }
 
@@ -150,7 +149,7 @@ public class QueueControl extends JPanel {
 	int k = e.whichQueue;
 	Customer c = queues[k].removeFirst ();
 	totalSystemTime += clock - c.entryTime;
-    histogram.add(totalSystemTime);
+    histogram.add(clock-c.entryTime);
 	if (queues[k].size() > 0) {
 	    // There's a waiting customer => schedule departure.
 	    Customer waitingCust = queues[k].get (0);
@@ -232,6 +231,7 @@ public class QueueControl extends JPanel {
     void pause ()
     {
         isPaused = true;
+        histogram.display();
     }
 
 

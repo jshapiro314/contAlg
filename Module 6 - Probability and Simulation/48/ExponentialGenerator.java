@@ -10,7 +10,7 @@ public class ExponentialGenerator {
         double gamma = 4.0;
 
         // Make a density histogram. NOTE: change code in PropHistogram accordingly.
-        PropHistogram hist = new PropHistogram (0, 5, 20);
+        PropHistogram hist = new PropHistogram (0, 1, 20);
         for (int n=0; n<numTrials; n++) {
             double x = generateNext (gamma);
             hist.add (x);
