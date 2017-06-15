@@ -1,55 +1,60 @@
-// Queue.java
+// ThreeQueue.java
 //
 // Author: Rahul Simha
 // Mar, 2008
 //
-// A single-server queue.
+// Customers leave the first queue and go to 2 or 3rd.
+// Some fraction of departing return to first.
 
 
 import java.util.*;
 import java.text.*;
 
-public class Queue {
+
+
+public class ThreeQueue {
+
+    // Fraction that return to start.
+    double fracReturn = 0.1;
 
     // Avg time between arrivals = 1.0, avg time at server=1/0.75.
-    double arrivalRate = 1.25;
-    double serviceRate = 1;
+    double arrivalRate = 1.0;
+    double[] serviceRates = {2.0, 1.0, 1.0};
 
-    // A data structure to store customers.
-    LinkedList<Customer> queue;
+    // Three queues.
+    LinkedList<Customer>[] queues;
 
-    // A data structure for simulation: list of forthcoming events.
     PriorityQueue<Event> eventList;
 
-    // The system clock, which we'll advance from event to event.
     double clock;
 
     // Statistics.
-    int numArrivals = 0;                    // How many arrived?
-    int numDepartures;                      // How many left?
-    double totalWaitTime, avgWaitTime;      // For time spent in queue.
+    int numArrivals;                        // How many arrived?
+    int numDepartures;                      // How many left the system?
     double totalSystemTime, avgSystemTime;  // For time spent in system.
-    double averageInterarrivalTime;
-    double avgServiceTime;
+    double averageDepartureRate, endTime;
+
 
     void init ()
     {
-        queue = new LinkedList<Customer> ();
+	queues = new LinkedList [3];
+        for (int i=0; i<3; i++) {
+            queues[i] = new LinkedList<Customer>();
+        }
         eventList = new PriorityQueue<Event> ();
         clock = 0.0;
         numArrivals = numDepartures = 0;
-        totalWaitTime = totalSystemTime = 0.0;
-        averageInterarrivalTime = 0;
-        avgServiceTime = 0;
+        totalSystemTime = 0.0;
         scheduleArrival ();
     }
+
 
 
     void simulate (int maxCustomers)
     {
         init ();
 
-        while (numArrivals < maxCustomers) {
+        while (numDepartures < maxCustomers) {
             Event e = eventList.poll ();
             clock = e.eventTime;
             if (e.type == Event.ARRIVAL) {
@@ -59,7 +64,7 @@ public class Queue {
                 handleDeparture (e);
             }
         }
-
+        endTime = clock;
         stats ();
     }
 
@@ -67,72 +72,91 @@ public class Queue {
     void handleArrival (Event e)
     {
 	numArrivals ++;
-	queue.add (new Customer (clock));
-	if (queue.size() == 1) {
-	    // This is the only customer => schedule a departure.
-	    scheduleDeparture ();
+	queues[0].add (new Customer (clock));
+	if (queues[0].size() == 1) {
+	    scheduleDeparture (0);
 	}
 	scheduleArrival ();
     }
 
 
+
     void handleDeparture (Event e)
     {
-	numDepartures ++;
-	Customer c = queue.removeFirst ();
+	int k = e.whichQueue;
+	Customer c = queues[k].removeFirst ();
 
-        // This is the time from start to finish for this customer:
-        double timeInSystem = clock - c.arrivalTime;
+        if (k == 0) {
+            // Send to 1 or 2
+            int w = chooseQueue ();
+            queues[w].add (c);
+            if (queues[w].size() == 1) {
+                scheduleDeparture (w);
+            }
+        }
+        else {
+            // See if customer is returning to the start.
+            if (RandTool.uniform() < fracReturn) {
+                queues[0].add (c);
+                if (queues[0].size() == 1) {
+                    scheduleDeparture (0);
+                }
+            }
+            else {
+                // This is a departing customer.
+                totalSystemTime += clock - c.arrivalTime;
+                numDepartures ++;
+            }
+        }
 
-        // Maintain total (for average, to be computed later).
-	totalSystemTime += timeInSystem;
-
-	if (queue.size() > 0) {
-	    // There's a waiting customer => schedule departure.
-	    Customer waitingCust = queue.get (0);
-            // This is the time spent only in waiting:
-            double waitTime = clock - waitingCust.arrivalTime;
-	    // Note where we are collecting stats for waiting time.
-	    totalWaitTime += waitTime;
-	    scheduleDeparture ();
+	if (queues[k].size() > 0) {
+	    scheduleDeparture (k);
 	}
     }
 
 
     void scheduleArrival ()
     {
-	// The next arrival occurs when we add an interrarrival to the the current time.
 	double nextArrivalTime = clock + randomInterarrivalTime();
-	eventList.add (new Event (nextArrivalTime, Event.ARRIVAL));
+	eventList.add (new Event (nextArrivalTime, Event.ARRIVAL, -1));
     }
 
 
-    void scheduleDeparture ()
+    void scheduleDeparture (int i)
     {
-	double nextDepartureTime = clock + randomServiceTime ();
-	eventList.add (new Event (nextDepartureTime, Event.DEPARTURE));
+	double nextDepartureTime = clock + randomServiceTime (i);
+	eventList.add (new Event (nextDepartureTime, Event.DEPARTURE, i));
+    }
+
+
+    int chooseQueue ()
+    {
+        //int k = UniformRandom.uniform (1,2);
+        if(queues[1].size() < queues[2].size()){
+            return 1;
+        }else if(queues[1].size() > queues[2].size()){
+            return 2;
+        }else{
+            return UniformRandom.uniform(1,2);
+        }
     }
 
 
     double randomInterarrivalTime ()
     {
-	double value =  exponential (arrivalRate);
-    averageInterarrivalTime += value;
-    return value;
+	return exponential (arrivalRate);
     }
 
 
-    double randomServiceTime ()
+    double randomServiceTime (int i)
     {
-	double value =  exponential (serviceRate);
-    avgServiceTime += value;
-    return value;
+	return exponential (serviceRates[i]);
     }
 
 
-    double exponential (double gamma)
+    double exponential (double lambda)
     {
-        return (1.0 / gamma) * (-Math.log(1.0 - RandTool.uniform()));
+        return (1.0 / lambda) * (-Math.log(1.0 - UniformRandom.uniform()));
     }
 
     void stats ()
@@ -140,22 +164,16 @@ public class Queue {
 	if (numDepartures == 0) {
 	    return;
 	}
-	avgWaitTime = totalWaitTime / numDepartures;
 	avgSystemTime = totalSystemTime / numDepartures;
-    averageInterarrivalTime /= numArrivals;
-    avgServiceTime /= numDepartures;
+    averageDepartureRate = endTime / numDepartures;
     }
-
 
     public String toString ()
     {
         String results = "Simulation results:";
-        results += "\n  numArrivals:     " + numArrivals;
         results += "\n  numDepartures:   " + numDepartures;
-        results += "\n  avg Wait:        " + avgWaitTime;
         results += "\n  avg System Time: " + avgSystemTime;
-        results += "\n avg Interarrival Time: " + averageInterarrivalTime;
-        results += "\n avg Service Time: " + avgServiceTime;
+        results += "\n avg departure rate: " + averageDepartureRate;
         return results;
     }
 
@@ -166,7 +184,7 @@ public class Queue {
 
     public static void main (String[] argv)
     {
-        Queue queue = new Queue ();
+        ThreeQueue queue = new ThreeQueue ();
         queue.simulate (10000);
         System.out.println (queue);
     }
@@ -198,11 +216,13 @@ class Event implements Comparable {
     public static int DEPARTURE = 2;
     int type = -1;                     // Arrival or departure.
     double eventTime;                  // When it occurs.
+    int whichQueue=-1;                 // A departure from which server?
 
-    public Event (double eventTime, int type)
+    public Event (double eventTime, int type, int whichQueue)
     {
 	this.eventTime = eventTime;
 	this.type = type;
+        this.whichQueue = whichQueue;
     }
 
 

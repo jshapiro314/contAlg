@@ -9,7 +9,7 @@
 import java.util.*;
 import java.text.*;
 
-public class Queue {
+public class Queue{
 
     // Avg time between arrivals = 1.0, avg time at server=1/0.75.
     double arrivalRate = 1.25;
@@ -31,6 +31,12 @@ public class Queue {
     double totalSystemTime, avgSystemTime;  // For time spent in system.
     double averageInterarrivalTime;
     double avgServiceTime;
+    double serverFree = 0;
+    double avgServerFree = 0;
+
+    public Queue(double input){
+        arrivalRate = input;
+    }
 
     void init ()
     {
@@ -41,6 +47,8 @@ public class Queue {
         totalWaitTime = totalSystemTime = 0.0;
         averageInterarrivalTime = 0;
         avgServiceTime = 0;
+        serverFree = 0;
+        avgServerFree = 0;
         scheduleArrival ();
     }
 
@@ -70,6 +78,7 @@ public class Queue {
 	queue.add (new Customer (clock));
 	if (queue.size() == 1) {
 	    // This is the only customer => schedule a departure.
+	    serverFree++;
 	    scheduleDeparture ();
 	}
 	scheduleArrival ();
@@ -144,6 +153,7 @@ public class Queue {
 	avgSystemTime = totalSystemTime / numDepartures;
     averageInterarrivalTime /= numArrivals;
     avgServiceTime /= numDepartures;
+    avgServerFree = serverFree/numArrivals;
     }
 
 
@@ -156,6 +166,7 @@ public class Queue {
         results += "\n  avg System Time: " + avgSystemTime;
         results += "\n avg Interarrival Time: " + averageInterarrivalTime;
         results += "\n avg Service Time: " + avgServiceTime;
+        results += "\n Prob of server free: " + avgServerFree;
         return results;
     }
 
@@ -166,9 +177,9 @@ public class Queue {
 
     public static void main (String[] argv)
     {
-        Queue queue = new Queue ();
-        queue.simulate (10000);
-        System.out.println (queue);
+        Queue queue = new Queue(0.75);
+        queue.simulate(10000);
+        System.out.println(queue);
     }
 
 }

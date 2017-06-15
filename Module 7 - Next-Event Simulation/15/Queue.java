@@ -12,8 +12,8 @@ import java.text.*;
 public class Queue {
 
     // Avg time between arrivals = 1.0, avg time at server=1/0.75.
-    double arrivalRate = 1.25;
-    double serviceRate = 1;
+    double arrivalRate = 0.75;
+    double serviceRate = 1.0;
 
     // A data structure to store customers.
     LinkedList<Customer> queue;
@@ -26,11 +26,12 @@ public class Queue {
 
     // Statistics.
     int numArrivals = 0;                    // How many arrived?
+    double lastArrivalTime = 0;
     int numDepartures;                      // How many left?
     double totalWaitTime, avgWaitTime;      // For time spent in queue.
-    double totalSystemTime, avgSystemTime;  // For time spent in system.
-    double averageInterarrivalTime;
-    double avgServiceTime;
+    double totalSystemTime, avgSystemTime, avgArrivalRate;  // For time spent in system.
+    DensityHistogram histogram = new DensityHistogram(0,15,15);
+    DensityHistogram dHistogram = new DensityHistogram(0,20,30);
 
     void init ()
     {
@@ -39,8 +40,6 @@ public class Queue {
         clock = 0.0;
         numArrivals = numDepartures = 0;
         totalWaitTime = totalSystemTime = 0.0;
-        averageInterarrivalTime = 0;
-        avgServiceTime = 0;
         scheduleArrival ();
     }
 
@@ -68,6 +67,11 @@ public class Queue {
     {
 	numArrivals ++;
 	queue.add (new Customer (clock));
+    lastArrivalTime = clock;
+
+    //To get M values, take the size of the queue-1 when a new arrival is added.
+    histogram.add(queue.size()-1);
+
 	if (queue.size() == 1) {
 	    // This is the only customer => schedule a departure.
 	    scheduleDeparture ();
@@ -83,6 +87,8 @@ public class Queue {
 
         // This is the time from start to finish for this customer:
         double timeInSystem = clock - c.arrivalTime;
+        //Add timeInSystem to histogram to show distribution of D
+        dHistogram.add(timeInSystem);
 
         // Maintain total (for average, to be computed later).
 	totalSystemTime += timeInSystem;
@@ -116,17 +122,13 @@ public class Queue {
 
     double randomInterarrivalTime ()
     {
-	double value =  exponential (arrivalRate);
-    averageInterarrivalTime += value;
-    return value;
+	return exponential (arrivalRate);
     }
 
 
     double randomServiceTime ()
     {
-	double value =  exponential (serviceRate);
-    avgServiceTime += value;
-    return value;
+	return exponential (serviceRate);
     }
 
 
@@ -142,8 +144,7 @@ public class Queue {
 	}
 	avgWaitTime = totalWaitTime / numDepartures;
 	avgSystemTime = totalSystemTime / numDepartures;
-    averageInterarrivalTime /= numArrivals;
-    avgServiceTime /= numDepartures;
+    avgArrivalRate = lastArrivalTime / numArrivals;
     }
 
 
@@ -154,8 +155,7 @@ public class Queue {
         results += "\n  numDepartures:   " + numDepartures;
         results += "\n  avg Wait:        " + avgWaitTime;
         results += "\n  avg System Time: " + avgSystemTime;
-        results += "\n avg Interarrival Time: " + averageInterarrivalTime;
-        results += "\n avg Service Time: " + avgServiceTime;
+        results += "\n avg Arrival Rate: " + avgArrivalRate;
         return results;
     }
 
@@ -167,8 +167,10 @@ public class Queue {
     public static void main (String[] argv)
     {
         Queue queue = new Queue ();
-        queue.simulate (10000);
+        queue.simulate (1000);
         System.out.println (queue);
+        queue.histogram.display();
+        queue.dHistogram.display();
     }
 
 }

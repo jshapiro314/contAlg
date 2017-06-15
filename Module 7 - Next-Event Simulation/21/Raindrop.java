@@ -7,13 +7,14 @@ public class Raindrop {
 
         double s = 1;
         double p = 0.5;
+        double h = 50;
         PropHistogram xHist = new PropHistogram(-25, 15, 40);
-        PropHistogram tHist = new PropHistogram(10, 40, 40);
+        PropHistogram tHist = new PropHistogram(80, 120, 40);
 
         for (int n=0; n<numTrials; n++) {
 
             // INSERT YOUR CODE HERE.
-            double[] temp = drop(10,s,p);
+            double[] temp = drop(h,s,p);
             xHist.add(temp[0]);
             tHist.add(temp[1]);
         }

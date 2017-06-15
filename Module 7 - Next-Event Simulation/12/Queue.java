@@ -9,7 +9,7 @@
 import java.util.*;
 import java.text.*;
 
-public class Queue {
+public class Queue{
 
     // Avg time between arrivals = 1.0, avg time at server=1/0.75.
     double arrivalRate = 1.25;
@@ -31,6 +31,10 @@ public class Queue {
     double totalSystemTime, avgSystemTime;  // For time spent in system.
     double averageInterarrivalTime;
     double avgServiceTime;
+
+    public Queue(double input){
+        arrivalRate = input;
+    }
 
     void init ()
     {
@@ -166,9 +170,14 @@ public class Queue {
 
     public static void main (String[] argv)
     {
-        Queue queue = new Queue ();
-        queue.simulate (10000);
-        System.out.println (queue);
+        Function func = new Function("lambda vs averageSystemTime");
+
+        for(double d = 0.1;d<1;d+=0.1){
+            Queue queue = new Queue(d);
+            queue.simulate(10000);
+            func.add(d,queue.avgSystemTime);
+        }
+        func.show();
     }
 
 }

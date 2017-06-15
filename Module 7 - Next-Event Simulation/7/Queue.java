@@ -10,7 +10,7 @@ import java.util.*;
 import java.text.*;
 
 public class Queue {
-    
+
     // Avg time between arrivals = 1.0, avg time at server=1/0.75.
     double arrivalRate = 0.75;
     double serviceRate = 1.0;
@@ -88,7 +88,7 @@ public class Queue {
 	    // There's a waiting customer => schedule departure.
 	    Customer waitingCust = queue.get (0);
             // This is the time spent only in waiting:
-            double waitTime = clock - waitingCust.arrivalTime; 
+            double waitTime = clock - waitingCust.arrivalTime;
 	    // Note where we are collecting stats for waiting time.
 	    totalWaitTime += waitTime;
 	    scheduleDeparture ();
@@ -102,7 +102,7 @@ public class Queue {
 	double nextArrivalTime = clock + randomInterarrivalTime();
 	eventList.add (new Event (nextArrivalTime, Event.ARRIVAL));
     }
-    
+
 
     void scheduleDeparture ()
     {
@@ -147,8 +147,8 @@ public class Queue {
         results += "\n  avg System Time: " + avgSystemTime;
         return results;
     }
-    
-    
+
+
 
     ///////////////////////////////////////////////////////////////////////
     // main
@@ -158,14 +158,14 @@ public class Queue {
         Queue queue = new Queue ();
         queue.simulate (1000);
         System.out.println (queue);
-    } 
+    }
 
 }
 
 
-// Class Customer (one instance per customer) stores whatever we 
-// need for each customer. Since we collect statistics on waiting 
-// time at the time of departure, we need to record when a 
+// Class Customer (one instance per customer) stores whatever we
+// need for each customer. Since we collect statistics on waiting
+// time at the time of departure, we need to record when a
 // customer arrives.
 
 class Customer {
@@ -215,4 +215,3 @@ class Event implements Comparable {
     }
 
 }
-
