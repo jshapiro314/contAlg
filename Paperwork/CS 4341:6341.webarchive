@@ -1,0 +1,251 @@
+bplist00“_WebMainResource_WebSubresources’	
+_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameName_WebResourceDataYtext/htmlUUTF-8_5http://www2.seas.gwu.edu/~simhaweb/contalg/about.htmlPO' <html><head>
+<title>CS 4341/6341</title>
+<style></style></head>
+
+<body bgcolor="#FFFFFF" link="#186727">
+<font color="#191970" face="book antiqua">
+
+<p>
+</p><hr><p></p>
+
+<h1><font color="#191970">CS 4341/6341: Continuous Algorithms</font></h1>
+
+<p><b><font color="#191970">Course overview, policies</font></b><font color="#191970">
+
+</font></p><p><font color="#191970">
+</font></p><hr><p></p><font color="#191970">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody><tr align="top">
+    <td width="20%" valign="top">
+        <font face="book antiqua" color="#000040">
+	<br><b>About</b>
+        <br><b><a href="index.html">Announcements</a></b><a href="index.html">
+	<br><b></b></a><b><a href="classwork.html">Classwork</a></b>
+	<br><b><a href="coursework.html">Coursework</a></b>
+	<br><b><a href="faq.html">FAQ</a></b>
+
+        <br><br>
+	<br><b><a href="http://java.sun.com/j2se/1.5.0/docs/api">Java API</a></b>
+  	
+        </font></td>
+	<td width="80%">
+
+        <font face="book antiqua, Georgia" color="#000040">
+
+
+<p>
+  </p><ul>
+  <li> <b>Instructor</b>: <a href="http://www.seas.gwu.edu/~simha">Prof. Rahul Simha</a>
+  <p><img src="http://www.seas.gwu.edu/~simha/email.gif"></p><p>
+
+  </p><p></p></li><li> <b>Time/place</b>:
+    <ul>
+    <li> Class: Fridays, 3.30-6.00pm, Tompkins 201
+    </li></ul>
+
+  <p></p></li><li> <b>Office Hours</b>: Wednesdays 4-6pm, SEH 4560
+     or by appointment.
+
+  <p></p></li><li> <b>TA: </b> Shabnam Tafreshi (<tt>shabnamt AT gwmail.gwu...</tt> etc)
+  
+  <p></p></li><li> <b>TA office hours: </b> TBA
+
+  <p></p></li><li> <b>Prerequisites</b>: 
+    CS 2113 or equivalent 
+   (See <a href="http://www.cs.gwu.edu/academics/"> undergraduate
+   curriculum</a>). 
+
+  <p></p></li><li> <b>Official course description:</b>
+Overview of structures in continuous mathematics 
+from a computational viewpoint. Main topics include 
+simulation, computational modeling, machine learning, 
+neural networks, text classification, 
+statistical language processing, robot control algorithms.
+
+  <p></p></li><li><b>My description:</b>
+To understand what this course is about and why you should 
+consider taking it, let's first examine the 
+<a href="http://www.seas.gwu.edu/~simhaweb/alg">standard CS algorithms course</a>. 
+What do we learn in <em>that</em> course? 
+The standard course
+features data structures (trees, tries, hashing), 
+graph algorithms (DFS, BFS, Dijkstra), discrete optimization 
+and NP-completeness. Almost any textbook on algorithms has 
+these topics at its core. The problem-solving paradigms we 
+learn have to do with divide-and-conquer, dynamic programming, 
+recursion and the use of appropriate data structures.
+
+<p>
+Yet, there is a whole world of algorithms that are both
+important and are fundamentally different. These algorithms include:
+  </p><ul>  
+  <li> Algorithms that simulate physical reality, for example 
+   the motion of objects or interactions between chemicals, 
+   or complex systems such as transportation networks.
+  </li><li> Algorithms that reason about probability, or that work 
+   with probabilistic quantities (We call them simulations).
+  </li><li> Algorithms that control robots, both at the low 
+   level (controlling movement) as well as at the high 
+   level (planning a path).
+  </li><li>  Algorithms that involve learning or recognition, 
+   for example, face-recognition or handwriting recognition.
+  </li><li> Algorithms that involve understanding natural languages. 
+  </li></ul>
+What is common to all these algorithms, and what differentiates 
+them from algorithms in the standard course, is that they are 
+all based on <i>continuous</i> structures or continuous mathematics. 
+Thus, while graph algorithms are based on discrete 
+structures (graphs), a simulation in contrast involves <i>real numbers</i>.
+The purpose of this course is to give you an overview of 
+this area, introduce you to key ideas, and along the way, 
+stimulate interest in the very different types of problems 
+you can solve with this approach. 
+
+  <p></p></li><li><b>Learning outcomes</b>:  
+  By the end of the course, you should be able to:
+  <ul>
+  <li> Develop an understanding of key concepts in areas of
+  continuous mathematics, such as calculus/ODEs, probability,
+  and optimization, useful to computer science.
+  </li><li> Understand how these concepts are applied to computer
+  science problems.
+  </li><li> Apply techniques and algorithms learned to computer
+  science problems, especially to the three motivating
+  problem areas of the course.
+  </li></ul>
+
+  <p></p></li><li><b>Textbook</b>:  
+   There is no required textbook. All the material is on the course
+   website.
+   For supplemental reading, there's no book that covers all the material 
+   we need. Here are some suggestions:
+   <ul>
+   <li> <i>Introduction to Probability Models</i>. S.Ross. Ross is easily
+   one of the best textbook writers in mathematics, especially in
+   probability. The writing is concise and the examples outstanding.
+   </li><li> <i>An Introduction to Computer Simulation Methods: 
+   Applications to Physical Systems</i>. H.Gould, J.Tobochnik 
+   and W.Christian. An accessible exposition of simulating
+   physical systems.
+   </li><li> <i>Discrete Event Simulation: A First Course</i>.
+   L.Leemis and S.Park. A nice introduction to discrete-event
+   simulation. (Full disclosure: Larry and Steve were former
+   colleagues.)
+   </li><li> <i>Machine Learning</i>. S.Marsland. This is an entry-level
+   textbook in machine learning, not too detailed yet covering
+   most important topics. For more details there are the well-known
+   books by Bishop and Duda et al. 
+   </li><li> <i>Neural Networks: Algorithms, Applications and Programming
+   Techniques. </i>.  J.A.Freeman and D.M.Skapura. I found this
+   explanation and development of early neural networks to be
+   easy to follow.
+   </li></ul>
+
+
+  <p></p></li><li><b>Programming load:</b>
+The course is not intended to be a heavy load. There will be
+programming assignments and group projects, but no exams.
+The idea is to see if we can apply the concepts learned to 
+some practical problems. Students may potentially propose 
+projects.
+
+  <p></p></li><li><b>Grads vs. undergrads:</b>
+Undergrads will be graded on a different scale, and will 
+possibly work in teams. Yes, we recognize that you are 
+taking an elective course.
+
+  <p></p></li><li><b>Coursework and grading:</b>  TBA
+
+  <p></p></li><li><b>Assignment submission and late work policy:</b>
+  Since the courseload is modest, and since much work is team-based,
+  no late submissions will be accepted except for medical emergencies
+  that are substantiated.
+
+  <p></p></li><li><a name="email"><b>Email policy:</b></a>
+  No debugging by email. Stop by in person - it's much easier that way.
+
+  <p></p></li><li>  <b>Academic Integrity policy:</b> 
+    <ul>
+    <li> In this course, you will be expected to work on <b>all</b> assigned
+    coursework by yourself, unless otherwise specified by me or
+    circumscribed by teamwork.
+    If you have any questions whatsoever regarding these
+    policies, see me during office hours.
+    </li><li> You may not, without my permission,
+    exchange course-related code with anyone (including
+    anyone not registered in the course), or download code for use
+    in your coursework, or use material from books other than the textbook.
+    Likewise, you may not look
+    at anyone else's code or show your code to anyone else. Protect
+    your work: for example, be careful not to leave your printouts around.
+    </li><li> I can't imagine you'll be using a tutor in this course, but
+    if you do, 
+    <em>All tutors for this class need to first register with me, by meeting
+    me during office hours</em>.
+    </li><li> If you use material in your assignments that are from
+    outside the course material, then you should be prepared
+    to explain that material. The instructor and TA's reserve
+    the right to question you on your use of extraneous material.
+    Failure to answer such questions might be viewed as
+    grounds for an integrity violation.
+    </li><li>
+    The <a href="https://studentconduct.gwu.edu/code-academic-integrity">
+    Academic Integrity Code</a> will apply to this course. Please read
+    through the code carefully.
+    </li><li> Penalties for violating the code or the policies described here
+    include failing this course, and are elaborated in the Academic Integrity Code.
+    </li></ul>
+
+  <p></p></li><li>If you have a disability that may
+  effect your participation in this course and wish to discuss academic acommodations,
+  please contact me as soon as possible. 
+
+  <p></p></li><li><b>Teams:</b></li>
+     <ul>
+     <li> When pairs of students may work as a team, team members can
+     share code (this is the only exception to the integrity policy
+     above), but will submit individual work.
+     </li><li> More will be expected of grad teams than individual grads.
+     </li></ul>
+
+
+  <p></p><li><b>Attitude:</b></li>
+  We need to touch upon two attitude-related issues.
+  One, since this is an elective, project-oriented course,
+  you ought to take this opportunity to learn by plunging into the material
+  and by taking on an interesting project that could become
+  a research project, or your senior design project.
+  Second, if you are a math-phobe, you should not let that
+  get in the way of appreciating the material, much of which
+  is based on continuous mathematics but much of which we
+  will cover computationally. More about this in class.
+
+  <p></p><li><b>Minimum course load:</b>
+  In a 15-week semester, including exam week, students are expected to
+  spend a minimum of 100 minutes of out-of-class work for every 50
+  minutes of direct instruction, for a minimum total of 2.5 hours a
+  week. A 3-credit course includes 2.5 hours of direct instruction and
+  a minimum of 5 hours of independent learning, or a minimum of 7.5 hours per
+  week. More information about GW√¢‚Ç¨‚Ñ¢s credit hour policy can be found
+  at: <a href="https://provost.gwu.edu/policies-forms">provost.gwu.edu/policies-forms</a>
+
+
+  </li></ul>
+
+  </font></td>
+  </tr>
+</tbody></table>
+
+<hr>
+
+
+
+</font></font></body></html>°‘_WebResourceResponseYimage/gif_(http://www.seas.gwu.edu/~simha/email.gifOBbplist00‘jkX$versionX$objectsY$archiverT$top Ü†Ø#)*0123MNOPQRSTUVWXYZ[\]^_`aeU$null›	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1Ä	ÄÄÄ ÄÄÄÄ”$%'(WNS.base[NS.relativeÄ ÄÄ_)http://www2.seas.gwu.edu/~simha/email.gif“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#Aæ•™∑{z »”456ALWNS.keysZNS.objects™789:;<=>?@Ä	Ä
+ÄÄÄÄÄÄÄÄ™BDEFGHIJKÄÄÄÄÄÄÄÄÄÄÄ_X-Content-Type-Options\Content-TypeVServer]Last-ModifiedTDate_X-Frame-Options]Accept-Ranges_X-XSS-Protection^Content-LengthZConnectionWnosniffYimage/gifVApache_Sun, 03 Aug 2003 18:32:50 GMT_Tue, 18 Apr 2017 02:00:10 GMTZSAMEORIGINUbytes]1; mode=blockS315Uclose“+,bc_NSMutableDictionary£bd/\NSDictionary“+,fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—lm_WebResourceResponseÄ    # - 2 7 Y _ z } Å Ñ á ä é ë ò õ û ° § ß © ´ ≠ Ø ± ≤ ¥ ∂ ∏ ∫ º æ ¿ « œ € › ﬂ ·&,/8ACELT_jlnprtvxz|~âãçèëìïóôõùü∏≈Ã⁄ﬂÒˇ!,4>EeÖêñ§®Æ≥…Õ⁄ﬂÛ˜+.D             n              FO;GIF87aÕ  °     ˇˇˇ      ,    Õ   ˛åè©ÀÌ£ú¥⁄ã≥`ÛÆEúÙ]¶Àûnã¨Íåd|6Õ%Ï¬ıv=Qd;a©§Ø‹Ω≥ÑR'lDeøgê[≈vìƒËlÎEv≈Ë5d û~¡Ÿ´[ãˆ¢Ã†ºû¨G∑òˆêgˆ$Fß®®YóU·á≈eYËË¡Ê8÷Gÿπ7I%
+
+¶yÖ˜h˘Hÿ»j5 ¯ä˙zG6í
+'%˚«r¥+:KzKå{ºŸBãõ\´¨kÍô[´Í≠˘ñXBÃwM˛¨&˜Ój¯ÓZZ%.ËV÷6Xâwˇ.~¶ﬂx« ü}/‚•5Á÷<n√∫£µ$¢DâRõà1£∆ç§ËÖ·2§»çGö<â2•J  ;    1 < R p  ñ ® ≤ ∏  Ò(ø(¡( (‡(Í)-[                           .ö
