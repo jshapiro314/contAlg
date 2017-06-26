@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MultiBracketSearch	10/MultiBracketSearch.java	/^public class MultiBracketSearch {$/;"	c
+main	10/MultiBracketSearch.java	/^		public static void main(String[] argv){$/;"	m	class:MultiBracketSearch
+bracketSearch	10/MultiBracketSearch.java	/^		static void bracketSearch(double a1, double b1, double a2, double b2){$/;"	m	class:MultiBracketSearch
+computef	10/MultiBracketSearch.java	/^		static double computef(double x1, double x2){$/;"	m	class:MultiBracketSearch
+BracketSearch2	11/BracketSearch2.java	/^public class BracketSearch2 {$/;"	c
+main	11/BracketSearch2.java	/^    public static void main (String[] argv)$/;"	m	class:BracketSearch2
+bracketSearch	11/BracketSearch2.java	/^    static void bracketSearch (double a, double b)$/;"	m	class:BracketSearch2
+computef	11/BracketSearch2.java	/^    static double computef (double x)$/;"	m	class:BracketSearch2
+GradientDemo	16/GradientDemo.java	/^public class GradientDemo extends JPanel {$/;"	c
+alpha	16/GradientDemo.java	/^    double alpha = 10;          \/\/ Algorithm parameter: the stepsize.$/;"	f	class:GradientDemo
+a	16/GradientDemo.java	/^    double a=1, b=9;              \/\/ Range [a,b]$/;"	f	class:GradientDemo
+b	16/GradientDemo.java	/^    double a=1, b=9;              \/\/ Range [a,b]$/;"	f	class:GradientDemo
+currentX	16/GradientDemo.java	/^    double currentX = a;          \/\/ x.$/;"	f	class:GradientDemo
+derivAtCurrentX	16/GradientDemo.java	/^    double derivAtCurrentX;       \/\/ f'(x)$/;"	f	class:GradientDemo
+currentY	16/GradientDemo.java	/^    double currentY;              \/\/ Used in drawing gradient.$/;"	f	class:GradientDemo
+deltaX	16/GradientDemo.java	/^    double deltaX = 0.1;          \/\/ Spacing for sampling points.$/;"	f	class:GradientDemo
+inset	16/GradientDemo.java	/^    int inset=60;                 \/\/ Inset of axes and bounding box.$/;"	f	class:GradientDemo
+gradOffsetX	16/GradientDemo.java	/^    double gradOffsetX = 1.0;$/;"	f	class:GradientDemo
+computef	16/GradientDemo.java	/^    double computef (double x)$/;"	m	class:GradientDemo
+computefDeriv	16/GradientDemo.java	/^    double computefDeriv (double x)$/;"	m	class:GradientDemo
+init	16/GradientDemo.java	/^    void init ()$/;"	m	class:GradientDemo
+nextStep	16/GradientDemo.java	/^    void nextStep ()$/;"	m	class:GradientDemo
+display	16/GradientDemo.java	/^    public void display ()$/;"	m	class:GradientDemo
+makeBottomLayer	16/GradientDemo.java	/^    JPanel makeBottomLayer ()$/;"	m	class:GradientDemo
+paintComponent	16/GradientDemo.java	/^    public void paintComponent (Graphics g)$/;"	m	class:GradientDemo
+main	16/GradientDemo.java	/^    public static void main (String[] argv)$/;"	m	class:GradientDemo
+GradientDemo2	17/GradientDemo2.java	/^public class GradientDemo2 extends JPanel {$/;"	c
+alpha	17/GradientDemo2.java	/^    double alpha = 0.01;          \/\/ Algorithm parameter: the stepsize.$/;"	f	class:GradientDemo2
+a	17/GradientDemo2.java	/^    double a=1, b=9;              \/\/ Range [a,b]$/;"	f	class:GradientDemo2
+b	17/GradientDemo2.java	/^    double a=1, b=9;              \/\/ Range [a,b]$/;"	f	class:GradientDemo2
+currentX	17/GradientDemo2.java	/^    double currentX = 1.8;        \/\/ x.$/;"	f	class:GradientDemo2
+derivAtCurrentX	17/GradientDemo2.java	/^    double derivAtCurrentX;       \/\/ f'(x)$/;"	f	class:GradientDemo2
+currentY	17/GradientDemo2.java	/^    double currentY;              \/\/ Used in drawing gradient.$/;"	f	class:GradientDemo2
+deltaX	17/GradientDemo2.java	/^    double deltaX = 0.1;          \/\/ Spacing for sampling points.$/;"	f	class:GradientDemo2
+inset	17/GradientDemo2.java	/^    int inset=60;                 \/\/ Inset of axes and bounding box.$/;"	f	class:GradientDemo2
+gradOffsetX	17/GradientDemo2.java	/^    double gradOffsetX = 1.0;$/;"	f	class:GradientDemo2
+computef	17/GradientDemo2.java	/^    double computef (double x)$/;"	m	class:GradientDemo2
+computefDeriv	17/GradientDemo2.java	/^    double computefDeriv (double x)$/;"	m	class:GradientDemo2
+init	17/GradientDemo2.java	/^    void init ()$/;"	m	class:GradientDemo2
+nextStep	17/GradientDemo2.java	/^    void nextStep ()$/;"	m	class:GradientDemo2
+display	17/GradientDemo2.java	/^    public void display ()$/;"	m	class:GradientDemo2
+makeBottomLayer	17/GradientDemo2.java	/^    JPanel makeBottomLayer ()$/;"	m	class:GradientDemo2
+paintComponent	17/GradientDemo2.java	/^    public void paintComponent (Graphics g)$/;"	m	class:GradientDemo2
+main	17/GradientDemo2.java	/^    public static void main (String[] argv)$/;"	m	class:GradientDemo2
+BracketSearch	6/BracketSearch.java	/^public class BracketSearch {$/;"	c
+main	6/BracketSearch.java	/^		public static void main(String[] argv){$/;"	m	class:BracketSearch
+bracketSearch	6/BracketSearch.java	/^		static void bracketSearch(double a, double b){$/;"	m	class:BracketSearch
+computef	6/BracketSearch.java	/^		static double computef(double x){$/;"	m	class:BracketSearch

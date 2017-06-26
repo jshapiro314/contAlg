@@ -1,0 +1,1633 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DataGenerator	11/DataGenerator.java	/^public class DataGenerator {$/;"	c
+x	11/DataGenerator.java	/^    int x;                              \/\/ The data value.$/;"	f	class:DataGenerator
+c	11/DataGenerator.java	/^    int c;                              \/\/ Which class it belongs to.$/;"	f	class:DataGenerator
+generateSample	11/DataGenerator.java	/^    public void generateSample ()$/;"	m	class:DataGenerator
+getX	11/DataGenerator.java	/^    public int getX ()$/;"	m	class:DataGenerator
+getClassNum	11/DataGenerator.java	/^    public int getClassNum ()$/;"	m	class:DataGenerator
+generate0	11/DataGenerator.java	/^    int generate0 ()$/;"	m	class:DataGenerator
+generate1	11/DataGenerator.java	/^    int generate1 ()$/;"	m	class:DataGenerator
+RandTool	11/RandTool.java	/^public class RandTool {$/;"	c
+m	11/RandTool.java	/^    static final long m = 2147483647L;$/;"	f	class:RandTool
+a	11/RandTool.java	/^    static final long a = 48271L;$/;"	f	class:RandTool
+q	11/RandTool.java	/^    static final long q = 44488L;$/;"	f	class:RandTool
+r	11/RandTool.java	/^    static final long r = 3399L;$/;"	f	class:RandTool
+r_seed	11/RandTool.java	/^    static long r_seed = 12345678L; $/;"	f	class:RandTool
+rand	11/RandTool.java	/^    static Random rand = new Random (r_seed);$/;"	f	class:RandTool
+setSeed	11/RandTool.java	/^    public static void setSeed (long seed)$/;"	m	class:RandTool
+uniform	11/RandTool.java	/^    public static double uniform ()$/;"	m	class:RandTool
+uniform	11/RandTool.java	/^    public static double uniform (double a, double b)$/;"	m	class:RandTool
+uniform	11/RandTool.java	/^    public static long uniform (long a, long b)$/;"	m	class:RandTool
+uniform	11/RandTool.java	/^    public static int uniform (int a, int b)$/;"	m	class:RandTool
+exponential	11/RandTool.java	/^    public static double exponential (double lambda)$/;"	m	class:RandTool
+gaussian	11/RandTool.java	/^    public static double gaussian ()$/;"	m	class:RandTool
+gaussian	11/RandTool.java	/^    public static double gaussian (double mean, double stdDeviation)$/;"	m	class:RandTool
+SimpleNN	11/SimpleNN.java	/^public class SimpleNN {$/;"	c
+main	11/SimpleNN.java	/^		public static void main(String[] argv){$/;"	m	class:SimpleNN
+data	11/SimpleNN.java	/^		static ArrayList<Integer>[] data;$/;"	f	class:SimpleNN
+setUp	11/SimpleNN.java	/^		static void setUp(){$/;"	m	class:SimpleNN
+train	11/SimpleNN.java	/^		static void train(int x, int c){$/;"	m	class:SimpleNN
+classify	11/SimpleNN.java	/^		static int classify(int x){$/;"	m	class:SimpleNN
+DataExample	12/DataExample.java	/^public class DataExample {$/;"	c
+main	12/DataExample.java	/^		public static void main(String[] argv){$/;"	m	class:DataExample
+DataGenerator	12/DataGenerator.java	/^public class DataGenerator {$/;"	c
+x	12/DataGenerator.java	/^    int x;                              \/\/ The data value.$/;"	f	class:DataGenerator
+c	12/DataGenerator.java	/^    int c;                              \/\/ Which class it belongs to.$/;"	f	class:DataGenerator
+generateSample	12/DataGenerator.java	/^    public void generateSample ()$/;"	m	class:DataGenerator
+getX	12/DataGenerator.java	/^    public int getX ()$/;"	m	class:DataGenerator
+getClassNum	12/DataGenerator.java	/^    public int getClassNum ()$/;"	m	class:DataGenerator
+generate0	12/DataGenerator.java	/^    int generate0 ()$/;"	m	class:DataGenerator
+generate1	12/DataGenerator.java	/^    int generate1 ()$/;"	m	class:DataGenerator
+RandTool	12/RandTool.java	/^public class RandTool {$/;"	c
+m	12/RandTool.java	/^    static final long m = 2147483647L;$/;"	f	class:RandTool
+a	12/RandTool.java	/^    static final long a = 48271L;$/;"	f	class:RandTool
+q	12/RandTool.java	/^    static final long q = 44488L;$/;"	f	class:RandTool
+r	12/RandTool.java	/^    static final long r = 3399L;$/;"	f	class:RandTool
+r_seed	12/RandTool.java	/^    static long r_seed = 12345678L; $/;"	f	class:RandTool
+rand	12/RandTool.java	/^    static Random rand = new Random (r_seed);$/;"	f	class:RandTool
+setSeed	12/RandTool.java	/^    public static void setSeed (long seed)$/;"	m	class:RandTool
+uniform	12/RandTool.java	/^    public static double uniform ()$/;"	m	class:RandTool
+uniform	12/RandTool.java	/^    public static double uniform (double a, double b)$/;"	m	class:RandTool
+uniform	12/RandTool.java	/^    public static long uniform (long a, long b)$/;"	m	class:RandTool
+uniform	12/RandTool.java	/^    public static int uniform (int a, int b)$/;"	m	class:RandTool
+exponential	12/RandTool.java	/^    public static double exponential (double lambda)$/;"	m	class:RandTool
+gaussian	12/RandTool.java	/^    public static double gaussian ()$/;"	m	class:RandTool
+gaussian	12/RandTool.java	/^    public static double gaussian (double mean, double stdDeviation)$/;"	m	class:RandTool
+DataExample	13/DataExample.java	/^public class DataExample {$/;"	c
+main	13/DataExample.java	/^		public static void main(String[] argv){$/;"	m	class:DataExample
+DataGenerator	13/DataGenerator.java	/^public class DataGenerator {$/;"	c
+x	13/DataGenerator.java	/^    int x;                              \/\/ The data value.$/;"	f	class:DataGenerator
+c	13/DataGenerator.java	/^    int c;                              \/\/ Which class it belongs to.$/;"	f	class:DataGenerator
+generateSample	13/DataGenerator.java	/^    public void generateSample ()$/;"	m	class:DataGenerator
+getX	13/DataGenerator.java	/^    public int getX ()$/;"	m	class:DataGenerator
+getClassNum	13/DataGenerator.java	/^    public int getClassNum ()$/;"	m	class:DataGenerator
+generate0	13/DataGenerator.java	/^    int generate0 ()$/;"	m	class:DataGenerator
+generate1	13/DataGenerator.java	/^    int generate1 ()$/;"	m	class:DataGenerator
+RandTool	13/RandTool.java	/^public class RandTool {$/;"	c
+m	13/RandTool.java	/^    static final long m = 2147483647L;$/;"	f	class:RandTool
+a	13/RandTool.java	/^    static final long a = 48271L;$/;"	f	class:RandTool
+q	13/RandTool.java	/^    static final long q = 44488L;$/;"	f	class:RandTool
+r	13/RandTool.java	/^    static final long r = 3399L;$/;"	f	class:RandTool
+r_seed	13/RandTool.java	/^    static long r_seed = 12345678L; $/;"	f	class:RandTool
+rand	13/RandTool.java	/^    static Random rand = new Random (r_seed);$/;"	f	class:RandTool
+setSeed	13/RandTool.java	/^    public static void setSeed (long seed)$/;"	m	class:RandTool
+uniform	13/RandTool.java	/^    public static double uniform ()$/;"	m	class:RandTool
+uniform	13/RandTool.java	/^    public static double uniform (double a, double b)$/;"	m	class:RandTool
+uniform	13/RandTool.java	/^    public static long uniform (long a, long b)$/;"	m	class:RandTool
+uniform	13/RandTool.java	/^    public static int uniform (int a, int b)$/;"	m	class:RandTool
+exponential	13/RandTool.java	/^    public static double exponential (double lambda)$/;"	m	class:RandTool
+gaussian	13/RandTool.java	/^    public static double gaussian ()$/;"	m	class:RandTool
+gaussian	13/RandTool.java	/^    public static double gaussian (double mean, double stdDeviation)$/;"	m	class:RandTool
+CharFeatures	3/classifierJar/CharFeatures.java	/^public class CharFeatures {$/;"	c
+getInstance	3/classifierJar/CharFeatures.java	/^    public static CharFeatures getInstance ()$/;"	m	class:CharFeatures
+extractSingle	3/classifierJar/CharFeatures.java	/^    public Vector<Double> extractSingle (Vector<LineSegmentd> segments)$/;"	m	class:CharFeatures
+extractSet	3/classifierJar/CharFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<Vector<LineSegmentd>>[] classData)$/;"	m	class:CharFeatures
+CharProblem	3/classifierJar/CharProblem.java	/^public class CharProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	3/classifierJar/CharProblem.java	/^    static int numClasses = 2;$/;"	f	class:CharProblem
+dirPath	3/classifierJar/CharProblem.java	/^    static String dirPath = "data\/charProblem1\/training\/";$/;"	f	class:CharProblem
+status	3/classifierJar/CharProblem.java	/^    JLabel status;$/;"	f	class:CharProblem
+leftPanel	3/classifierJar/CharProblem.java	/^    ScribblePanel leftPanel, rightPanel;$/;"	f	class:CharProblem
+rightPanel	3/classifierJar/CharProblem.java	/^    ScribblePanel leftPanel, rightPanel;$/;"	f	class:CharProblem
+features	3/classifierJar/CharProblem.java	/^    CharFeatures features = CharFeatures.getInstance ();$/;"	f	class:CharProblem
+CharProblem	3/classifierJar/CharProblem.java	/^    public CharProblem (JLabel status)$/;"	m	class:CharProblem
+getNumClasses	3/classifierJar/CharProblem.java	/^    public int getNumClasses ()$/;"	m	class:CharProblem
+isFixedDimension	3/classifierJar/CharProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:CharProblem
+getTrainingData	3/classifierJar/CharProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:CharProblem
+getSample	3/classifierJar/CharProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:CharProblem
+paintComponent	3/classifierJar/CharProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:CharProblem
+getFullPanel	3/classifierJar/CharProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:CharProblem
+ScribblePanel	3/classifierJar/CharProblem.java	/^class ScribblePanel extends JPanel {$/;"	c
+numClasses	3/classifierJar/CharProblem.java	/^    int numClasses;$/;"	f	class:ScribblePanel
+currentSample	3/classifierJar/CharProblem.java	/^    int currentSample = 0;$/;"	f	class:ScribblePanel
+currentClass	3/classifierJar/CharProblem.java	/^    int currentClass = 0;$/;"	f	class:ScribblePanel
+status	3/classifierJar/CharProblem.java	/^    JLabel status;$/;"	f	class:ScribblePanel
+isFullPanel	3/classifierJar/CharProblem.java	/^    boolean isFullPanel = false;$/;"	f	class:ScribblePanel
+classField	3/classifierJar/CharProblem.java	/^    JTextField classField = new JTextField (2);$/;"	f	class:ScribblePanel
+drawPanel	3/classifierJar/CharProblem.java	/^    DrawPanel drawPanel;$/;"	f	class:ScribblePanel
+classData	3/classifierJar/CharProblem.java	/^    ArrayList<Vector<LineSegmentd>>[] classData;$/;"	f	class:ScribblePanel
+ScribblePanel	3/classifierJar/CharProblem.java	/^    public ScribblePanel (boolean isFullPanel, int numClasses, JLabel status)$/;"	m	class:ScribblePanel
+makeFullControls	3/classifierJar/CharProblem.java	/^    JPanel makeFullControls ()$/;"	m	class:ScribblePanel
+makeSubControls	3/classifierJar/CharProblem.java	/^    JPanel makeSubControls ()$/;"	m	class:ScribblePanel
+clear	3/classifierJar/CharProblem.java	/^    void clear ()$/;"	m	class:ScribblePanel
+add	3/classifierJar/CharProblem.java	/^    void add ()$/;"	m	class:ScribblePanel
+load	3/classifierJar/CharProblem.java	/^    void load ()$/;"	m	class:ScribblePanel
+readFromFile	3/classifierJar/CharProblem.java	/^    Vector<LineSegmentd> readFromFile (String fileName)$/;"	m	class:ScribblePanel
+save	3/classifierJar/CharProblem.java	/^    void save ()$/;"	m	class:ScribblePanel
+writeToFile	3/classifierJar/CharProblem.java	/^    void writeToFile (String fileName, Vector<LineSegmentd> segments)$/;"	m	class:ScribblePanel
+prev	3/classifierJar/CharProblem.java	/^    void prev ()$/;"	m	class:ScribblePanel
+next	3/classifierJar/CharProblem.java	/^    void next ()$/;"	m	class:ScribblePanel
+getFromClassAndSample	3/classifierJar/CharProblem.java	/^    void getFromClassAndSample (int c, int s)$/;"	m	class:ScribblePanel
+getClassNum	3/classifierJar/CharProblem.java	/^    int getClassNum ()$/;"	m	class:ScribblePanel
+isComplete	3/classifierJar/CharProblem.java	/^    boolean isComplete ()$/;"	m	class:ScribblePanel
+prevClass	3/classifierJar/CharProblem.java	/^    void prevClass ()$/;"	m	class:ScribblePanel
+nextClass	3/classifierJar/CharProblem.java	/^    void nextClass () $/;"	m	class:ScribblePanel
+DrawPanel	3/classifierJar/CharProblem.java	/^class DrawPanel extends JPanel implements MouseInputListener {$/;"	c
+segments	3/classifierJar/CharProblem.java	/^    Vector<LineSegmentd> segments;$/;"	f	class:DrawPanel
+prevX	3/classifierJar/CharProblem.java	/^    double prevX = -1, prevY = -1;$/;"	f	class:DrawPanel
+prevY	3/classifierJar/CharProblem.java	/^    double prevX = -1, prevY = -1;$/;"	f	class:DrawPanel
+startOver	3/classifierJar/CharProblem.java	/^    boolean startOver = true;$/;"	f	class:DrawPanel
+startNewSequence	3/classifierJar/CharProblem.java	/^    boolean startNewSequence = true;$/;"	f	class:DrawPanel
+DrawPanel	3/classifierJar/CharProblem.java	/^    public DrawPanel ()$/;"	m	class:DrawPanel
+clear	3/classifierJar/CharProblem.java	/^    public void clear ()$/;"	m	class:DrawPanel
+paintComponent	3/classifierJar/CharProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:DrawPanel
+mouseClicked	3/classifierJar/CharProblem.java	/^    public void mouseClicked (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseMoved	3/classifierJar/CharProblem.java	/^    public void mouseMoved (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseEntered	3/classifierJar/CharProblem.java	/^    public void mouseEntered (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseExited	3/classifierJar/CharProblem.java	/^    public void mouseExited (MouseEvent e) {}$/;"	m	class:DrawPanel
+mousePressed	3/classifierJar/CharProblem.java	/^    public void mousePressed (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseDragged	3/classifierJar/CharProblem.java	/^    public void mouseDragged (MouseEvent e) $/;"	m	class:DrawPanel
+mouseReleased	3/classifierJar/CharProblem.java	/^    public void mouseReleased (MouseEvent e) $/;"	m	class:DrawPanel
+ClassificationProblem	3/classifierJar/ClassificationProblem.java	/^public interface ClassificationProblem {$/;"	i
+getNumClasses	3/classifierJar/ClassificationProblem.java	/^    public int getNumClasses ();$/;"	m	interface:ClassificationProblem
+isFixedDimension	3/classifierJar/ClassificationProblem.java	/^    public boolean isFixedDimension ();$/;"	m	interface:ClassificationProblem
+getTrainingData	3/classifierJar/ClassificationProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ();$/;"	m	interface:ClassificationProblem
+getSample	3/classifierJar/ClassificationProblem.java	/^    public Vector<Double> getSample ();$/;"	m	interface:ClassificationProblem
+Classifier	3/classifierJar/Classifier.java	/^public interface Classifier {$/;"	i
+train	3/classifierJar/Classifier.java	/^    public String train (int numClasses, boolean isFixedDimension, ArrayList<Vector<Double>>[] trainingData);$/;"	m	interface:Classifier
+classify	3/classifierJar/Classifier.java	/^    public int classify (Vector<Double> sample);$/;"	m	interface:Classifier
+ClassifierGUI	3/classifierJar/ClassifierGUI.java	/^public class ClassifierGUI extends JFrame {$/;"	c
+status	3/classifierJar/ClassifierGUI.java	/^    JLabel status = new JLabel (" ");$/;"	f	class:ClassifierGUI
+tabbedPane	3/classifierJar/ClassifierGUI.java	/^    JTabbedPane tabbedPane;$/;"	f	class:ClassifierGUI
+algField	3/classifierJar/ClassifierGUI.java	/^    JTextField algField = new JTextField (20);$/;"	f	class:ClassifierGUI
+nextB	3/classifierJar/ClassifierGUI.java	/^    JButton nextB = new JButton ("Classify");$/;"	f	class:ClassifierGUI
+pointProblem	3/classifierJar/ClassifierGUI.java	/^    PointProblem pointProblem;$/;"	f	class:ClassifierGUI
+charProblem	3/classifierJar/ClassifierGUI.java	/^    CharProblem charProblem;$/;"	f	class:ClassifierGUI
+faceProblem	3/classifierJar/ClassifierGUI.java	/^    FaceProblem faceProblem;$/;"	f	class:ClassifierGUI
+classifier	3/classifierJar/ClassifierGUI.java	/^    Classifier classifier;$/;"	f	class:ClassifierGUI
+problem	3/classifierJar/ClassifierGUI.java	/^    ClassificationProblem problem;$/;"	f	class:ClassifierGUI
+main	3/classifierJar/ClassifierGUI.java	/^    public static void main (String[] argv)$/;"	m	class:ClassifierGUI
+ClassifierGUI	3/classifierJar/ClassifierGUI.java	/^    public ClassifierGUI () $/;"	m	class:ClassifierGUI
+makeBottomPanel	3/classifierJar/ClassifierGUI.java	/^    JPanel makeBottomPanel ()$/;"	m	class:ClassifierGUI
+tabChange	3/classifierJar/ClassifierGUI.java	/^    void tabChange ()$/;"	m	class:ClassifierGUI
+loadAlgorithm	3/classifierJar/ClassifierGUI.java	/^    void loadAlgorithm ()$/;"	m	class:ClassifierGUI
+train	3/classifierJar/ClassifierGUI.java	/^    void train ()$/;"	m	class:ClassifierGUI
+next	3/classifierJar/ClassifierGUI.java	/^    void next ()$/;"	m	class:ClassifierGUI
+FaceFeatures	3/classifierJar/FaceFeatures.java	/^public class FaceFeatures {$/;"	c
+getInstance	3/classifierJar/FaceFeatures.java	/^    public static FaceFeatures getInstance ()$/;"	m	class:FaceFeatures
+extractSingle	3/classifierJar/FaceFeatures.java	/^    public Vector<Double> extractSingle (Image image)$/;"	m	class:FaceFeatures
+extractSet	3/classifierJar/FaceFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<Image>[] classData)$/;"	m	class:FaceFeatures
+toGreyPixels	3/classifierJar/FaceFeatures.java	/^    int[][] toGreyPixels (Image image)$/;"	m	class:FaceFeatures
+toGreyScale	3/classifierJar/FaceFeatures.java	/^    int[][] toGreyScale (int[][][] pixels)$/;"	m	class:FaceFeatures
+FaceFeatures2	3/classifierJar/FaceFeatures.java	/^class FaceFeatures2 extends FaceFeatures {$/;"	c
+numBlocks	3/classifierJar/FaceFeatures.java	/^    int numBlocks = 2;$/;"	f	class:FaceFeatures2
+numBins	3/classifierJar/FaceFeatures.java	/^    int numBins = 10;$/;"	f	class:FaceFeatures2
+extractSingle	3/classifierJar/FaceFeatures.java	/^    public Vector<Double> extractSingle (Image image)$/;"	m	class:FaceFeatures2
+makeHOG	3/classifierJar/FaceFeatures.java	/^    double[] makeHOG (int[][] pixels, int rowStart, int rowEnd, int colStart, int colEnd)$/;"	m	class:FaceFeatures2
+gradientOrientation	3/classifierJar/FaceFeatures.java	/^    double gradientOrientation (int[][] pixels, int row, int col)$/;"	m	class:FaceFeatures2
+FaceProblem	3/classifierJar/FaceProblem.java	/^public class FaceProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	3/classifierJar/FaceProblem.java	/^    static int numClasses = 2;$/;"	f	class:FaceProblem
+trainPath	3/classifierJar/FaceProblem.java	/^    static String trainPath = "data\/faceProblem1\/training\/";$/;"	f	class:FaceProblem
+testPath	3/classifierJar/FaceProblem.java	/^    static String testPath = "data\/faceProblem1\/test\/";$/;"	f	class:FaceProblem
+status	3/classifierJar/FaceProblem.java	/^    JLabel status;$/;"	f	class:FaceProblem
+leftPanel	3/classifierJar/FaceProblem.java	/^    ImageBrowsePanel leftPanel, rightPanel;$/;"	f	class:FaceProblem
+rightPanel	3/classifierJar/FaceProblem.java	/^    ImageBrowsePanel leftPanel, rightPanel;$/;"	f	class:FaceProblem
+features	3/classifierJar/FaceProblem.java	/^    FaceFeatures features = FaceFeatures.getInstance ();$/;"	f	class:FaceProblem
+FaceProblem	3/classifierJar/FaceProblem.java	/^    public FaceProblem (JLabel status)$/;"	m	class:FaceProblem
+getNumClasses	3/classifierJar/FaceProblem.java	/^    public int getNumClasses ()$/;"	m	class:FaceProblem
+isFixedDimension	3/classifierJar/FaceProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:FaceProblem
+getTrainingData	3/classifierJar/FaceProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:FaceProblem
+getSample	3/classifierJar/FaceProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:FaceProblem
+getFullPanel	3/classifierJar/FaceProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:FaceProblem
+ImageBrowsePanel	3/classifierJar/FaceProblem.java	/^class ImageBrowsePanel extends JPanel {$/;"	c
+status	3/classifierJar/FaceProblem.java	/^    JLabel status;$/;"	f	class:ImageBrowsePanel
+classField	3/classifierJar/FaceProblem.java	/^    JTextField classField = new JTextField (2);$/;"	f	class:ImageBrowsePanel
+displayPanel	3/classifierJar/FaceProblem.java	/^    ImageDisplayPanel displayPanel;$/;"	f	class:ImageBrowsePanel
+classData	3/classifierJar/FaceProblem.java	/^    ArrayList<Image>[] classData;$/;"	f	class:ImageBrowsePanel
+numClasses	3/classifierJar/FaceProblem.java	/^    int numClasses;$/;"	f	class:ImageBrowsePanel
+currentClass	3/classifierJar/FaceProblem.java	/^    int currentClass = 0;$/;"	f	class:ImageBrowsePanel
+currentSample	3/classifierJar/FaceProblem.java	/^    int currentSample = 0;$/;"	f	class:ImageBrowsePanel
+dirPath	3/classifierJar/FaceProblem.java	/^    String dirPath;$/;"	f	class:ImageBrowsePanel
+ImageBrowsePanel	3/classifierJar/FaceProblem.java	/^    public ImageBrowsePanel (int numClasses, JLabel status, String dirPath)$/;"	m	class:ImageBrowsePanel
+makeControls	3/classifierJar/FaceProblem.java	/^    JPanel makeControls ()$/;"	m	class:ImageBrowsePanel
+load	3/classifierJar/FaceProblem.java	/^    void load ()$/;"	m	class:ImageBrowsePanel
+getFromClassAndSample	3/classifierJar/FaceProblem.java	/^    void getFromClassAndSample (int c, int s)$/;"	m	class:ImageBrowsePanel
+prev	3/classifierJar/FaceProblem.java	/^    void prev ()$/;"	m	class:ImageBrowsePanel
+next	3/classifierJar/FaceProblem.java	/^    void next ()$/;"	m	class:ImageBrowsePanel
+getCurrent	3/classifierJar/FaceProblem.java	/^    Image getCurrent ()$/;"	m	class:ImageBrowsePanel
+prevClass	3/classifierJar/FaceProblem.java	/^    void prevClass ()$/;"	m	class:ImageBrowsePanel
+nextClass	3/classifierJar/FaceProblem.java	/^    void nextClass () $/;"	m	class:ImageBrowsePanel
+getClassNum	3/classifierJar/FaceProblem.java	/^    int getClassNum ()$/;"	m	class:ImageBrowsePanel
+isComplete	3/classifierJar/FaceProblem.java	/^    boolean isComplete ()$/;"	m	class:ImageBrowsePanel
+ImageDisplayPanel	3/classifierJar/FaceProblem.java	/^class ImageDisplayPanel extends JPanel {$/;"	c
+image	3/classifierJar/FaceProblem.java	/^    Image image;$/;"	f	class:ImageDisplayPanel
+paintComponent	3/classifierJar/FaceProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:ImageDisplayPanel
+Function	3/classifierJar/Function.java	/^public class Function {$/;"	c
+name	3/classifierJar/Function.java	/^    String name = "Func";$/;"	f	class:Function
+xLabel	3/classifierJar/Function.java	/^    String xLabel = "x";$/;"	f	class:Function
+points	3/classifierJar/Function.java	/^    Vector<Point2D.Double> points = new Vector<Point2D.Double>();$/;"	f	class:Function
+minX	3/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+maxX	3/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+minY	3/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+maxY	3/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+Function	3/classifierJar/Function.java	/^    public Function (String name)$/;"	m	class:Function
+Function	3/classifierJar/Function.java	/^    public Function (String name, String xLabel)$/;"	m	class:Function
+getName	3/classifierJar/Function.java	/^    public String getName ()$/;"	m	class:Function
+add	3/classifierJar/Function.java	/^    public void add (double x, double y)$/;"	m	class:Function
+get	3/classifierJar/Function.java	/^    public double get (double x)$/;"	m	class:Function
+getNumValues	3/classifierJar/Function.java	/^    public int getNumValues ()$/;"	m	class:Function
+maxX	3/classifierJar/Function.java	/^    public double maxX ()$/;"	m	class:Function
+minX	3/classifierJar/Function.java	/^    public double minX ()$/;"	m	class:Function
+maxY	3/classifierJar/Function.java	/^    public double maxY ()$/;"	m	class:Function
+minY	3/classifierJar/Function.java	/^    public double minY ()$/;"	m	class:Function
+distance	3/classifierJar/Function.java	/^    public double distance (Function F, int numPoints)$/;"	m	class:Function
+toString	3/classifierJar/Function.java	/^    public String toString ()$/;"	m	class:Function
+format	3/classifierJar/Function.java	/^    String format (double x)$/;"	m	class:Function
+show	3/classifierJar/Function.java	/^    public void show ()$/;"	m	class:Function
+show	3/classifierJar/Function.java	/^    public static void show (Function F1, Function F2)$/;"	m	class:Function
+show	3/classifierJar/Function.java	/^    public static void show (Function F1, Function F2, Function F3)$/;"	m	class:Function
+main	3/classifierJar/Function.java	/^    public static void main (String[] argv)$/;"	m	class:Function
+test1	3/classifierJar/Function.java	/^    static void test1 ()$/;"	m	class:Function
+test2	3/classifierJar/Function.java	/^    static void test2 ()$/;"	m	class:Function
+ImagePanel	3/classifierJar/ImageTool.java	/^class ImagePanel extends JPanel {$/;"	c
+image	3/classifierJar/ImageTool.java	/^    Image image;$/;"	f	class:ImagePanel
+paintComponent	3/classifierJar/ImageTool.java	/^    public void paintComponent (Graphics g)$/;"	m	class:ImagePanel
+ImageTool	3/classifierJar/ImageTool.java	/^public class ImageTool extends JFrame {$/;"	c
+locationX	3/classifierJar/ImageTool.java	/^    static int locationX = 0;$/;"	f	class:ImageTool
+locationY	3/classifierJar/ImageTool.java	/^    static int locationY = 0;$/;"	f	class:ImageTool
+showImage	3/classifierJar/ImageTool.java	/^    public void showImage (Image image)$/;"	m	class:ImageTool
+showImage	3/classifierJar/ImageTool.java	/^    public void showImage (Image image, String title)$/;"	m	class:ImageTool
+imageToPixels	3/classifierJar/ImageTool.java	/^    public int[][][] imageToPixels (Image image)$/;"	m	class:ImageTool
+pixelsToImage	3/classifierJar/ImageTool.java	/^    public Image pixelsToImage (int[][][] pixels)$/;"	m	class:ImageTool
+readImageFile	3/classifierJar/ImageTool.java	/^    public Image readImageFile (String fileName)$/;"	m	class:ImageTool
+imageFileToPixels	3/classifierJar/ImageTool.java	/^    public int[][][] imageFileToPixels (String fileName)$/;"	m	class:ImageTool
+toBufferedImage	3/classifierJar/ImageTool.java	/^    public BufferedImage toBufferedImage (Image image)$/;"	m	class:ImageTool
+writeToJPGFile	3/classifierJar/ImageTool.java	/^    public void writeToJPGFile (Image image, String fileName)$/;"	m	class:ImageTool
+writeToJPGFile	3/classifierJar/ImageTool.java	/^    public void writeToJPGFile (int[][][] pixels, String fileName)$/;"	m	class:ImageTool
+main	3/classifierJar/ImageTool.java	/^    public static void main (String[] argv)$/;"	m	class:ImageTool
+LineSegmentd	3/classifierJar/LineSegmentd.java	/^class LineSegmentd {$/;"	c
+x1	3/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+y1	3/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+x2	3/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+y2	3/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+LineSegmentd	3/classifierJar/LineSegmentd.java	/^    public LineSegmentd (double x1, double y1, double x2, double y2)$/;"	m	class:LineSegmentd
+toString	3/classifierJar/LineSegmentd.java	/^    public String toString ()$/;"	m	class:LineSegmentd
+NullClassifier	3/classifierJar/NullClassifier.java	/^public class NullClassifier implements Classifier {$/;"	c
+printAll	3/classifierJar/NullClassifier.java	/^    boolean printAll = true;$/;"	f	class:NullClassifier
+trainingData	3/classifierJar/NullClassifier.java	/^    ArrayList<Vector<Double>>[] trainingData;$/;"	f	class:NullClassifier
+numClasses	3/classifierJar/NullClassifier.java	/^    int numClasses = -1;$/;"	f	class:NullClassifier
+dim	3/classifierJar/NullClassifier.java	/^    int dim = -1;$/;"	f	class:NullClassifier
+component	3/classifierJar/NullClassifier.java	/^    int component = -1;$/;"	f	class:NullClassifier
+train	3/classifierJar/NullClassifier.java	/^    public String train (int numClasses, boolean isFixedDimension, ArrayList<Vector<Double>>[] trainingData)$/;"	m	class:NullClassifier
+classify	3/classifierJar/NullClassifier.java	/^    public int classify (Vector<Double> sample)$/;"	m	class:NullClassifier
+makeFixedDimension	3/classifierJar/NullClassifier.java	/^    public ArrayList<Vector<Double>>[] makeFixedDimension (int numClasses, ArrayList<Vector<Double>>[] data)$/;"	m	class:NullClassifier
+makeFixedDimension	3/classifierJar/NullClassifier.java	/^    Vector<Double> makeFixedDimension (Vector<Double> v)$/;"	m	class:NullClassifier
+clip	3/classifierJar/NullClassifier.java	/^    Vector<Double> clip (Vector<Double> v, int n)$/;"	m	class:NullClassifier
+pad	3/classifierJar/NullClassifier.java	/^    Vector<Double> pad (Vector<Double> v, int n)$/;"	m	class:NullClassifier
+distance	3/classifierJar/NullClassifier.java	/^    double distance (Vector<Double> v1, Vector<Double> v2) $/;"	m	class:NullClassifier
+addUnitX	3/classifierJar/NullClassifier.java	/^    public ArrayList<Vector<Double>>[] addUnitX (int numClasses, ArrayList<Vector<Double>>[] data)$/;"	m	class:NullClassifier
+copy	3/classifierJar/NullClassifier.java	/^    Vector<Double> copy (Vector<Double> v)$/;"	m	class:NullClassifier
+distance	3/classifierJar/NullClassifier.java	/^    double distance (Vector<Double> v1, Vector<Double> v2, int component) $/;"	m	class:NullClassifier
+classDistance	3/classifierJar/NullClassifier.java	/^    double classDistance (int c, Vector<Double> v, int k) $/;"	m	class:NullClassifier
+PlotPoint	3/classifierJar/PlotPoint.java	/^public class PlotPoint {$/;"	c
+x	3/classifierJar/PlotPoint.java	/^    double x,y;$/;"	f	class:PlotPoint
+y	3/classifierJar/PlotPoint.java	/^    double x,y;$/;"	f	class:PlotPoint
+color	3/classifierJar/PlotPoint.java	/^    Color color;$/;"	f	class:PlotPoint
+isTest	3/classifierJar/PlotPoint.java	/^    boolean isTest = false;$/;"	f	class:PlotPoint
+classNum	3/classifierJar/PlotPoint.java	/^    int classNum = -1;$/;"	f	class:PlotPoint
+PlotPoint	3/classifierJar/PlotPoint.java	/^    public PlotPoint (double x, double y, int classNum, boolean isTest)$/;"	m	class:PlotPoint
+setColor	3/classifierJar/PlotPoint.java	/^    void setColor (int c)$/;"	m	class:PlotPoint
+PointFeatures	3/classifierJar/PointFeatures.java	/^public class PointFeatures {$/;"	c
+getInstance	3/classifierJar/PointFeatures.java	/^    public static PointFeatures getInstance ()$/;"	m	class:PointFeatures
+extractSingle	3/classifierJar/PointFeatures.java	/^    public Vector<Double> extractSingle (PlotPoint p)$/;"	m	class:PointFeatures
+extractSet	3/classifierJar/PointFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<PlotPoint>[] points)$/;"	m	class:PointFeatures
+PointProblem	3/classifierJar/PointProblem.java	/^public class PointProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	3/classifierJar/PointProblem.java	/^    static int numClasses = 2;$/;"	f	class:PointProblem
+uniformOverlap	3/classifierJar/PointProblem.java	/^    static double uniformOverlap = 1;$/;"	f	class:PointProblem
+gaussianStdDev	3/classifierJar/PointProblem.java	/^    static double gaussianStdDev = 1;$/;"	f	class:PointProblem
+status	3/classifierJar/PointProblem.java	/^    JLabel status;$/;"	f	class:PointProblem
+models	3/classifierJar/PointProblem.java	/^    String[] models = {"Uniform", "Gaussian", "Split-Uniform", "Split-Gaussian"};$/;"	f	class:PointProblem
+modelBox	3/classifierJar/PointProblem.java	/^    JComboBox modelBox = new JComboBox (models);$/;"	f	class:PointProblem
+pointsField	3/classifierJar/PointProblem.java	/^    JTextField pointsField = new JTextField (5);$/;"	f	class:PointProblem
+xField	3/classifierJar/PointProblem.java	/^    JTextField xField = new JTextField (5);$/;"	f	class:PointProblem
+yField	3/classifierJar/PointProblem.java	/^    JTextField yField = new JTextField (5);$/;"	f	class:PointProblem
+cField	3/classifierJar/PointProblem.java	/^    JTextField cField = new JTextField (2);$/;"	f	class:PointProblem
+inset	3/classifierJar/PointProblem.java	/^    int inset=20;            $/;"	f	class:PointProblem
+df	3/classifierJar/PointProblem.java	/^    DecimalFormat df = new DecimalFormat();$/;"	f	class:PointProblem
+currentX	3/classifierJar/PointProblem.java	/^    double currentX=-1, currentY=-1;$/;"	f	class:PointProblem
+currentY	3/classifierJar/PointProblem.java	/^    double currentX=-1, currentY=-1;$/;"	f	class:PointProblem
+currentClass	3/classifierJar/PointProblem.java	/^    int currentClass = -1;$/;"	f	class:PointProblem
+numPoints	3/classifierJar/PointProblem.java	/^    int numPoints;$/;"	f	class:PointProblem
+points	3/classifierJar/PointProblem.java	/^    ArrayList<PlotPoint>[] points;$/;"	f	class:PointProblem
+currentTestPoint	3/classifierJar/PointProblem.java	/^    PlotPoint currentTestPoint;$/;"	f	class:PointProblem
+features	3/classifierJar/PointProblem.java	/^    PointFeatures features = PointFeatures.getInstance ();$/;"	f	class:PointProblem
+PointProblem	3/classifierJar/PointProblem.java	/^    public PointProblem (JLabel status)$/;"	m	class:PointProblem
+getNumClasses	3/classifierJar/PointProblem.java	/^    public int getNumClasses ()$/;"	m	class:PointProblem
+isFixedDimension	3/classifierJar/PointProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:PointProblem
+getTrainingData	3/classifierJar/PointProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:PointProblem
+getSample	3/classifierJar/PointProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:PointProblem
+generateUniform	3/classifierJar/PointProblem.java	/^    void generateUniform ()$/;"	m	class:PointProblem
+generateSplitUniform	3/classifierJar/PointProblem.java	/^    void generateSplitUniform ()$/;"	m	class:PointProblem
+generateGaussian	3/classifierJar/PointProblem.java	/^    void generateGaussian ()$/;"	m	class:PointProblem
+generateSplitGaussian	3/classifierJar/PointProblem.java	/^    void generateSplitGaussian ()$/;"	m	class:PointProblem
+generateGaussian	3/classifierJar/PointProblem.java	/^    void generateGaussian (int n, int c, double centerX, double centerY, boolean makeNew)$/;"	m	class:PointProblem
+paintComponent	3/classifierJar/PointProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:PointProblem
+getFullPanel	3/classifierJar/PointProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:PointProblem
+makeBottomPanel	3/classifierJar/PointProblem.java	/^    JPanel makeBottomPanel ()$/;"	m	class:PointProblem
+generate	3/classifierJar/PointProblem.java	/^    void generate ()$/;"	m	class:PointProblem
+setNumPoints	3/classifierJar/PointProblem.java	/^    void setNumPoints ()$/;"	m	class:PointProblem
+addToTrainingSet	3/classifierJar/PointProblem.java	/^    void addToTrainingSet ()$/;"	m	class:PointProblem
+getXY	3/classifierJar/PointProblem.java	/^    void getXY ()$/;"	m	class:PointProblem
+setAsTest	3/classifierJar/PointProblem.java	/^    void setAsTest ()$/;"	m	class:PointProblem
+RandTool	3/classifierJar/RandTool.java	/^public class RandTool {$/;"	c
+m	3/classifierJar/RandTool.java	/^    static final long m = 2147483647L;$/;"	f	class:RandTool
+a	3/classifierJar/RandTool.java	/^    static final long a = 48271L;$/;"	f	class:RandTool
+q	3/classifierJar/RandTool.java	/^    static final long q = 44488L;$/;"	f	class:RandTool
+r	3/classifierJar/RandTool.java	/^    static final long r = 3399L;$/;"	f	class:RandTool
+r_seed	3/classifierJar/RandTool.java	/^    static long r_seed = 12345678L; $/;"	f	class:RandTool
+rand	3/classifierJar/RandTool.java	/^    static Random rand = new Random (r_seed);$/;"	f	class:RandTool
+setSeed	3/classifierJar/RandTool.java	/^    public static void setSeed (long seed)$/;"	m	class:RandTool
+uniform	3/classifierJar/RandTool.java	/^    public static double uniform ()$/;"	m	class:RandTool
+uniform	3/classifierJar/RandTool.java	/^    public static double uniform (double a, double b)$/;"	m	class:RandTool
+uniform	3/classifierJar/RandTool.java	/^    public static long uniform (long a, long b)$/;"	m	class:RandTool
+uniform	3/classifierJar/RandTool.java	/^    public static int uniform (int a, int b)$/;"	m	class:RandTool
+exponential	3/classifierJar/RandTool.java	/^    public static double exponential (double lambda)$/;"	m	class:RandTool
+gaussian	3/classifierJar/RandTool.java	/^    public static double gaussian ()$/;"	m	class:RandTool
+gaussian	3/classifierJar/RandTool.java	/^    public static double gaussian (double mean, double stdDeviation)$/;"	m	class:RandTool
+SimplePlotPanel	3/classifierJar/SimplePlotPanel.java	/^public class SimplePlotPanel extends JPanel {$/;"	c
+glueSpace	3/classifierJar/SimplePlotPanel.java	/^  public static int glueSpace = 3;                    \/\/ Generic spacing between lines, text.$/;"	f	class:SimplePlotPanel
+axisLabelFontSize	3/classifierJar/SimplePlotPanel.java	/^  public static int axisLabelFontSize = 10;           \/\/ Font size for axis labels.$/;"	f	class:SimplePlotPanel
+tickFontSize	3/classifierJar/SimplePlotPanel.java	/^  public static int tickFontSize = 8;                 \/\/ Same for tickmark labels.$/;"	f	class:SimplePlotPanel
+legendFontSize	3/classifierJar/SimplePlotPanel.java	/^  public static int legendFontSize = 16;              \/\/ Legend.$/;"	f	class:SimplePlotPanel
+tickSize	3/classifierJar/SimplePlotPanel.java	/^  public static int tickSize = 6;                     \/\/ Length of each tick mark.$/;"	f	class:SimplePlotPanel
+titleFontSize	3/classifierJar/SimplePlotPanel.java	/^  public static int titleFontSize = 12;               \/\/ Length of each tick mark.$/;"	f	class:SimplePlotPanel
+pointBlobRadius	3/classifierJar/SimplePlotPanel.java	/^  public static int pointBlobRadius = 4;              \/\/ Size of circle to mark a point.$/;"	f	class:SimplePlotPanel
+legendFont	3/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+tickFont	3/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+axisLabelFont	3/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+titleFont	3/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+tickFontMetrics	3/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+axisLabelFontMetrics	3/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+legendFontMetrics	3/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+titleFontMetrics	3/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+panelHeight	3/classifierJar/SimplePlotPanel.java	/^  int panelHeight, panelWidth;$/;"	f	class:SimplePlotPanel
+panelWidth	3/classifierJar/SimplePlotPanel.java	/^  int panelHeight, panelWidth;$/;"	f	class:SimplePlotPanel
+bboxLeft	3/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxRight	3/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxTop	3/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxBottom	3/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxHeight	3/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxWidth	3/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+plotBoxTopInset	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxBottomInset	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxLeftInset	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxRightInset	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxHeight	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxWidth	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxLeft	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxRight	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxTop	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxBottom	3/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxHeight	3/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxWidth	3/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxLeft	3/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxRight	3/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxTop	3/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxBottom	3/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+legendBoxHeight	3/classifierJar/SimplePlotPanel.java	/^  int legendBoxHeight, legendBoxWidth;$/;"	f	class:SimplePlotPanel
+legendBoxWidth	3/classifierJar/SimplePlotPanel.java	/^  int legendBoxHeight, legendBoxWidth;$/;"	f	class:SimplePlotPanel
+maxNumCurves	3/classifierJar/SimplePlotPanel.java	/^  int maxNumCurves;                              \/\/ Max allowable curves: for storage.$/;"	f	class:SimplePlotPanel
+numCurves	3/classifierJar/SimplePlotPanel.java	/^  int numCurves;                                 \/\/ Actual number of curves.$/;"	f	class:SimplePlotPanel
+maxNumValues	3/classifierJar/SimplePlotPanel.java	/^  int maxNumValues;$/;"	f	class:SimplePlotPanel
+curves	3/classifierJar/SimplePlotPanel.java	/^  SimplePlotCurve[] curves;                      \/\/ The curves themselves.$/;"	f	class:SimplePlotPanel
+Xmax	3/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Xmin	3/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Xrange	3/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Ymax	3/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+Ymin	3/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+Yrange	3/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+numXTicks	3/classifierJar/SimplePlotPanel.java	/^  int numXTicks, numYTicks;                      \/\/ Number of tick marks.$/;"	f	class:SimplePlotPanel
+numYTicks	3/classifierJar/SimplePlotPanel.java	/^  int numXTicks, numYTicks;                      \/\/ Number of tick marks.$/;"	f	class:SimplePlotPanel
+XTicks	3/classifierJar/SimplePlotPanel.java	/^  double[] XTicks, YTicks;                       \/\/ The actual points for the ticks.$/;"	f	class:SimplePlotPanel
+YTicks	3/classifierJar/SimplePlotPanel.java	/^  double[] XTicks, YTicks;                       \/\/ The actual points for the ticks.$/;"	f	class:SimplePlotPanel
+XTickLabels	3/classifierJar/SimplePlotPanel.java	/^  String[] XTickLabels, YTickLabels;             \/\/ Labels.$/;"	f	class:SimplePlotPanel
+YTickLabels	3/classifierJar/SimplePlotPanel.java	/^  String[] XTickLabels, YTickLabels;             \/\/ Labels.$/;"	f	class:SimplePlotPanel
+XTickWidth	3/classifierJar/SimplePlotPanel.java	/^  int XTickWidth, XTickHeight;                   \/\/ Font heights and widths.$/;"	f	class:SimplePlotPanel
+XTickHeight	3/classifierJar/SimplePlotPanel.java	/^  int XTickWidth, XTickHeight;                   \/\/ Font heights and widths.$/;"	f	class:SimplePlotPanel
+YTickWidth	3/classifierJar/SimplePlotPanel.java	/^  int YTickWidth, YTickHeight;$/;"	f	class:SimplePlotPanel
+YTickHeight	3/classifierJar/SimplePlotPanel.java	/^  int YTickWidth, YTickHeight;$/;"	f	class:SimplePlotPanel
+XaxisLabelString	3/classifierJar/SimplePlotPanel.java	/^  String XaxisLabelString = "", YaxisLabelString = "";     \/\/ Axis labels.$/;"	f	class:SimplePlotPanel
+YaxisLabelString	3/classifierJar/SimplePlotPanel.java	/^  String XaxisLabelString = "", YaxisLabelString = "";     \/\/ Axis labels.$/;"	f	class:SimplePlotPanel
+Xformat	3/classifierJar/SimplePlotPanel.java	/^  DecimalFormat Xformat, Yformat;                \/\/ Format labels\/ticks.$/;"	f	class:SimplePlotPanel
+Yformat	3/classifierJar/SimplePlotPanel.java	/^  DecimalFormat Xformat, Yformat;                \/\/ Format labels\/ticks.$/;"	f	class:SimplePlotPanel
+titleString	3/classifierJar/SimplePlotPanel.java	/^  String titleString = "";                       \/\/ Title to appear center-top.$/;"	f	class:SimplePlotPanel
+colors	3/classifierJar/SimplePlotPanel.java	/^  static Color colors[] = {Color.red, Color.blue, Color.green, Color.magenta};$/;"	f	class:SimplePlotPanel
+SimplePlotPanel	3/classifierJar/SimplePlotPanel.java	/^  public SimplePlotPanel (int maxNumCurves, int maxNumValues)$/;"	m	class:SimplePlotPanel
+frame	3/classifierJar/SimplePlotPanel.java	/^  static JFrame frame;$/;"	f	class:SimplePlotPanel
+makePlotFrame	3/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector points, String name, int frameWidth, int frameHeight)$/;"	m	class:SimplePlotPanel
+makePlotFrame	3/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector points)$/;"	m	class:SimplePlotPanel
+makePlotFrame	3/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector[] pointSets, String[] names, String xLabel, int frameWidth, int frameHeight)$/;"	m	class:SimplePlotPanel
+paintComponent	3/classifierJar/SimplePlotPanel.java	/^  public void paintComponent (Graphics g)$/;"	m	class:SimplePlotPanel
+setBounds	3/classifierJar/SimplePlotPanel.java	/^  private void setBounds ()$/;"	m	class:SimplePlotPanel	file:
+setTitle	3/classifierJar/SimplePlotPanel.java	/^  public void setTitle (String titleString)$/;"	m	class:SimplePlotPanel
+createNewCurve	3/classifierJar/SimplePlotPanel.java	/^  public int createNewCurve (String legendString, Color color)$/;"	m	class:SimplePlotPanel
+setXaxisLabel	3/classifierJar/SimplePlotPanel.java	/^  public void setXaxisLabel (String XaxisLabelString)$/;"	m	class:SimplePlotPanel
+setYaxisLabel	3/classifierJar/SimplePlotPanel.java	/^  public void setYaxisLabel (String YaxisLabelString)$/;"	m	class:SimplePlotPanel
+setNumXTicks	3/classifierJar/SimplePlotPanel.java	/^  public void setNumXTicks (int numXTicks)$/;"	m	class:SimplePlotPanel
+setNumYTicks	3/classifierJar/SimplePlotPanel.java	/^  public void setNumYTicks (int numYTicks)$/;"	m	class:SimplePlotPanel
+setPointRadius	3/classifierJar/SimplePlotPanel.java	/^  public void setPointRadius (int numPixels)$/;"	m	class:SimplePlotPanel
+setXVector	3/classifierJar/SimplePlotPanel.java	/^  public void setXVector (int curveID, double[] X)$/;"	m	class:SimplePlotPanel
+setYVector	3/classifierJar/SimplePlotPanel.java	/^  public void setYVector (int curveID, double[] Y)$/;"	m	class:SimplePlotPanel
+addNewYValue	3/classifierJar/SimplePlotPanel.java	/^  public void addNewYValue (int curveID, double y)$/;"	m	class:SimplePlotPanel
+setXYPoints	3/classifierJar/SimplePlotPanel.java	/^  public void setXYPoints (int curveID, Vector points)$/;"	m	class:SimplePlotPanel
+makePlot	3/classifierJar/SimplePlotPanel.java	/^  public void makePlot (Graphics g, int boundingBoxTopLeftX, int boundingBoxTopLeftY, $/;"	m	class:SimplePlotPanel
+makePlot	3/classifierJar/SimplePlotPanel.java	/^  void makePlot (Graphics g)$/;"	m	class:SimplePlotPanel
+dataXToPixelValue	3/classifierJar/SimplePlotPanel.java	/^  int dataXToPixelValue (double x)$/;"	m	class:SimplePlotPanel
+dataYToPixelValue	3/classifierJar/SimplePlotPanel.java	/^  int dataYToPixelValue (double y)$/;"	m	class:SimplePlotPanel
+computeDrawingConstants	3/classifierJar/SimplePlotPanel.java	/^  void computeDrawingConstants (Graphics g)$/;"	m	class:SimplePlotPanel
+makeTicks	3/classifierJar/SimplePlotPanel.java	/^  void makeTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+drawTicks	3/classifierJar/SimplePlotPanel.java	/^  void drawTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+estimateNumXTicks	3/classifierJar/SimplePlotPanel.java	/^  int estimateNumXTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+makeXTicks	3/classifierJar/SimplePlotPanel.java	/^  void makeXTicks ()$/;"	m	class:SimplePlotPanel
+makeYTicks	3/classifierJar/SimplePlotPanel.java	/^  void makeYTicks ()$/;"	m	class:SimplePlotPanel
+createFormats	3/classifierJar/SimplePlotPanel.java	/^  void createFormats ()$/;"	m	class:SimplePlotPanel
+makeFormat	3/classifierJar/SimplePlotPanel.java	/^  DecimalFormat makeFormat (double low, double high)$/;"	m	class:SimplePlotPanel
+makeDoubleFormatX	3/classifierJar/SimplePlotPanel.java	/^  String makeDoubleFormatX (double x)$/;"	m	class:SimplePlotPanel
+makeDoubleFormatY	3/classifierJar/SimplePlotPanel.java	/^  String makeDoubleFormatY (double y)$/;"	m	class:SimplePlotPanel
+drawXTick	3/classifierJar/SimplePlotPanel.java	/^  void drawXTick (Graphics g, double x, String tickLabel)$/;"	m	class:SimplePlotPanel
+drawYTick	3/classifierJar/SimplePlotPanel.java	/^  void drawYTick (Graphics g, double y, String tickLabel)$/;"	m	class:SimplePlotPanel
+writeLegends	3/classifierJar/SimplePlotPanel.java	/^  void writeLegends (Graphics g)$/;"	m	class:SimplePlotPanel
+plotCurve	3/classifierJar/SimplePlotPanel.java	/^  void plotCurve (Graphics g, SimplePlotCurve curve)$/;"	m	class:SimplePlotPanel
+SimplePlotCurve	3/classifierJar/SimplePlotPanel.java	/^class SimplePlotCurve {$/;"	c
+maxNumValues	3/classifierJar/SimplePlotPanel.java	/^  private int maxNumValues;          \/\/ Maximum number of points.$/;"	f	class:SimplePlotCurve	file:
+numXValues	3/classifierJar/SimplePlotPanel.java	/^  private int numXValues;            \/\/ Actual number of points.$/;"	f	class:SimplePlotCurve	file:
+numCurrentYValues	3/classifierJar/SimplePlotPanel.java	/^  private int numCurrentYValues;     \/\/ Number of Y values added so far.$/;"	f	class:SimplePlotCurve	file:
+legendString	3/classifierJar/SimplePlotPanel.java	/^  String legendString;               \/\/ String to print in legend.$/;"	f	class:SimplePlotCurve
+color	3/classifierJar/SimplePlotPanel.java	/^  Color color;                       \/\/ Preferred color.$/;"	f	class:SimplePlotCurve
+X	3/classifierJar/SimplePlotPanel.java	/^  private double[] X, Y;     \/\/ The points.$/;"	f	class:SimplePlotCurve	file:
+Y	3/classifierJar/SimplePlotPanel.java	/^  private double[] X, Y;     \/\/ The points.$/;"	f	class:SimplePlotCurve	file:
+SimplePlotCurve	3/classifierJar/SimplePlotPanel.java	/^  public SimplePlotCurve (int maxNumValues)$/;"	m	class:SimplePlotCurve
+setXValues	3/classifierJar/SimplePlotPanel.java	/^  public void setXValues (double[] X)$/;"	m	class:SimplePlotCurve
+setYValues	3/classifierJar/SimplePlotPanel.java	/^  public void setYValues (double[] Y)$/;"	m	class:SimplePlotCurve
+addNewYValue	3/classifierJar/SimplePlotPanel.java	/^  public void addNewYValue (double y)$/;"	m	class:SimplePlotCurve
+getNumXValues	3/classifierJar/SimplePlotPanel.java	/^  public int getNumXValues ()$/;"	m	class:SimplePlotCurve
+getNumValues	3/classifierJar/SimplePlotPanel.java	/^  public int getNumValues ()$/;"	m	class:SimplePlotCurve
+getNumYValues	3/classifierJar/SimplePlotPanel.java	/^  public int getNumYValues ()$/;"	m	class:SimplePlotCurve
+getX	3/classifierJar/SimplePlotPanel.java	/^  public double getX (int i)$/;"	m	class:SimplePlotCurve
+getY	3/classifierJar/SimplePlotPanel.java	/^  public double getY (int i)$/;"	m	class:SimplePlotCurve
+CharFeatures	4/classifierJar/CharFeatures.java	/^public class CharFeatures {$/;"	c
+getInstance	4/classifierJar/CharFeatures.java	/^    public static CharFeatures getInstance ()$/;"	m	class:CharFeatures
+extractSingle	4/classifierJar/CharFeatures.java	/^    public Vector<Double> extractSingle (Vector<LineSegmentd> segments)$/;"	m	class:CharFeatures
+extractSet	4/classifierJar/CharFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<Vector<LineSegmentd>>[] classData)$/;"	m	class:CharFeatures
+CharProblem	4/classifierJar/CharProblem.java	/^public class CharProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	4/classifierJar/CharProblem.java	/^    static int numClasses = 2;$/;"	f	class:CharProblem
+dirPath	4/classifierJar/CharProblem.java	/^    static String dirPath = "data\/charProblem1\/training\/";$/;"	f	class:CharProblem
+status	4/classifierJar/CharProblem.java	/^    JLabel status;$/;"	f	class:CharProblem
+leftPanel	4/classifierJar/CharProblem.java	/^    ScribblePanel leftPanel, rightPanel;$/;"	f	class:CharProblem
+rightPanel	4/classifierJar/CharProblem.java	/^    ScribblePanel leftPanel, rightPanel;$/;"	f	class:CharProblem
+features	4/classifierJar/CharProblem.java	/^    CharFeatures features = CharFeatures.getInstance ();$/;"	f	class:CharProblem
+CharProblem	4/classifierJar/CharProblem.java	/^    public CharProblem (JLabel status)$/;"	m	class:CharProblem
+getNumClasses	4/classifierJar/CharProblem.java	/^    public int getNumClasses ()$/;"	m	class:CharProblem
+isFixedDimension	4/classifierJar/CharProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:CharProblem
+getTrainingData	4/classifierJar/CharProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:CharProblem
+getSample	4/classifierJar/CharProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:CharProblem
+paintComponent	4/classifierJar/CharProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:CharProblem
+getFullPanel	4/classifierJar/CharProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:CharProblem
+ScribblePanel	4/classifierJar/CharProblem.java	/^class ScribblePanel extends JPanel {$/;"	c
+numClasses	4/classifierJar/CharProblem.java	/^    int numClasses;$/;"	f	class:ScribblePanel
+currentSample	4/classifierJar/CharProblem.java	/^    int currentSample = 0;$/;"	f	class:ScribblePanel
+currentClass	4/classifierJar/CharProblem.java	/^    int currentClass = 0;$/;"	f	class:ScribblePanel
+status	4/classifierJar/CharProblem.java	/^    JLabel status;$/;"	f	class:ScribblePanel
+isFullPanel	4/classifierJar/CharProblem.java	/^    boolean isFullPanel = false;$/;"	f	class:ScribblePanel
+classField	4/classifierJar/CharProblem.java	/^    JTextField classField = new JTextField (2);$/;"	f	class:ScribblePanel
+drawPanel	4/classifierJar/CharProblem.java	/^    DrawPanel drawPanel;$/;"	f	class:ScribblePanel
+classData	4/classifierJar/CharProblem.java	/^    ArrayList<Vector<LineSegmentd>>[] classData;$/;"	f	class:ScribblePanel
+ScribblePanel	4/classifierJar/CharProblem.java	/^    public ScribblePanel (boolean isFullPanel, int numClasses, JLabel status)$/;"	m	class:ScribblePanel
+makeFullControls	4/classifierJar/CharProblem.java	/^    JPanel makeFullControls ()$/;"	m	class:ScribblePanel
+makeSubControls	4/classifierJar/CharProblem.java	/^    JPanel makeSubControls ()$/;"	m	class:ScribblePanel
+clear	4/classifierJar/CharProblem.java	/^    void clear ()$/;"	m	class:ScribblePanel
+add	4/classifierJar/CharProblem.java	/^    void add ()$/;"	m	class:ScribblePanel
+load	4/classifierJar/CharProblem.java	/^    void load ()$/;"	m	class:ScribblePanel
+readFromFile	4/classifierJar/CharProblem.java	/^    Vector<LineSegmentd> readFromFile (String fileName)$/;"	m	class:ScribblePanel
+save	4/classifierJar/CharProblem.java	/^    void save ()$/;"	m	class:ScribblePanel
+writeToFile	4/classifierJar/CharProblem.java	/^    void writeToFile (String fileName, Vector<LineSegmentd> segments)$/;"	m	class:ScribblePanel
+prev	4/classifierJar/CharProblem.java	/^    void prev ()$/;"	m	class:ScribblePanel
+next	4/classifierJar/CharProblem.java	/^    void next ()$/;"	m	class:ScribblePanel
+getFromClassAndSample	4/classifierJar/CharProblem.java	/^    void getFromClassAndSample (int c, int s)$/;"	m	class:ScribblePanel
+getClassNum	4/classifierJar/CharProblem.java	/^    int getClassNum ()$/;"	m	class:ScribblePanel
+isComplete	4/classifierJar/CharProblem.java	/^    boolean isComplete ()$/;"	m	class:ScribblePanel
+prevClass	4/classifierJar/CharProblem.java	/^    void prevClass ()$/;"	m	class:ScribblePanel
+nextClass	4/classifierJar/CharProblem.java	/^    void nextClass () $/;"	m	class:ScribblePanel
+DrawPanel	4/classifierJar/CharProblem.java	/^class DrawPanel extends JPanel implements MouseInputListener {$/;"	c
+segments	4/classifierJar/CharProblem.java	/^    Vector<LineSegmentd> segments;$/;"	f	class:DrawPanel
+prevX	4/classifierJar/CharProblem.java	/^    double prevX = -1, prevY = -1;$/;"	f	class:DrawPanel
+prevY	4/classifierJar/CharProblem.java	/^    double prevX = -1, prevY = -1;$/;"	f	class:DrawPanel
+startOver	4/classifierJar/CharProblem.java	/^    boolean startOver = true;$/;"	f	class:DrawPanel
+startNewSequence	4/classifierJar/CharProblem.java	/^    boolean startNewSequence = true;$/;"	f	class:DrawPanel
+DrawPanel	4/classifierJar/CharProblem.java	/^    public DrawPanel ()$/;"	m	class:DrawPanel
+clear	4/classifierJar/CharProblem.java	/^    public void clear ()$/;"	m	class:DrawPanel
+paintComponent	4/classifierJar/CharProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:DrawPanel
+mouseClicked	4/classifierJar/CharProblem.java	/^    public void mouseClicked (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseMoved	4/classifierJar/CharProblem.java	/^    public void mouseMoved (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseEntered	4/classifierJar/CharProblem.java	/^    public void mouseEntered (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseExited	4/classifierJar/CharProblem.java	/^    public void mouseExited (MouseEvent e) {}$/;"	m	class:DrawPanel
+mousePressed	4/classifierJar/CharProblem.java	/^    public void mousePressed (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseDragged	4/classifierJar/CharProblem.java	/^    public void mouseDragged (MouseEvent e) $/;"	m	class:DrawPanel
+mouseReleased	4/classifierJar/CharProblem.java	/^    public void mouseReleased (MouseEvent e) $/;"	m	class:DrawPanel
+ClassificationProblem	4/classifierJar/ClassificationProblem.java	/^public interface ClassificationProblem {$/;"	i
+getNumClasses	4/classifierJar/ClassificationProblem.java	/^    public int getNumClasses ();$/;"	m	interface:ClassificationProblem
+isFixedDimension	4/classifierJar/ClassificationProblem.java	/^    public boolean isFixedDimension ();$/;"	m	interface:ClassificationProblem
+getTrainingData	4/classifierJar/ClassificationProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ();$/;"	m	interface:ClassificationProblem
+getSample	4/classifierJar/ClassificationProblem.java	/^    public Vector<Double> getSample ();$/;"	m	interface:ClassificationProblem
+Classifier	4/classifierJar/Classifier.java	/^public interface Classifier {$/;"	i
+train	4/classifierJar/Classifier.java	/^    public String train (int numClasses, boolean isFixedDimension, ArrayList<Vector<Double>>[] trainingData);$/;"	m	interface:Classifier
+classify	4/classifierJar/Classifier.java	/^    public int classify (Vector<Double> sample);$/;"	m	interface:Classifier
+ClassifierGUI	4/classifierJar/ClassifierGUI.java	/^public class ClassifierGUI extends JFrame {$/;"	c
+status	4/classifierJar/ClassifierGUI.java	/^    JLabel status = new JLabel (" ");$/;"	f	class:ClassifierGUI
+tabbedPane	4/classifierJar/ClassifierGUI.java	/^    JTabbedPane tabbedPane;$/;"	f	class:ClassifierGUI
+algField	4/classifierJar/ClassifierGUI.java	/^    JTextField algField = new JTextField (20);$/;"	f	class:ClassifierGUI
+nextB	4/classifierJar/ClassifierGUI.java	/^    JButton nextB = new JButton ("Classify");$/;"	f	class:ClassifierGUI
+pointProblem	4/classifierJar/ClassifierGUI.java	/^    PointProblem pointProblem;$/;"	f	class:ClassifierGUI
+charProblem	4/classifierJar/ClassifierGUI.java	/^    CharProblem charProblem;$/;"	f	class:ClassifierGUI
+faceProblem	4/classifierJar/ClassifierGUI.java	/^    FaceProblem faceProblem;$/;"	f	class:ClassifierGUI
+classifier	4/classifierJar/ClassifierGUI.java	/^    Classifier classifier;$/;"	f	class:ClassifierGUI
+problem	4/classifierJar/ClassifierGUI.java	/^    ClassificationProblem problem;$/;"	f	class:ClassifierGUI
+main	4/classifierJar/ClassifierGUI.java	/^    public static void main (String[] argv)$/;"	m	class:ClassifierGUI
+ClassifierGUI	4/classifierJar/ClassifierGUI.java	/^    public ClassifierGUI () $/;"	m	class:ClassifierGUI
+makeBottomPanel	4/classifierJar/ClassifierGUI.java	/^    JPanel makeBottomPanel ()$/;"	m	class:ClassifierGUI
+tabChange	4/classifierJar/ClassifierGUI.java	/^    void tabChange ()$/;"	m	class:ClassifierGUI
+loadAlgorithm	4/classifierJar/ClassifierGUI.java	/^    void loadAlgorithm ()$/;"	m	class:ClassifierGUI
+train	4/classifierJar/ClassifierGUI.java	/^    void train ()$/;"	m	class:ClassifierGUI
+next	4/classifierJar/ClassifierGUI.java	/^    void next ()$/;"	m	class:ClassifierGUI
+FaceFeatures	4/classifierJar/FaceFeatures.java	/^public class FaceFeatures {$/;"	c
+getInstance	4/classifierJar/FaceFeatures.java	/^    public static FaceFeatures getInstance ()$/;"	m	class:FaceFeatures
+extractSingle	4/classifierJar/FaceFeatures.java	/^    public Vector<Double> extractSingle (Image image)$/;"	m	class:FaceFeatures
+extractSet	4/classifierJar/FaceFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<Image>[] classData)$/;"	m	class:FaceFeatures
+toGreyPixels	4/classifierJar/FaceFeatures.java	/^    int[][] toGreyPixels (Image image)$/;"	m	class:FaceFeatures
+toGreyScale	4/classifierJar/FaceFeatures.java	/^    int[][] toGreyScale (int[][][] pixels)$/;"	m	class:FaceFeatures
+FaceFeatures2	4/classifierJar/FaceFeatures.java	/^class FaceFeatures2 extends FaceFeatures {$/;"	c
+numBlocks	4/classifierJar/FaceFeatures.java	/^    int numBlocks = 2;$/;"	f	class:FaceFeatures2
+numBins	4/classifierJar/FaceFeatures.java	/^    int numBins = 10;$/;"	f	class:FaceFeatures2
+extractSingle	4/classifierJar/FaceFeatures.java	/^    public Vector<Double> extractSingle (Image image)$/;"	m	class:FaceFeatures2
+makeHOG	4/classifierJar/FaceFeatures.java	/^    double[] makeHOG (int[][] pixels, int rowStart, int rowEnd, int colStart, int colEnd)$/;"	m	class:FaceFeatures2
+gradientOrientation	4/classifierJar/FaceFeatures.java	/^    double gradientOrientation (int[][] pixels, int row, int col)$/;"	m	class:FaceFeatures2
+FaceProblem	4/classifierJar/FaceProblem.java	/^public class FaceProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	4/classifierJar/FaceProblem.java	/^    static int numClasses = 2;$/;"	f	class:FaceProblem
+trainPath	4/classifierJar/FaceProblem.java	/^    static String trainPath = "data\/faceProblem1\/training\/";$/;"	f	class:FaceProblem
+testPath	4/classifierJar/FaceProblem.java	/^    static String testPath = "data\/faceProblem1\/test\/";$/;"	f	class:FaceProblem
+status	4/classifierJar/FaceProblem.java	/^    JLabel status;$/;"	f	class:FaceProblem
+leftPanel	4/classifierJar/FaceProblem.java	/^    ImageBrowsePanel leftPanel, rightPanel;$/;"	f	class:FaceProblem
+rightPanel	4/classifierJar/FaceProblem.java	/^    ImageBrowsePanel leftPanel, rightPanel;$/;"	f	class:FaceProblem
+features	4/classifierJar/FaceProblem.java	/^    FaceFeatures features = FaceFeatures.getInstance ();$/;"	f	class:FaceProblem
+FaceProblem	4/classifierJar/FaceProblem.java	/^    public FaceProblem (JLabel status)$/;"	m	class:FaceProblem
+getNumClasses	4/classifierJar/FaceProblem.java	/^    public int getNumClasses ()$/;"	m	class:FaceProblem
+isFixedDimension	4/classifierJar/FaceProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:FaceProblem
+getTrainingData	4/classifierJar/FaceProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:FaceProblem
+getSample	4/classifierJar/FaceProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:FaceProblem
+getFullPanel	4/classifierJar/FaceProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:FaceProblem
+ImageBrowsePanel	4/classifierJar/FaceProblem.java	/^class ImageBrowsePanel extends JPanel {$/;"	c
+status	4/classifierJar/FaceProblem.java	/^    JLabel status;$/;"	f	class:ImageBrowsePanel
+classField	4/classifierJar/FaceProblem.java	/^    JTextField classField = new JTextField (2);$/;"	f	class:ImageBrowsePanel
+displayPanel	4/classifierJar/FaceProblem.java	/^    ImageDisplayPanel displayPanel;$/;"	f	class:ImageBrowsePanel
+classData	4/classifierJar/FaceProblem.java	/^    ArrayList<Image>[] classData;$/;"	f	class:ImageBrowsePanel
+numClasses	4/classifierJar/FaceProblem.java	/^    int numClasses;$/;"	f	class:ImageBrowsePanel
+currentClass	4/classifierJar/FaceProblem.java	/^    int currentClass = 0;$/;"	f	class:ImageBrowsePanel
+currentSample	4/classifierJar/FaceProblem.java	/^    int currentSample = 0;$/;"	f	class:ImageBrowsePanel
+dirPath	4/classifierJar/FaceProblem.java	/^    String dirPath;$/;"	f	class:ImageBrowsePanel
+ImageBrowsePanel	4/classifierJar/FaceProblem.java	/^    public ImageBrowsePanel (int numClasses, JLabel status, String dirPath)$/;"	m	class:ImageBrowsePanel
+makeControls	4/classifierJar/FaceProblem.java	/^    JPanel makeControls ()$/;"	m	class:ImageBrowsePanel
+load	4/classifierJar/FaceProblem.java	/^    void load ()$/;"	m	class:ImageBrowsePanel
+getFromClassAndSample	4/classifierJar/FaceProblem.java	/^    void getFromClassAndSample (int c, int s)$/;"	m	class:ImageBrowsePanel
+prev	4/classifierJar/FaceProblem.java	/^    void prev ()$/;"	m	class:ImageBrowsePanel
+next	4/classifierJar/FaceProblem.java	/^    void next ()$/;"	m	class:ImageBrowsePanel
+getCurrent	4/classifierJar/FaceProblem.java	/^    Image getCurrent ()$/;"	m	class:ImageBrowsePanel
+prevClass	4/classifierJar/FaceProblem.java	/^    void prevClass ()$/;"	m	class:ImageBrowsePanel
+nextClass	4/classifierJar/FaceProblem.java	/^    void nextClass () $/;"	m	class:ImageBrowsePanel
+getClassNum	4/classifierJar/FaceProblem.java	/^    int getClassNum ()$/;"	m	class:ImageBrowsePanel
+isComplete	4/classifierJar/FaceProblem.java	/^    boolean isComplete ()$/;"	m	class:ImageBrowsePanel
+ImageDisplayPanel	4/classifierJar/FaceProblem.java	/^class ImageDisplayPanel extends JPanel {$/;"	c
+image	4/classifierJar/FaceProblem.java	/^    Image image;$/;"	f	class:ImageDisplayPanel
+paintComponent	4/classifierJar/FaceProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:ImageDisplayPanel
+Function	4/classifierJar/Function.java	/^public class Function {$/;"	c
+name	4/classifierJar/Function.java	/^    String name = "Func";$/;"	f	class:Function
+xLabel	4/classifierJar/Function.java	/^    String xLabel = "x";$/;"	f	class:Function
+points	4/classifierJar/Function.java	/^    Vector<Point2D.Double> points = new Vector<Point2D.Double>();$/;"	f	class:Function
+minX	4/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+maxX	4/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+minY	4/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+maxY	4/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+Function	4/classifierJar/Function.java	/^    public Function (String name)$/;"	m	class:Function
+Function	4/classifierJar/Function.java	/^    public Function (String name, String xLabel)$/;"	m	class:Function
+getName	4/classifierJar/Function.java	/^    public String getName ()$/;"	m	class:Function
+add	4/classifierJar/Function.java	/^    public void add (double x, double y)$/;"	m	class:Function
+get	4/classifierJar/Function.java	/^    public double get (double x)$/;"	m	class:Function
+getNumValues	4/classifierJar/Function.java	/^    public int getNumValues ()$/;"	m	class:Function
+maxX	4/classifierJar/Function.java	/^    public double maxX ()$/;"	m	class:Function
+minX	4/classifierJar/Function.java	/^    public double minX ()$/;"	m	class:Function
+maxY	4/classifierJar/Function.java	/^    public double maxY ()$/;"	m	class:Function
+minY	4/classifierJar/Function.java	/^    public double minY ()$/;"	m	class:Function
+distance	4/classifierJar/Function.java	/^    public double distance (Function F, int numPoints)$/;"	m	class:Function
+toString	4/classifierJar/Function.java	/^    public String toString ()$/;"	m	class:Function
+format	4/classifierJar/Function.java	/^    String format (double x)$/;"	m	class:Function
+show	4/classifierJar/Function.java	/^    public void show ()$/;"	m	class:Function
+show	4/classifierJar/Function.java	/^    public static void show (Function F1, Function F2)$/;"	m	class:Function
+show	4/classifierJar/Function.java	/^    public static void show (Function F1, Function F2, Function F3)$/;"	m	class:Function
+main	4/classifierJar/Function.java	/^    public static void main (String[] argv)$/;"	m	class:Function
+test1	4/classifierJar/Function.java	/^    static void test1 ()$/;"	m	class:Function
+test2	4/classifierJar/Function.java	/^    static void test2 ()$/;"	m	class:Function
+ImagePanel	4/classifierJar/ImageTool.java	/^class ImagePanel extends JPanel {$/;"	c
+image	4/classifierJar/ImageTool.java	/^    Image image;$/;"	f	class:ImagePanel
+paintComponent	4/classifierJar/ImageTool.java	/^    public void paintComponent (Graphics g)$/;"	m	class:ImagePanel
+ImageTool	4/classifierJar/ImageTool.java	/^public class ImageTool extends JFrame {$/;"	c
+locationX	4/classifierJar/ImageTool.java	/^    static int locationX = 0;$/;"	f	class:ImageTool
+locationY	4/classifierJar/ImageTool.java	/^    static int locationY = 0;$/;"	f	class:ImageTool
+showImage	4/classifierJar/ImageTool.java	/^    public void showImage (Image image)$/;"	m	class:ImageTool
+showImage	4/classifierJar/ImageTool.java	/^    public void showImage (Image image, String title)$/;"	m	class:ImageTool
+imageToPixels	4/classifierJar/ImageTool.java	/^    public int[][][] imageToPixels (Image image)$/;"	m	class:ImageTool
+pixelsToImage	4/classifierJar/ImageTool.java	/^    public Image pixelsToImage (int[][][] pixels)$/;"	m	class:ImageTool
+readImageFile	4/classifierJar/ImageTool.java	/^    public Image readImageFile (String fileName)$/;"	m	class:ImageTool
+imageFileToPixels	4/classifierJar/ImageTool.java	/^    public int[][][] imageFileToPixels (String fileName)$/;"	m	class:ImageTool
+toBufferedImage	4/classifierJar/ImageTool.java	/^    public BufferedImage toBufferedImage (Image image)$/;"	m	class:ImageTool
+writeToJPGFile	4/classifierJar/ImageTool.java	/^    public void writeToJPGFile (Image image, String fileName)$/;"	m	class:ImageTool
+writeToJPGFile	4/classifierJar/ImageTool.java	/^    public void writeToJPGFile (int[][][] pixels, String fileName)$/;"	m	class:ImageTool
+main	4/classifierJar/ImageTool.java	/^    public static void main (String[] argv)$/;"	m	class:ImageTool
+LineSegmentd	4/classifierJar/LineSegmentd.java	/^class LineSegmentd {$/;"	c
+x1	4/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+y1	4/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+x2	4/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+y2	4/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+LineSegmentd	4/classifierJar/LineSegmentd.java	/^    public LineSegmentd (double x1, double y1, double x2, double y2)$/;"	m	class:LineSegmentd
+toString	4/classifierJar/LineSegmentd.java	/^    public String toString ()$/;"	m	class:LineSegmentd
+NullClassifier	4/classifierJar/NullClassifier.java	/^public class NullClassifier implements Classifier {$/;"	c
+printAll	4/classifierJar/NullClassifier.java	/^    boolean printAll = true;$/;"	f	class:NullClassifier
+trainingData	4/classifierJar/NullClassifier.java	/^    ArrayList<Vector<Double>>[] trainingData;$/;"	f	class:NullClassifier
+numClasses	4/classifierJar/NullClassifier.java	/^    int numClasses = -1;$/;"	f	class:NullClassifier
+dim	4/classifierJar/NullClassifier.java	/^    int dim = -1;$/;"	f	class:NullClassifier
+component	4/classifierJar/NullClassifier.java	/^    int component = -1;$/;"	f	class:NullClassifier
+train	4/classifierJar/NullClassifier.java	/^    public String train (int numClasses, boolean isFixedDimension, ArrayList<Vector<Double>>[] trainingData)$/;"	m	class:NullClassifier
+classify	4/classifierJar/NullClassifier.java	/^    public int classify (Vector<Double> sample)$/;"	m	class:NullClassifier
+makeFixedDimension	4/classifierJar/NullClassifier.java	/^    public ArrayList<Vector<Double>>[] makeFixedDimension (int numClasses, ArrayList<Vector<Double>>[] data)$/;"	m	class:NullClassifier
+makeFixedDimension	4/classifierJar/NullClassifier.java	/^    Vector<Double> makeFixedDimension (Vector<Double> v)$/;"	m	class:NullClassifier
+clip	4/classifierJar/NullClassifier.java	/^    Vector<Double> clip (Vector<Double> v, int n)$/;"	m	class:NullClassifier
+pad	4/classifierJar/NullClassifier.java	/^    Vector<Double> pad (Vector<Double> v, int n)$/;"	m	class:NullClassifier
+distance	4/classifierJar/NullClassifier.java	/^    double distance (Vector<Double> v1, Vector<Double> v2) $/;"	m	class:NullClassifier
+addUnitX	4/classifierJar/NullClassifier.java	/^    public ArrayList<Vector<Double>>[] addUnitX (int numClasses, ArrayList<Vector<Double>>[] data)$/;"	m	class:NullClassifier
+copy	4/classifierJar/NullClassifier.java	/^    Vector<Double> copy (Vector<Double> v)$/;"	m	class:NullClassifier
+distance	4/classifierJar/NullClassifier.java	/^    double distance (Vector<Double> v1, Vector<Double> v2, int component) $/;"	m	class:NullClassifier
+classDistance	4/classifierJar/NullClassifier.java	/^    double classDistance (int c, Vector<Double> v, int k) $/;"	m	class:NullClassifier
+PlotPoint	4/classifierJar/PlotPoint.java	/^public class PlotPoint {$/;"	c
+x	4/classifierJar/PlotPoint.java	/^    double x,y;$/;"	f	class:PlotPoint
+y	4/classifierJar/PlotPoint.java	/^    double x,y;$/;"	f	class:PlotPoint
+color	4/classifierJar/PlotPoint.java	/^    Color color;$/;"	f	class:PlotPoint
+isTest	4/classifierJar/PlotPoint.java	/^    boolean isTest = false;$/;"	f	class:PlotPoint
+classNum	4/classifierJar/PlotPoint.java	/^    int classNum = -1;$/;"	f	class:PlotPoint
+PlotPoint	4/classifierJar/PlotPoint.java	/^    public PlotPoint (double x, double y, int classNum, boolean isTest)$/;"	m	class:PlotPoint
+setColor	4/classifierJar/PlotPoint.java	/^    void setColor (int c)$/;"	m	class:PlotPoint
+PointFeatures	4/classifierJar/PointFeatures.java	/^public class PointFeatures {$/;"	c
+getInstance	4/classifierJar/PointFeatures.java	/^    public static PointFeatures getInstance ()$/;"	m	class:PointFeatures
+extractSingle	4/classifierJar/PointFeatures.java	/^    public Vector<Double> extractSingle (PlotPoint p)$/;"	m	class:PointFeatures
+extractSet	4/classifierJar/PointFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<PlotPoint>[] points)$/;"	m	class:PointFeatures
+PointProblem	4/classifierJar/PointProblem.java	/^public class PointProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	4/classifierJar/PointProblem.java	/^    static int numClasses = 2;$/;"	f	class:PointProblem
+uniformOverlap	4/classifierJar/PointProblem.java	/^    static double uniformOverlap = 1;$/;"	f	class:PointProblem
+gaussianStdDev	4/classifierJar/PointProblem.java	/^    static double gaussianStdDev = 1;$/;"	f	class:PointProblem
+status	4/classifierJar/PointProblem.java	/^    JLabel status;$/;"	f	class:PointProblem
+models	4/classifierJar/PointProblem.java	/^    String[] models = {"Uniform", "Gaussian", "Split-Uniform", "Split-Gaussian"};$/;"	f	class:PointProblem
+modelBox	4/classifierJar/PointProblem.java	/^    JComboBox modelBox = new JComboBox (models);$/;"	f	class:PointProblem
+pointsField	4/classifierJar/PointProblem.java	/^    JTextField pointsField = new JTextField (5);$/;"	f	class:PointProblem
+xField	4/classifierJar/PointProblem.java	/^    JTextField xField = new JTextField (5);$/;"	f	class:PointProblem
+yField	4/classifierJar/PointProblem.java	/^    JTextField yField = new JTextField (5);$/;"	f	class:PointProblem
+cField	4/classifierJar/PointProblem.java	/^    JTextField cField = new JTextField (2);$/;"	f	class:PointProblem
+inset	4/classifierJar/PointProblem.java	/^    int inset=20;            $/;"	f	class:PointProblem
+df	4/classifierJar/PointProblem.java	/^    DecimalFormat df = new DecimalFormat();$/;"	f	class:PointProblem
+currentX	4/classifierJar/PointProblem.java	/^    double currentX=-1, currentY=-1;$/;"	f	class:PointProblem
+currentY	4/classifierJar/PointProblem.java	/^    double currentX=-1, currentY=-1;$/;"	f	class:PointProblem
+currentClass	4/classifierJar/PointProblem.java	/^    int currentClass = -1;$/;"	f	class:PointProblem
+numPoints	4/classifierJar/PointProblem.java	/^    int numPoints;$/;"	f	class:PointProblem
+points	4/classifierJar/PointProblem.java	/^    ArrayList<PlotPoint>[] points;$/;"	f	class:PointProblem
+currentTestPoint	4/classifierJar/PointProblem.java	/^    PlotPoint currentTestPoint;$/;"	f	class:PointProblem
+features	4/classifierJar/PointProblem.java	/^    PointFeatures features = PointFeatures.getInstance ();$/;"	f	class:PointProblem
+PointProblem	4/classifierJar/PointProblem.java	/^    public PointProblem (JLabel status)$/;"	m	class:PointProblem
+getNumClasses	4/classifierJar/PointProblem.java	/^    public int getNumClasses ()$/;"	m	class:PointProblem
+isFixedDimension	4/classifierJar/PointProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:PointProblem
+getTrainingData	4/classifierJar/PointProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:PointProblem
+getSample	4/classifierJar/PointProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:PointProblem
+generateUniform	4/classifierJar/PointProblem.java	/^    void generateUniform ()$/;"	m	class:PointProblem
+generateSplitUniform	4/classifierJar/PointProblem.java	/^    void generateSplitUniform ()$/;"	m	class:PointProblem
+generateGaussian	4/classifierJar/PointProblem.java	/^    void generateGaussian ()$/;"	m	class:PointProblem
+generateSplitGaussian	4/classifierJar/PointProblem.java	/^    void generateSplitGaussian ()$/;"	m	class:PointProblem
+generateGaussian	4/classifierJar/PointProblem.java	/^    void generateGaussian (int n, int c, double centerX, double centerY, boolean makeNew)$/;"	m	class:PointProblem
+paintComponent	4/classifierJar/PointProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:PointProblem
+getFullPanel	4/classifierJar/PointProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:PointProblem
+makeBottomPanel	4/classifierJar/PointProblem.java	/^    JPanel makeBottomPanel ()$/;"	m	class:PointProblem
+generate	4/classifierJar/PointProblem.java	/^    void generate ()$/;"	m	class:PointProblem
+setNumPoints	4/classifierJar/PointProblem.java	/^    void setNumPoints ()$/;"	m	class:PointProblem
+addToTrainingSet	4/classifierJar/PointProblem.java	/^    void addToTrainingSet ()$/;"	m	class:PointProblem
+getXY	4/classifierJar/PointProblem.java	/^    void getXY ()$/;"	m	class:PointProblem
+setAsTest	4/classifierJar/PointProblem.java	/^    void setAsTest ()$/;"	m	class:PointProblem
+RandTool	4/classifierJar/RandTool.java	/^public class RandTool {$/;"	c
+m	4/classifierJar/RandTool.java	/^    static final long m = 2147483647L;$/;"	f	class:RandTool
+a	4/classifierJar/RandTool.java	/^    static final long a = 48271L;$/;"	f	class:RandTool
+q	4/classifierJar/RandTool.java	/^    static final long q = 44488L;$/;"	f	class:RandTool
+r	4/classifierJar/RandTool.java	/^    static final long r = 3399L;$/;"	f	class:RandTool
+r_seed	4/classifierJar/RandTool.java	/^    static long r_seed = 12345678L; $/;"	f	class:RandTool
+rand	4/classifierJar/RandTool.java	/^    static Random rand = new Random (r_seed);$/;"	f	class:RandTool
+setSeed	4/classifierJar/RandTool.java	/^    public static void setSeed (long seed)$/;"	m	class:RandTool
+uniform	4/classifierJar/RandTool.java	/^    public static double uniform ()$/;"	m	class:RandTool
+uniform	4/classifierJar/RandTool.java	/^    public static double uniform (double a, double b)$/;"	m	class:RandTool
+uniform	4/classifierJar/RandTool.java	/^    public static long uniform (long a, long b)$/;"	m	class:RandTool
+uniform	4/classifierJar/RandTool.java	/^    public static int uniform (int a, int b)$/;"	m	class:RandTool
+exponential	4/classifierJar/RandTool.java	/^    public static double exponential (double lambda)$/;"	m	class:RandTool
+gaussian	4/classifierJar/RandTool.java	/^    public static double gaussian ()$/;"	m	class:RandTool
+gaussian	4/classifierJar/RandTool.java	/^    public static double gaussian (double mean, double stdDeviation)$/;"	m	class:RandTool
+SimplePlotPanel	4/classifierJar/SimplePlotPanel.java	/^public class SimplePlotPanel extends JPanel {$/;"	c
+glueSpace	4/classifierJar/SimplePlotPanel.java	/^  public static int glueSpace = 3;                    \/\/ Generic spacing between lines, text.$/;"	f	class:SimplePlotPanel
+axisLabelFontSize	4/classifierJar/SimplePlotPanel.java	/^  public static int axisLabelFontSize = 10;           \/\/ Font size for axis labels.$/;"	f	class:SimplePlotPanel
+tickFontSize	4/classifierJar/SimplePlotPanel.java	/^  public static int tickFontSize = 8;                 \/\/ Same for tickmark labels.$/;"	f	class:SimplePlotPanel
+legendFontSize	4/classifierJar/SimplePlotPanel.java	/^  public static int legendFontSize = 16;              \/\/ Legend.$/;"	f	class:SimplePlotPanel
+tickSize	4/classifierJar/SimplePlotPanel.java	/^  public static int tickSize = 6;                     \/\/ Length of each tick mark.$/;"	f	class:SimplePlotPanel
+titleFontSize	4/classifierJar/SimplePlotPanel.java	/^  public static int titleFontSize = 12;               \/\/ Length of each tick mark.$/;"	f	class:SimplePlotPanel
+pointBlobRadius	4/classifierJar/SimplePlotPanel.java	/^  public static int pointBlobRadius = 4;              \/\/ Size of circle to mark a point.$/;"	f	class:SimplePlotPanel
+legendFont	4/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+tickFont	4/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+axisLabelFont	4/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+titleFont	4/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+tickFontMetrics	4/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+axisLabelFontMetrics	4/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+legendFontMetrics	4/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+titleFontMetrics	4/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+panelHeight	4/classifierJar/SimplePlotPanel.java	/^  int panelHeight, panelWidth;$/;"	f	class:SimplePlotPanel
+panelWidth	4/classifierJar/SimplePlotPanel.java	/^  int panelHeight, panelWidth;$/;"	f	class:SimplePlotPanel
+bboxLeft	4/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxRight	4/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxTop	4/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxBottom	4/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxHeight	4/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxWidth	4/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+plotBoxTopInset	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxBottomInset	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxLeftInset	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxRightInset	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxHeight	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxWidth	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxLeft	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxRight	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxTop	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxBottom	4/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxHeight	4/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxWidth	4/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxLeft	4/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxRight	4/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxTop	4/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxBottom	4/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+legendBoxHeight	4/classifierJar/SimplePlotPanel.java	/^  int legendBoxHeight, legendBoxWidth;$/;"	f	class:SimplePlotPanel
+legendBoxWidth	4/classifierJar/SimplePlotPanel.java	/^  int legendBoxHeight, legendBoxWidth;$/;"	f	class:SimplePlotPanel
+maxNumCurves	4/classifierJar/SimplePlotPanel.java	/^  int maxNumCurves;                              \/\/ Max allowable curves: for storage.$/;"	f	class:SimplePlotPanel
+numCurves	4/classifierJar/SimplePlotPanel.java	/^  int numCurves;                                 \/\/ Actual number of curves.$/;"	f	class:SimplePlotPanel
+maxNumValues	4/classifierJar/SimplePlotPanel.java	/^  int maxNumValues;$/;"	f	class:SimplePlotPanel
+curves	4/classifierJar/SimplePlotPanel.java	/^  SimplePlotCurve[] curves;                      \/\/ The curves themselves.$/;"	f	class:SimplePlotPanel
+Xmax	4/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Xmin	4/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Xrange	4/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Ymax	4/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+Ymin	4/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+Yrange	4/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+numXTicks	4/classifierJar/SimplePlotPanel.java	/^  int numXTicks, numYTicks;                      \/\/ Number of tick marks.$/;"	f	class:SimplePlotPanel
+numYTicks	4/classifierJar/SimplePlotPanel.java	/^  int numXTicks, numYTicks;                      \/\/ Number of tick marks.$/;"	f	class:SimplePlotPanel
+XTicks	4/classifierJar/SimplePlotPanel.java	/^  double[] XTicks, YTicks;                       \/\/ The actual points for the ticks.$/;"	f	class:SimplePlotPanel
+YTicks	4/classifierJar/SimplePlotPanel.java	/^  double[] XTicks, YTicks;                       \/\/ The actual points for the ticks.$/;"	f	class:SimplePlotPanel
+XTickLabels	4/classifierJar/SimplePlotPanel.java	/^  String[] XTickLabels, YTickLabels;             \/\/ Labels.$/;"	f	class:SimplePlotPanel
+YTickLabels	4/classifierJar/SimplePlotPanel.java	/^  String[] XTickLabels, YTickLabels;             \/\/ Labels.$/;"	f	class:SimplePlotPanel
+XTickWidth	4/classifierJar/SimplePlotPanel.java	/^  int XTickWidth, XTickHeight;                   \/\/ Font heights and widths.$/;"	f	class:SimplePlotPanel
+XTickHeight	4/classifierJar/SimplePlotPanel.java	/^  int XTickWidth, XTickHeight;                   \/\/ Font heights and widths.$/;"	f	class:SimplePlotPanel
+YTickWidth	4/classifierJar/SimplePlotPanel.java	/^  int YTickWidth, YTickHeight;$/;"	f	class:SimplePlotPanel
+YTickHeight	4/classifierJar/SimplePlotPanel.java	/^  int YTickWidth, YTickHeight;$/;"	f	class:SimplePlotPanel
+XaxisLabelString	4/classifierJar/SimplePlotPanel.java	/^  String XaxisLabelString = "", YaxisLabelString = "";     \/\/ Axis labels.$/;"	f	class:SimplePlotPanel
+YaxisLabelString	4/classifierJar/SimplePlotPanel.java	/^  String XaxisLabelString = "", YaxisLabelString = "";     \/\/ Axis labels.$/;"	f	class:SimplePlotPanel
+Xformat	4/classifierJar/SimplePlotPanel.java	/^  DecimalFormat Xformat, Yformat;                \/\/ Format labels\/ticks.$/;"	f	class:SimplePlotPanel
+Yformat	4/classifierJar/SimplePlotPanel.java	/^  DecimalFormat Xformat, Yformat;                \/\/ Format labels\/ticks.$/;"	f	class:SimplePlotPanel
+titleString	4/classifierJar/SimplePlotPanel.java	/^  String titleString = "";                       \/\/ Title to appear center-top.$/;"	f	class:SimplePlotPanel
+colors	4/classifierJar/SimplePlotPanel.java	/^  static Color colors[] = {Color.red, Color.blue, Color.green, Color.magenta};$/;"	f	class:SimplePlotPanel
+SimplePlotPanel	4/classifierJar/SimplePlotPanel.java	/^  public SimplePlotPanel (int maxNumCurves, int maxNumValues)$/;"	m	class:SimplePlotPanel
+frame	4/classifierJar/SimplePlotPanel.java	/^  static JFrame frame;$/;"	f	class:SimplePlotPanel
+makePlotFrame	4/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector points, String name, int frameWidth, int frameHeight)$/;"	m	class:SimplePlotPanel
+makePlotFrame	4/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector points)$/;"	m	class:SimplePlotPanel
+makePlotFrame	4/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector[] pointSets, String[] names, String xLabel, int frameWidth, int frameHeight)$/;"	m	class:SimplePlotPanel
+paintComponent	4/classifierJar/SimplePlotPanel.java	/^  public void paintComponent (Graphics g)$/;"	m	class:SimplePlotPanel
+setBounds	4/classifierJar/SimplePlotPanel.java	/^  private void setBounds ()$/;"	m	class:SimplePlotPanel	file:
+setTitle	4/classifierJar/SimplePlotPanel.java	/^  public void setTitle (String titleString)$/;"	m	class:SimplePlotPanel
+createNewCurve	4/classifierJar/SimplePlotPanel.java	/^  public int createNewCurve (String legendString, Color color)$/;"	m	class:SimplePlotPanel
+setXaxisLabel	4/classifierJar/SimplePlotPanel.java	/^  public void setXaxisLabel (String XaxisLabelString)$/;"	m	class:SimplePlotPanel
+setYaxisLabel	4/classifierJar/SimplePlotPanel.java	/^  public void setYaxisLabel (String YaxisLabelString)$/;"	m	class:SimplePlotPanel
+setNumXTicks	4/classifierJar/SimplePlotPanel.java	/^  public void setNumXTicks (int numXTicks)$/;"	m	class:SimplePlotPanel
+setNumYTicks	4/classifierJar/SimplePlotPanel.java	/^  public void setNumYTicks (int numYTicks)$/;"	m	class:SimplePlotPanel
+setPointRadius	4/classifierJar/SimplePlotPanel.java	/^  public void setPointRadius (int numPixels)$/;"	m	class:SimplePlotPanel
+setXVector	4/classifierJar/SimplePlotPanel.java	/^  public void setXVector (int curveID, double[] X)$/;"	m	class:SimplePlotPanel
+setYVector	4/classifierJar/SimplePlotPanel.java	/^  public void setYVector (int curveID, double[] Y)$/;"	m	class:SimplePlotPanel
+addNewYValue	4/classifierJar/SimplePlotPanel.java	/^  public void addNewYValue (int curveID, double y)$/;"	m	class:SimplePlotPanel
+setXYPoints	4/classifierJar/SimplePlotPanel.java	/^  public void setXYPoints (int curveID, Vector points)$/;"	m	class:SimplePlotPanel
+makePlot	4/classifierJar/SimplePlotPanel.java	/^  public void makePlot (Graphics g, int boundingBoxTopLeftX, int boundingBoxTopLeftY, $/;"	m	class:SimplePlotPanel
+makePlot	4/classifierJar/SimplePlotPanel.java	/^  void makePlot (Graphics g)$/;"	m	class:SimplePlotPanel
+dataXToPixelValue	4/classifierJar/SimplePlotPanel.java	/^  int dataXToPixelValue (double x)$/;"	m	class:SimplePlotPanel
+dataYToPixelValue	4/classifierJar/SimplePlotPanel.java	/^  int dataYToPixelValue (double y)$/;"	m	class:SimplePlotPanel
+computeDrawingConstants	4/classifierJar/SimplePlotPanel.java	/^  void computeDrawingConstants (Graphics g)$/;"	m	class:SimplePlotPanel
+makeTicks	4/classifierJar/SimplePlotPanel.java	/^  void makeTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+drawTicks	4/classifierJar/SimplePlotPanel.java	/^  void drawTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+estimateNumXTicks	4/classifierJar/SimplePlotPanel.java	/^  int estimateNumXTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+makeXTicks	4/classifierJar/SimplePlotPanel.java	/^  void makeXTicks ()$/;"	m	class:SimplePlotPanel
+makeYTicks	4/classifierJar/SimplePlotPanel.java	/^  void makeYTicks ()$/;"	m	class:SimplePlotPanel
+createFormats	4/classifierJar/SimplePlotPanel.java	/^  void createFormats ()$/;"	m	class:SimplePlotPanel
+makeFormat	4/classifierJar/SimplePlotPanel.java	/^  DecimalFormat makeFormat (double low, double high)$/;"	m	class:SimplePlotPanel
+makeDoubleFormatX	4/classifierJar/SimplePlotPanel.java	/^  String makeDoubleFormatX (double x)$/;"	m	class:SimplePlotPanel
+makeDoubleFormatY	4/classifierJar/SimplePlotPanel.java	/^  String makeDoubleFormatY (double y)$/;"	m	class:SimplePlotPanel
+drawXTick	4/classifierJar/SimplePlotPanel.java	/^  void drawXTick (Graphics g, double x, String tickLabel)$/;"	m	class:SimplePlotPanel
+drawYTick	4/classifierJar/SimplePlotPanel.java	/^  void drawYTick (Graphics g, double y, String tickLabel)$/;"	m	class:SimplePlotPanel
+writeLegends	4/classifierJar/SimplePlotPanel.java	/^  void writeLegends (Graphics g)$/;"	m	class:SimplePlotPanel
+plotCurve	4/classifierJar/SimplePlotPanel.java	/^  void plotCurve (Graphics g, SimplePlotCurve curve)$/;"	m	class:SimplePlotPanel
+SimplePlotCurve	4/classifierJar/SimplePlotPanel.java	/^class SimplePlotCurve {$/;"	c
+maxNumValues	4/classifierJar/SimplePlotPanel.java	/^  private int maxNumValues;          \/\/ Maximum number of points.$/;"	f	class:SimplePlotCurve	file:
+numXValues	4/classifierJar/SimplePlotPanel.java	/^  private int numXValues;            \/\/ Actual number of points.$/;"	f	class:SimplePlotCurve	file:
+numCurrentYValues	4/classifierJar/SimplePlotPanel.java	/^  private int numCurrentYValues;     \/\/ Number of Y values added so far.$/;"	f	class:SimplePlotCurve	file:
+legendString	4/classifierJar/SimplePlotPanel.java	/^  String legendString;               \/\/ String to print in legend.$/;"	f	class:SimplePlotCurve
+color	4/classifierJar/SimplePlotPanel.java	/^  Color color;                       \/\/ Preferred color.$/;"	f	class:SimplePlotCurve
+X	4/classifierJar/SimplePlotPanel.java	/^  private double[] X, Y;     \/\/ The points.$/;"	f	class:SimplePlotCurve	file:
+Y	4/classifierJar/SimplePlotPanel.java	/^  private double[] X, Y;     \/\/ The points.$/;"	f	class:SimplePlotCurve	file:
+SimplePlotCurve	4/classifierJar/SimplePlotPanel.java	/^  public SimplePlotCurve (int maxNumValues)$/;"	m	class:SimplePlotCurve
+setXValues	4/classifierJar/SimplePlotPanel.java	/^  public void setXValues (double[] X)$/;"	m	class:SimplePlotCurve
+setYValues	4/classifierJar/SimplePlotPanel.java	/^  public void setYValues (double[] Y)$/;"	m	class:SimplePlotCurve
+addNewYValue	4/classifierJar/SimplePlotPanel.java	/^  public void addNewYValue (double y)$/;"	m	class:SimplePlotCurve
+getNumXValues	4/classifierJar/SimplePlotPanel.java	/^  public int getNumXValues ()$/;"	m	class:SimplePlotCurve
+getNumValues	4/classifierJar/SimplePlotPanel.java	/^  public int getNumValues ()$/;"	m	class:SimplePlotCurve
+getNumYValues	4/classifierJar/SimplePlotPanel.java	/^  public int getNumYValues ()$/;"	m	class:SimplePlotCurve
+getX	4/classifierJar/SimplePlotPanel.java	/^  public double getX (int i)$/;"	m	class:SimplePlotCurve
+getY	4/classifierJar/SimplePlotPanel.java	/^  public double getY (int i)$/;"	m	class:SimplePlotCurve
+CharFeatures	5/classifierJar/CharFeatures.java	/^public class CharFeatures {$/;"	c
+getInstance	5/classifierJar/CharFeatures.java	/^    public static CharFeatures getInstance ()$/;"	m	class:CharFeatures
+extractSingle	5/classifierJar/CharFeatures.java	/^    public Vector<Double> extractSingle (Vector<LineSegmentd> segments)$/;"	m	class:CharFeatures
+extractSet	5/classifierJar/CharFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<Vector<LineSegmentd>>[] classData)$/;"	m	class:CharFeatures
+CharProblem	5/classifierJar/CharProblem.java	/^public class CharProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	5/classifierJar/CharProblem.java	/^    static int numClasses = 2;$/;"	f	class:CharProblem
+dirPath	5/classifierJar/CharProblem.java	/^    static String dirPath = "data\/charProblem1\/training\/";$/;"	f	class:CharProblem
+status	5/classifierJar/CharProblem.java	/^    JLabel status;$/;"	f	class:CharProblem
+leftPanel	5/classifierJar/CharProblem.java	/^    ScribblePanel leftPanel, rightPanel;$/;"	f	class:CharProblem
+rightPanel	5/classifierJar/CharProblem.java	/^    ScribblePanel leftPanel, rightPanel;$/;"	f	class:CharProblem
+features	5/classifierJar/CharProblem.java	/^    CharFeatures features = CharFeatures.getInstance ();$/;"	f	class:CharProblem
+CharProblem	5/classifierJar/CharProblem.java	/^    public CharProblem (JLabel status)$/;"	m	class:CharProblem
+getNumClasses	5/classifierJar/CharProblem.java	/^    public int getNumClasses ()$/;"	m	class:CharProblem
+isFixedDimension	5/classifierJar/CharProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:CharProblem
+getTrainingData	5/classifierJar/CharProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:CharProblem
+getSample	5/classifierJar/CharProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:CharProblem
+paintComponent	5/classifierJar/CharProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:CharProblem
+getFullPanel	5/classifierJar/CharProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:CharProblem
+ScribblePanel	5/classifierJar/CharProblem.java	/^class ScribblePanel extends JPanel {$/;"	c
+numClasses	5/classifierJar/CharProblem.java	/^    int numClasses;$/;"	f	class:ScribblePanel
+currentSample	5/classifierJar/CharProblem.java	/^    int currentSample = 0;$/;"	f	class:ScribblePanel
+currentClass	5/classifierJar/CharProblem.java	/^    int currentClass = 0;$/;"	f	class:ScribblePanel
+status	5/classifierJar/CharProblem.java	/^    JLabel status;$/;"	f	class:ScribblePanel
+isFullPanel	5/classifierJar/CharProblem.java	/^    boolean isFullPanel = false;$/;"	f	class:ScribblePanel
+classField	5/classifierJar/CharProblem.java	/^    JTextField classField = new JTextField (2);$/;"	f	class:ScribblePanel
+drawPanel	5/classifierJar/CharProblem.java	/^    DrawPanel drawPanel;$/;"	f	class:ScribblePanel
+classData	5/classifierJar/CharProblem.java	/^    ArrayList<Vector<LineSegmentd>>[] classData;$/;"	f	class:ScribblePanel
+ScribblePanel	5/classifierJar/CharProblem.java	/^    public ScribblePanel (boolean isFullPanel, int numClasses, JLabel status)$/;"	m	class:ScribblePanel
+makeFullControls	5/classifierJar/CharProblem.java	/^    JPanel makeFullControls ()$/;"	m	class:ScribblePanel
+makeSubControls	5/classifierJar/CharProblem.java	/^    JPanel makeSubControls ()$/;"	m	class:ScribblePanel
+clear	5/classifierJar/CharProblem.java	/^    void clear ()$/;"	m	class:ScribblePanel
+add	5/classifierJar/CharProblem.java	/^    void add ()$/;"	m	class:ScribblePanel
+load	5/classifierJar/CharProblem.java	/^    void load ()$/;"	m	class:ScribblePanel
+readFromFile	5/classifierJar/CharProblem.java	/^    Vector<LineSegmentd> readFromFile (String fileName)$/;"	m	class:ScribblePanel
+save	5/classifierJar/CharProblem.java	/^    void save ()$/;"	m	class:ScribblePanel
+writeToFile	5/classifierJar/CharProblem.java	/^    void writeToFile (String fileName, Vector<LineSegmentd> segments)$/;"	m	class:ScribblePanel
+prev	5/classifierJar/CharProblem.java	/^    void prev ()$/;"	m	class:ScribblePanel
+next	5/classifierJar/CharProblem.java	/^    void next ()$/;"	m	class:ScribblePanel
+getFromClassAndSample	5/classifierJar/CharProblem.java	/^    void getFromClassAndSample (int c, int s)$/;"	m	class:ScribblePanel
+getClassNum	5/classifierJar/CharProblem.java	/^    int getClassNum ()$/;"	m	class:ScribblePanel
+isComplete	5/classifierJar/CharProblem.java	/^    boolean isComplete ()$/;"	m	class:ScribblePanel
+prevClass	5/classifierJar/CharProblem.java	/^    void prevClass ()$/;"	m	class:ScribblePanel
+nextClass	5/classifierJar/CharProblem.java	/^    void nextClass () $/;"	m	class:ScribblePanel
+DrawPanel	5/classifierJar/CharProblem.java	/^class DrawPanel extends JPanel implements MouseInputListener {$/;"	c
+segments	5/classifierJar/CharProblem.java	/^    Vector<LineSegmentd> segments;$/;"	f	class:DrawPanel
+prevX	5/classifierJar/CharProblem.java	/^    double prevX = -1, prevY = -1;$/;"	f	class:DrawPanel
+prevY	5/classifierJar/CharProblem.java	/^    double prevX = -1, prevY = -1;$/;"	f	class:DrawPanel
+startOver	5/classifierJar/CharProblem.java	/^    boolean startOver = true;$/;"	f	class:DrawPanel
+startNewSequence	5/classifierJar/CharProblem.java	/^    boolean startNewSequence = true;$/;"	f	class:DrawPanel
+DrawPanel	5/classifierJar/CharProblem.java	/^    public DrawPanel ()$/;"	m	class:DrawPanel
+clear	5/classifierJar/CharProblem.java	/^    public void clear ()$/;"	m	class:DrawPanel
+paintComponent	5/classifierJar/CharProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:DrawPanel
+mouseClicked	5/classifierJar/CharProblem.java	/^    public void mouseClicked (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseMoved	5/classifierJar/CharProblem.java	/^    public void mouseMoved (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseEntered	5/classifierJar/CharProblem.java	/^    public void mouseEntered (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseExited	5/classifierJar/CharProblem.java	/^    public void mouseExited (MouseEvent e) {}$/;"	m	class:DrawPanel
+mousePressed	5/classifierJar/CharProblem.java	/^    public void mousePressed (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseDragged	5/classifierJar/CharProblem.java	/^    public void mouseDragged (MouseEvent e) $/;"	m	class:DrawPanel
+mouseReleased	5/classifierJar/CharProblem.java	/^    public void mouseReleased (MouseEvent e) $/;"	m	class:DrawPanel
+ClassificationProblem	5/classifierJar/ClassificationProblem.java	/^public interface ClassificationProblem {$/;"	i
+getNumClasses	5/classifierJar/ClassificationProblem.java	/^    public int getNumClasses ();$/;"	m	interface:ClassificationProblem
+isFixedDimension	5/classifierJar/ClassificationProblem.java	/^    public boolean isFixedDimension ();$/;"	m	interface:ClassificationProblem
+getTrainingData	5/classifierJar/ClassificationProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ();$/;"	m	interface:ClassificationProblem
+getSample	5/classifierJar/ClassificationProblem.java	/^    public Vector<Double> getSample ();$/;"	m	interface:ClassificationProblem
+Classifier	5/classifierJar/Classifier.java	/^public interface Classifier {$/;"	i
+train	5/classifierJar/Classifier.java	/^    public String train (int numClasses, boolean isFixedDimension, ArrayList<Vector<Double>>[] trainingData);$/;"	m	interface:Classifier
+classify	5/classifierJar/Classifier.java	/^    public int classify (Vector<Double> sample);$/;"	m	interface:Classifier
+ClassifierGUI	5/classifierJar/ClassifierGUI.java	/^public class ClassifierGUI extends JFrame {$/;"	c
+status	5/classifierJar/ClassifierGUI.java	/^    JLabel status = new JLabel (" ");$/;"	f	class:ClassifierGUI
+tabbedPane	5/classifierJar/ClassifierGUI.java	/^    JTabbedPane tabbedPane;$/;"	f	class:ClassifierGUI
+algField	5/classifierJar/ClassifierGUI.java	/^    JTextField algField = new JTextField (20);$/;"	f	class:ClassifierGUI
+nextB	5/classifierJar/ClassifierGUI.java	/^    JButton nextB = new JButton ("Classify");$/;"	f	class:ClassifierGUI
+pointProblem	5/classifierJar/ClassifierGUI.java	/^    PointProblem pointProblem;$/;"	f	class:ClassifierGUI
+charProblem	5/classifierJar/ClassifierGUI.java	/^    CharProblem charProblem;$/;"	f	class:ClassifierGUI
+faceProblem	5/classifierJar/ClassifierGUI.java	/^    FaceProblem faceProblem;$/;"	f	class:ClassifierGUI
+classifier	5/classifierJar/ClassifierGUI.java	/^    Classifier classifier;$/;"	f	class:ClassifierGUI
+problem	5/classifierJar/ClassifierGUI.java	/^    ClassificationProblem problem;$/;"	f	class:ClassifierGUI
+main	5/classifierJar/ClassifierGUI.java	/^    public static void main (String[] argv)$/;"	m	class:ClassifierGUI
+ClassifierGUI	5/classifierJar/ClassifierGUI.java	/^    public ClassifierGUI () $/;"	m	class:ClassifierGUI
+makeBottomPanel	5/classifierJar/ClassifierGUI.java	/^    JPanel makeBottomPanel ()$/;"	m	class:ClassifierGUI
+tabChange	5/classifierJar/ClassifierGUI.java	/^    void tabChange ()$/;"	m	class:ClassifierGUI
+loadAlgorithm	5/classifierJar/ClassifierGUI.java	/^    void loadAlgorithm ()$/;"	m	class:ClassifierGUI
+train	5/classifierJar/ClassifierGUI.java	/^    void train ()$/;"	m	class:ClassifierGUI
+next	5/classifierJar/ClassifierGUI.java	/^    void next ()$/;"	m	class:ClassifierGUI
+FaceFeatures	5/classifierJar/FaceFeatures.java	/^public class FaceFeatures {$/;"	c
+getInstance	5/classifierJar/FaceFeatures.java	/^		public static FaceFeatures getInstance(){$/;"	m	class:FaceFeatures
+extractSingle	5/classifierJar/FaceFeatures.java	/^		public Vector<Double> extractSingle(Image image){$/;"	m	class:FaceFeatures
+extractSet	5/classifierJar/FaceFeatures.java	/^		public ArrayList<Vector<Double> >[] extractSet(int numClasses, ArrayList<Image>[] classData){$/;"	m	class:FaceFeatures
+toGreyPixels	5/classifierJar/FaceFeatures.java	/^		int[][] toGreyPixels(Image image){$/;"	m	class:FaceFeatures
+toGreyScale	5/classifierJar/FaceFeatures.java	/^		int[][] toGreyScale(int[][][] pixels){$/;"	m	class:FaceFeatures
+FaceFeatures2	5/classifierJar/FaceFeatures.java	/^class FaceFeatures2 extends FaceFeatures {$/;"	c
+numBlocks	5/classifierJar/FaceFeatures.java	/^		int numBlocks = 2;$/;"	f	class:FaceFeatures2
+numBins	5/classifierJar/FaceFeatures.java	/^		int numBins = 10;$/;"	f	class:FaceFeatures2
+extractSingle	5/classifierJar/FaceFeatures.java	/^		public Vector<Double> extractSingle(Image image){$/;"	m	class:FaceFeatures2
+makeHOG	5/classifierJar/FaceFeatures.java	/^		double[] makeHOG(int[][] pixels, int rowStart, int rowEnd, int colStart, int colEnd){$/;"	m	class:FaceFeatures2
+gradientOrientation	5/classifierJar/FaceFeatures.java	/^		double gradientOrientation(int[][] pixels, int row, int col){$/;"	m	class:FaceFeatures2
+FaceProblem	5/classifierJar/FaceProblem.java	/^public class FaceProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	5/classifierJar/FaceProblem.java	/^		static int numClasses = 2;$/;"	f	class:FaceProblem
+trainPath	5/classifierJar/FaceProblem.java	/^		static String trainPath = "data\/faceProblem1\/training\/";$/;"	f	class:FaceProblem
+testPath	5/classifierJar/FaceProblem.java	/^		static String testPath = "data\/faceProblem1\/test\/";$/;"	f	class:FaceProblem
+status	5/classifierJar/FaceProblem.java	/^		JLabel status;$/;"	f	class:FaceProblem
+leftPanel	5/classifierJar/FaceProblem.java	/^		ImageBrowsePanel leftPanel, rightPanel;$/;"	f	class:FaceProblem
+rightPanel	5/classifierJar/FaceProblem.java	/^		ImageBrowsePanel leftPanel, rightPanel;$/;"	f	class:FaceProblem
+features	5/classifierJar/FaceProblem.java	/^		FaceFeatures features = FaceFeatures.getInstance();$/;"	f	class:FaceProblem
+FaceProblem	5/classifierJar/FaceProblem.java	/^		public FaceProblem (JLabel status){$/;"	m	class:FaceProblem
+getNumClasses	5/classifierJar/FaceProblem.java	/^		public int getNumClasses(){$/;"	m	class:FaceProblem
+isFixedDimension	5/classifierJar/FaceProblem.java	/^		public boolean isFixedDimension(){$/;"	m	class:FaceProblem
+getTrainingData	5/classifierJar/FaceProblem.java	/^		public ArrayList<Vector<Double> >[] getTrainingData(){$/;"	m	class:FaceProblem
+getSample	5/classifierJar/FaceProblem.java	/^		public Vector<Double> getSample(){$/;"	m	class:FaceProblem
+getFullPanel	5/classifierJar/FaceProblem.java	/^		public JPanel getFullPanel(){$/;"	m	class:FaceProblem
+ImageBrowsePanel	5/classifierJar/FaceProblem.java	/^class ImageBrowsePanel extends JPanel {$/;"	c
+status	5/classifierJar/FaceProblem.java	/^		JLabel status;$/;"	f	class:ImageBrowsePanel
+classField	5/classifierJar/FaceProblem.java	/^		JTextField classField = new JTextField(2);$/;"	f	class:ImageBrowsePanel
+displayPanel	5/classifierJar/FaceProblem.java	/^		ImageDisplayPanel displayPanel;$/;"	f	class:ImageBrowsePanel
+classData	5/classifierJar/FaceProblem.java	/^		ArrayList<Image>[] classData;$/;"	f	class:ImageBrowsePanel
+numClasses	5/classifierJar/FaceProblem.java	/^		int numClasses;$/;"	f	class:ImageBrowsePanel
+currentClass	5/classifierJar/FaceProblem.java	/^		int currentClass = 0;$/;"	f	class:ImageBrowsePanel
+currentSample	5/classifierJar/FaceProblem.java	/^		int currentSample = 0;$/;"	f	class:ImageBrowsePanel
+dirPath	5/classifierJar/FaceProblem.java	/^		String dirPath;$/;"	f	class:ImageBrowsePanel
+ImageBrowsePanel	5/classifierJar/FaceProblem.java	/^		public ImageBrowsePanel (int numClasses, JLabel status, String dirPath){$/;"	m	class:ImageBrowsePanel
+makeControls	5/classifierJar/FaceProblem.java	/^		JPanel makeControls(){$/;"	m	class:ImageBrowsePanel
+load	5/classifierJar/FaceProblem.java	/^		void load(){$/;"	m	class:ImageBrowsePanel
+getFromClassAndSample	5/classifierJar/FaceProblem.java	/^		void getFromClassAndSample(int c, int s){$/;"	m	class:ImageBrowsePanel
+prev	5/classifierJar/FaceProblem.java	/^		void prev(){$/;"	m	class:ImageBrowsePanel
+next	5/classifierJar/FaceProblem.java	/^		void next(){$/;"	m	class:ImageBrowsePanel
+getCurrent	5/classifierJar/FaceProblem.java	/^		Image getCurrent(){$/;"	m	class:ImageBrowsePanel
+prevClass	5/classifierJar/FaceProblem.java	/^		void prevClass(){$/;"	m	class:ImageBrowsePanel
+nextClass	5/classifierJar/FaceProblem.java	/^		void nextClass(){$/;"	m	class:ImageBrowsePanel
+getClassNum	5/classifierJar/FaceProblem.java	/^		int getClassNum(){$/;"	m	class:ImageBrowsePanel
+isComplete	5/classifierJar/FaceProblem.java	/^		boolean isComplete(){$/;"	m	class:ImageBrowsePanel
+ImageDisplayPanel	5/classifierJar/FaceProblem.java	/^class ImageDisplayPanel extends JPanel {$/;"	c
+image	5/classifierJar/FaceProblem.java	/^		Image image;$/;"	f	class:ImageDisplayPanel
+paintComponent	5/classifierJar/FaceProblem.java	/^		public void paintComponent(Graphics g){$/;"	m	class:ImageDisplayPanel
+Function	5/classifierJar/Function.java	/^public class Function {$/;"	c
+name	5/classifierJar/Function.java	/^    String name = "Func";$/;"	f	class:Function
+xLabel	5/classifierJar/Function.java	/^    String xLabel = "x";$/;"	f	class:Function
+points	5/classifierJar/Function.java	/^    Vector<Point2D.Double> points = new Vector<Point2D.Double>();$/;"	f	class:Function
+minX	5/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+maxX	5/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+minY	5/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+maxY	5/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+Function	5/classifierJar/Function.java	/^    public Function (String name)$/;"	m	class:Function
+Function	5/classifierJar/Function.java	/^    public Function (String name, String xLabel)$/;"	m	class:Function
+getName	5/classifierJar/Function.java	/^    public String getName ()$/;"	m	class:Function
+add	5/classifierJar/Function.java	/^    public void add (double x, double y)$/;"	m	class:Function
+get	5/classifierJar/Function.java	/^    public double get (double x)$/;"	m	class:Function
+getNumValues	5/classifierJar/Function.java	/^    public int getNumValues ()$/;"	m	class:Function
+maxX	5/classifierJar/Function.java	/^    public double maxX ()$/;"	m	class:Function
+minX	5/classifierJar/Function.java	/^    public double minX ()$/;"	m	class:Function
+maxY	5/classifierJar/Function.java	/^    public double maxY ()$/;"	m	class:Function
+minY	5/classifierJar/Function.java	/^    public double minY ()$/;"	m	class:Function
+distance	5/classifierJar/Function.java	/^    public double distance (Function F, int numPoints)$/;"	m	class:Function
+toString	5/classifierJar/Function.java	/^    public String toString ()$/;"	m	class:Function
+format	5/classifierJar/Function.java	/^    String format (double x)$/;"	m	class:Function
+show	5/classifierJar/Function.java	/^    public void show ()$/;"	m	class:Function
+show	5/classifierJar/Function.java	/^    public static void show (Function F1, Function F2)$/;"	m	class:Function
+show	5/classifierJar/Function.java	/^    public static void show (Function F1, Function F2, Function F3)$/;"	m	class:Function
+main	5/classifierJar/Function.java	/^    public static void main (String[] argv)$/;"	m	class:Function
+test1	5/classifierJar/Function.java	/^    static void test1 ()$/;"	m	class:Function
+test2	5/classifierJar/Function.java	/^    static void test2 ()$/;"	m	class:Function
+ImagePanel	5/classifierJar/ImageTool.java	/^class ImagePanel extends JPanel {$/;"	c
+image	5/classifierJar/ImageTool.java	/^    Image image;$/;"	f	class:ImagePanel
+paintComponent	5/classifierJar/ImageTool.java	/^    public void paintComponent (Graphics g)$/;"	m	class:ImagePanel
+ImageTool	5/classifierJar/ImageTool.java	/^public class ImageTool extends JFrame {$/;"	c
+locationX	5/classifierJar/ImageTool.java	/^    static int locationX = 0;$/;"	f	class:ImageTool
+locationY	5/classifierJar/ImageTool.java	/^    static int locationY = 0;$/;"	f	class:ImageTool
+showImage	5/classifierJar/ImageTool.java	/^    public void showImage (Image image)$/;"	m	class:ImageTool
+showImage	5/classifierJar/ImageTool.java	/^    public void showImage (Image image, String title)$/;"	m	class:ImageTool
+imageToPixels	5/classifierJar/ImageTool.java	/^    public int[][][] imageToPixels (Image image)$/;"	m	class:ImageTool
+pixelsToImage	5/classifierJar/ImageTool.java	/^    public Image pixelsToImage (int[][][] pixels)$/;"	m	class:ImageTool
+readImageFile	5/classifierJar/ImageTool.java	/^    public Image readImageFile (String fileName)$/;"	m	class:ImageTool
+imageFileToPixels	5/classifierJar/ImageTool.java	/^    public int[][][] imageFileToPixels (String fileName)$/;"	m	class:ImageTool
+toBufferedImage	5/classifierJar/ImageTool.java	/^    public BufferedImage toBufferedImage (Image image)$/;"	m	class:ImageTool
+writeToJPGFile	5/classifierJar/ImageTool.java	/^    public void writeToJPGFile (Image image, String fileName)$/;"	m	class:ImageTool
+writeToJPGFile	5/classifierJar/ImageTool.java	/^    public void writeToJPGFile (int[][][] pixels, String fileName)$/;"	m	class:ImageTool
+main	5/classifierJar/ImageTool.java	/^    public static void main (String[] argv)$/;"	m	class:ImageTool
+LineSegmentd	5/classifierJar/LineSegmentd.java	/^class LineSegmentd {$/;"	c
+x1	5/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+y1	5/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+x2	5/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+y2	5/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+LineSegmentd	5/classifierJar/LineSegmentd.java	/^    public LineSegmentd (double x1, double y1, double x2, double y2)$/;"	m	class:LineSegmentd
+toString	5/classifierJar/LineSegmentd.java	/^    public String toString ()$/;"	m	class:LineSegmentd
+NullClassifier	5/classifierJar/NullClassifier.java	/^public class NullClassifier implements Classifier {$/;"	c
+printAll	5/classifierJar/NullClassifier.java	/^    boolean printAll = true;$/;"	f	class:NullClassifier
+trainingData	5/classifierJar/NullClassifier.java	/^    ArrayList<Vector<Double>>[] trainingData;$/;"	f	class:NullClassifier
+numClasses	5/classifierJar/NullClassifier.java	/^    int numClasses = -1;$/;"	f	class:NullClassifier
+dim	5/classifierJar/NullClassifier.java	/^    int dim = -1;$/;"	f	class:NullClassifier
+component	5/classifierJar/NullClassifier.java	/^    int component = -1;$/;"	f	class:NullClassifier
+train	5/classifierJar/NullClassifier.java	/^    public String train (int numClasses, boolean isFixedDimension, ArrayList<Vector<Double>>[] trainingData)$/;"	m	class:NullClassifier
+classify	5/classifierJar/NullClassifier.java	/^    public int classify (Vector<Double> sample)$/;"	m	class:NullClassifier
+makeFixedDimension	5/classifierJar/NullClassifier.java	/^    public ArrayList<Vector<Double>>[] makeFixedDimension (int numClasses, ArrayList<Vector<Double>>[] data)$/;"	m	class:NullClassifier
+makeFixedDimension	5/classifierJar/NullClassifier.java	/^    Vector<Double> makeFixedDimension (Vector<Double> v)$/;"	m	class:NullClassifier
+clip	5/classifierJar/NullClassifier.java	/^    Vector<Double> clip (Vector<Double> v, int n)$/;"	m	class:NullClassifier
+pad	5/classifierJar/NullClassifier.java	/^    Vector<Double> pad (Vector<Double> v, int n)$/;"	m	class:NullClassifier
+distance	5/classifierJar/NullClassifier.java	/^    double distance (Vector<Double> v1, Vector<Double> v2) $/;"	m	class:NullClassifier
+addUnitX	5/classifierJar/NullClassifier.java	/^    public ArrayList<Vector<Double>>[] addUnitX (int numClasses, ArrayList<Vector<Double>>[] data)$/;"	m	class:NullClassifier
+copy	5/classifierJar/NullClassifier.java	/^    Vector<Double> copy (Vector<Double> v)$/;"	m	class:NullClassifier
+distance	5/classifierJar/NullClassifier.java	/^    double distance (Vector<Double> v1, Vector<Double> v2, int component) $/;"	m	class:NullClassifier
+classDistance	5/classifierJar/NullClassifier.java	/^    double classDistance (int c, Vector<Double> v, int k) $/;"	m	class:NullClassifier
+PlotPoint	5/classifierJar/PlotPoint.java	/^public class PlotPoint {$/;"	c
+x	5/classifierJar/PlotPoint.java	/^    double x,y;$/;"	f	class:PlotPoint
+y	5/classifierJar/PlotPoint.java	/^    double x,y;$/;"	f	class:PlotPoint
+color	5/classifierJar/PlotPoint.java	/^    Color color;$/;"	f	class:PlotPoint
+isTest	5/classifierJar/PlotPoint.java	/^    boolean isTest = false;$/;"	f	class:PlotPoint
+classNum	5/classifierJar/PlotPoint.java	/^    int classNum = -1;$/;"	f	class:PlotPoint
+PlotPoint	5/classifierJar/PlotPoint.java	/^    public PlotPoint (double x, double y, int classNum, boolean isTest)$/;"	m	class:PlotPoint
+setColor	5/classifierJar/PlotPoint.java	/^    void setColor (int c)$/;"	m	class:PlotPoint
+PointFeatures	5/classifierJar/PointFeatures.java	/^public class PointFeatures {$/;"	c
+getInstance	5/classifierJar/PointFeatures.java	/^    public static PointFeatures getInstance ()$/;"	m	class:PointFeatures
+extractSingle	5/classifierJar/PointFeatures.java	/^    public Vector<Double> extractSingle (PlotPoint p)$/;"	m	class:PointFeatures
+extractSet	5/classifierJar/PointFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<PlotPoint>[] points)$/;"	m	class:PointFeatures
+PointProblem	5/classifierJar/PointProblem.java	/^public class PointProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	5/classifierJar/PointProblem.java	/^    static int numClasses = 2;$/;"	f	class:PointProblem
+uniformOverlap	5/classifierJar/PointProblem.java	/^    static double uniformOverlap = 1;$/;"	f	class:PointProblem
+gaussianStdDev	5/classifierJar/PointProblem.java	/^    static double gaussianStdDev = 1;$/;"	f	class:PointProblem
+status	5/classifierJar/PointProblem.java	/^    JLabel status;$/;"	f	class:PointProblem
+models	5/classifierJar/PointProblem.java	/^    String[] models = {"Uniform", "Gaussian", "Split-Uniform", "Split-Gaussian"};$/;"	f	class:PointProblem
+modelBox	5/classifierJar/PointProblem.java	/^    JComboBox modelBox = new JComboBox (models);$/;"	f	class:PointProblem
+pointsField	5/classifierJar/PointProblem.java	/^    JTextField pointsField = new JTextField (5);$/;"	f	class:PointProblem
+xField	5/classifierJar/PointProblem.java	/^    JTextField xField = new JTextField (5);$/;"	f	class:PointProblem
+yField	5/classifierJar/PointProblem.java	/^    JTextField yField = new JTextField (5);$/;"	f	class:PointProblem
+cField	5/classifierJar/PointProblem.java	/^    JTextField cField = new JTextField (2);$/;"	f	class:PointProblem
+inset	5/classifierJar/PointProblem.java	/^    int inset=20;            $/;"	f	class:PointProblem
+df	5/classifierJar/PointProblem.java	/^    DecimalFormat df = new DecimalFormat();$/;"	f	class:PointProblem
+currentX	5/classifierJar/PointProblem.java	/^    double currentX=-1, currentY=-1;$/;"	f	class:PointProblem
+currentY	5/classifierJar/PointProblem.java	/^    double currentX=-1, currentY=-1;$/;"	f	class:PointProblem
+currentClass	5/classifierJar/PointProblem.java	/^    int currentClass = -1;$/;"	f	class:PointProblem
+numPoints	5/classifierJar/PointProblem.java	/^    int numPoints;$/;"	f	class:PointProblem
+points	5/classifierJar/PointProblem.java	/^    ArrayList<PlotPoint>[] points;$/;"	f	class:PointProblem
+currentTestPoint	5/classifierJar/PointProblem.java	/^    PlotPoint currentTestPoint;$/;"	f	class:PointProblem
+features	5/classifierJar/PointProblem.java	/^    PointFeatures features = PointFeatures.getInstance ();$/;"	f	class:PointProblem
+PointProblem	5/classifierJar/PointProblem.java	/^    public PointProblem (JLabel status)$/;"	m	class:PointProblem
+getNumClasses	5/classifierJar/PointProblem.java	/^    public int getNumClasses ()$/;"	m	class:PointProblem
+isFixedDimension	5/classifierJar/PointProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:PointProblem
+getTrainingData	5/classifierJar/PointProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:PointProblem
+getSample	5/classifierJar/PointProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:PointProblem
+generateUniform	5/classifierJar/PointProblem.java	/^    void generateUniform ()$/;"	m	class:PointProblem
+generateSplitUniform	5/classifierJar/PointProblem.java	/^    void generateSplitUniform ()$/;"	m	class:PointProblem
+generateGaussian	5/classifierJar/PointProblem.java	/^    void generateGaussian ()$/;"	m	class:PointProblem
+generateSplitGaussian	5/classifierJar/PointProblem.java	/^    void generateSplitGaussian ()$/;"	m	class:PointProblem
+generateGaussian	5/classifierJar/PointProblem.java	/^    void generateGaussian (int n, int c, double centerX, double centerY, boolean makeNew)$/;"	m	class:PointProblem
+paintComponent	5/classifierJar/PointProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:PointProblem
+getFullPanel	5/classifierJar/PointProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:PointProblem
+makeBottomPanel	5/classifierJar/PointProblem.java	/^    JPanel makeBottomPanel ()$/;"	m	class:PointProblem
+generate	5/classifierJar/PointProblem.java	/^    void generate ()$/;"	m	class:PointProblem
+setNumPoints	5/classifierJar/PointProblem.java	/^    void setNumPoints ()$/;"	m	class:PointProblem
+addToTrainingSet	5/classifierJar/PointProblem.java	/^    void addToTrainingSet ()$/;"	m	class:PointProblem
+getXY	5/classifierJar/PointProblem.java	/^    void getXY ()$/;"	m	class:PointProblem
+setAsTest	5/classifierJar/PointProblem.java	/^    void setAsTest ()$/;"	m	class:PointProblem
+RandTool	5/classifierJar/RandTool.java	/^public class RandTool {$/;"	c
+m	5/classifierJar/RandTool.java	/^    static final long m = 2147483647L;$/;"	f	class:RandTool
+a	5/classifierJar/RandTool.java	/^    static final long a = 48271L;$/;"	f	class:RandTool
+q	5/classifierJar/RandTool.java	/^    static final long q = 44488L;$/;"	f	class:RandTool
+r	5/classifierJar/RandTool.java	/^    static final long r = 3399L;$/;"	f	class:RandTool
+r_seed	5/classifierJar/RandTool.java	/^    static long r_seed = 12345678L; $/;"	f	class:RandTool
+rand	5/classifierJar/RandTool.java	/^    static Random rand = new Random (r_seed);$/;"	f	class:RandTool
+setSeed	5/classifierJar/RandTool.java	/^    public static void setSeed (long seed)$/;"	m	class:RandTool
+uniform	5/classifierJar/RandTool.java	/^    public static double uniform ()$/;"	m	class:RandTool
+uniform	5/classifierJar/RandTool.java	/^    public static double uniform (double a, double b)$/;"	m	class:RandTool
+uniform	5/classifierJar/RandTool.java	/^    public static long uniform (long a, long b)$/;"	m	class:RandTool
+uniform	5/classifierJar/RandTool.java	/^    public static int uniform (int a, int b)$/;"	m	class:RandTool
+exponential	5/classifierJar/RandTool.java	/^    public static double exponential (double lambda)$/;"	m	class:RandTool
+gaussian	5/classifierJar/RandTool.java	/^    public static double gaussian ()$/;"	m	class:RandTool
+gaussian	5/classifierJar/RandTool.java	/^    public static double gaussian (double mean, double stdDeviation)$/;"	m	class:RandTool
+SimplePlotPanel	5/classifierJar/SimplePlotPanel.java	/^public class SimplePlotPanel extends JPanel {$/;"	c
+glueSpace	5/classifierJar/SimplePlotPanel.java	/^  public static int glueSpace = 3;                    \/\/ Generic spacing between lines, text.$/;"	f	class:SimplePlotPanel
+axisLabelFontSize	5/classifierJar/SimplePlotPanel.java	/^  public static int axisLabelFontSize = 10;           \/\/ Font size for axis labels.$/;"	f	class:SimplePlotPanel
+tickFontSize	5/classifierJar/SimplePlotPanel.java	/^  public static int tickFontSize = 8;                 \/\/ Same for tickmark labels.$/;"	f	class:SimplePlotPanel
+legendFontSize	5/classifierJar/SimplePlotPanel.java	/^  public static int legendFontSize = 16;              \/\/ Legend.$/;"	f	class:SimplePlotPanel
+tickSize	5/classifierJar/SimplePlotPanel.java	/^  public static int tickSize = 6;                     \/\/ Length of each tick mark.$/;"	f	class:SimplePlotPanel
+titleFontSize	5/classifierJar/SimplePlotPanel.java	/^  public static int titleFontSize = 12;               \/\/ Length of each tick mark.$/;"	f	class:SimplePlotPanel
+pointBlobRadius	5/classifierJar/SimplePlotPanel.java	/^  public static int pointBlobRadius = 4;              \/\/ Size of circle to mark a point.$/;"	f	class:SimplePlotPanel
+legendFont	5/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+tickFont	5/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+axisLabelFont	5/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+titleFont	5/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+tickFontMetrics	5/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+axisLabelFontMetrics	5/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+legendFontMetrics	5/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+titleFontMetrics	5/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+panelHeight	5/classifierJar/SimplePlotPanel.java	/^  int panelHeight, panelWidth;$/;"	f	class:SimplePlotPanel
+panelWidth	5/classifierJar/SimplePlotPanel.java	/^  int panelHeight, panelWidth;$/;"	f	class:SimplePlotPanel
+bboxLeft	5/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxRight	5/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxTop	5/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxBottom	5/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxHeight	5/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxWidth	5/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+plotBoxTopInset	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxBottomInset	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxLeftInset	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxRightInset	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxHeight	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxWidth	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxLeft	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxRight	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxTop	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxBottom	5/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxHeight	5/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxWidth	5/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxLeft	5/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxRight	5/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxTop	5/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxBottom	5/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+legendBoxHeight	5/classifierJar/SimplePlotPanel.java	/^  int legendBoxHeight, legendBoxWidth;$/;"	f	class:SimplePlotPanel
+legendBoxWidth	5/classifierJar/SimplePlotPanel.java	/^  int legendBoxHeight, legendBoxWidth;$/;"	f	class:SimplePlotPanel
+maxNumCurves	5/classifierJar/SimplePlotPanel.java	/^  int maxNumCurves;                              \/\/ Max allowable curves: for storage.$/;"	f	class:SimplePlotPanel
+numCurves	5/classifierJar/SimplePlotPanel.java	/^  int numCurves;                                 \/\/ Actual number of curves.$/;"	f	class:SimplePlotPanel
+maxNumValues	5/classifierJar/SimplePlotPanel.java	/^  int maxNumValues;$/;"	f	class:SimplePlotPanel
+curves	5/classifierJar/SimplePlotPanel.java	/^  SimplePlotCurve[] curves;                      \/\/ The curves themselves.$/;"	f	class:SimplePlotPanel
+Xmax	5/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Xmin	5/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Xrange	5/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Ymax	5/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+Ymin	5/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+Yrange	5/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+numXTicks	5/classifierJar/SimplePlotPanel.java	/^  int numXTicks, numYTicks;                      \/\/ Number of tick marks.$/;"	f	class:SimplePlotPanel
+numYTicks	5/classifierJar/SimplePlotPanel.java	/^  int numXTicks, numYTicks;                      \/\/ Number of tick marks.$/;"	f	class:SimplePlotPanel
+XTicks	5/classifierJar/SimplePlotPanel.java	/^  double[] XTicks, YTicks;                       \/\/ The actual points for the ticks.$/;"	f	class:SimplePlotPanel
+YTicks	5/classifierJar/SimplePlotPanel.java	/^  double[] XTicks, YTicks;                       \/\/ The actual points for the ticks.$/;"	f	class:SimplePlotPanel
+XTickLabels	5/classifierJar/SimplePlotPanel.java	/^  String[] XTickLabels, YTickLabels;             \/\/ Labels.$/;"	f	class:SimplePlotPanel
+YTickLabels	5/classifierJar/SimplePlotPanel.java	/^  String[] XTickLabels, YTickLabels;             \/\/ Labels.$/;"	f	class:SimplePlotPanel
+XTickWidth	5/classifierJar/SimplePlotPanel.java	/^  int XTickWidth, XTickHeight;                   \/\/ Font heights and widths.$/;"	f	class:SimplePlotPanel
+XTickHeight	5/classifierJar/SimplePlotPanel.java	/^  int XTickWidth, XTickHeight;                   \/\/ Font heights and widths.$/;"	f	class:SimplePlotPanel
+YTickWidth	5/classifierJar/SimplePlotPanel.java	/^  int YTickWidth, YTickHeight;$/;"	f	class:SimplePlotPanel
+YTickHeight	5/classifierJar/SimplePlotPanel.java	/^  int YTickWidth, YTickHeight;$/;"	f	class:SimplePlotPanel
+XaxisLabelString	5/classifierJar/SimplePlotPanel.java	/^  String XaxisLabelString = "", YaxisLabelString = "";     \/\/ Axis labels.$/;"	f	class:SimplePlotPanel
+YaxisLabelString	5/classifierJar/SimplePlotPanel.java	/^  String XaxisLabelString = "", YaxisLabelString = "";     \/\/ Axis labels.$/;"	f	class:SimplePlotPanel
+Xformat	5/classifierJar/SimplePlotPanel.java	/^  DecimalFormat Xformat, Yformat;                \/\/ Format labels\/ticks.$/;"	f	class:SimplePlotPanel
+Yformat	5/classifierJar/SimplePlotPanel.java	/^  DecimalFormat Xformat, Yformat;                \/\/ Format labels\/ticks.$/;"	f	class:SimplePlotPanel
+titleString	5/classifierJar/SimplePlotPanel.java	/^  String titleString = "";                       \/\/ Title to appear center-top.$/;"	f	class:SimplePlotPanel
+colors	5/classifierJar/SimplePlotPanel.java	/^  static Color colors[] = {Color.red, Color.blue, Color.green, Color.magenta};$/;"	f	class:SimplePlotPanel
+SimplePlotPanel	5/classifierJar/SimplePlotPanel.java	/^  public SimplePlotPanel (int maxNumCurves, int maxNumValues)$/;"	m	class:SimplePlotPanel
+frame	5/classifierJar/SimplePlotPanel.java	/^  static JFrame frame;$/;"	f	class:SimplePlotPanel
+makePlotFrame	5/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector points, String name, int frameWidth, int frameHeight)$/;"	m	class:SimplePlotPanel
+makePlotFrame	5/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector points)$/;"	m	class:SimplePlotPanel
+makePlotFrame	5/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector[] pointSets, String[] names, String xLabel, int frameWidth, int frameHeight)$/;"	m	class:SimplePlotPanel
+paintComponent	5/classifierJar/SimplePlotPanel.java	/^  public void paintComponent (Graphics g)$/;"	m	class:SimplePlotPanel
+setBounds	5/classifierJar/SimplePlotPanel.java	/^  private void setBounds ()$/;"	m	class:SimplePlotPanel	file:
+setTitle	5/classifierJar/SimplePlotPanel.java	/^  public void setTitle (String titleString)$/;"	m	class:SimplePlotPanel
+createNewCurve	5/classifierJar/SimplePlotPanel.java	/^  public int createNewCurve (String legendString, Color color)$/;"	m	class:SimplePlotPanel
+setXaxisLabel	5/classifierJar/SimplePlotPanel.java	/^  public void setXaxisLabel (String XaxisLabelString)$/;"	m	class:SimplePlotPanel
+setYaxisLabel	5/classifierJar/SimplePlotPanel.java	/^  public void setYaxisLabel (String YaxisLabelString)$/;"	m	class:SimplePlotPanel
+setNumXTicks	5/classifierJar/SimplePlotPanel.java	/^  public void setNumXTicks (int numXTicks)$/;"	m	class:SimplePlotPanel
+setNumYTicks	5/classifierJar/SimplePlotPanel.java	/^  public void setNumYTicks (int numYTicks)$/;"	m	class:SimplePlotPanel
+setPointRadius	5/classifierJar/SimplePlotPanel.java	/^  public void setPointRadius (int numPixels)$/;"	m	class:SimplePlotPanel
+setXVector	5/classifierJar/SimplePlotPanel.java	/^  public void setXVector (int curveID, double[] X)$/;"	m	class:SimplePlotPanel
+setYVector	5/classifierJar/SimplePlotPanel.java	/^  public void setYVector (int curveID, double[] Y)$/;"	m	class:SimplePlotPanel
+addNewYValue	5/classifierJar/SimplePlotPanel.java	/^  public void addNewYValue (int curveID, double y)$/;"	m	class:SimplePlotPanel
+setXYPoints	5/classifierJar/SimplePlotPanel.java	/^  public void setXYPoints (int curveID, Vector points)$/;"	m	class:SimplePlotPanel
+makePlot	5/classifierJar/SimplePlotPanel.java	/^  public void makePlot (Graphics g, int boundingBoxTopLeftX, int boundingBoxTopLeftY, $/;"	m	class:SimplePlotPanel
+makePlot	5/classifierJar/SimplePlotPanel.java	/^  void makePlot (Graphics g)$/;"	m	class:SimplePlotPanel
+dataXToPixelValue	5/classifierJar/SimplePlotPanel.java	/^  int dataXToPixelValue (double x)$/;"	m	class:SimplePlotPanel
+dataYToPixelValue	5/classifierJar/SimplePlotPanel.java	/^  int dataYToPixelValue (double y)$/;"	m	class:SimplePlotPanel
+computeDrawingConstants	5/classifierJar/SimplePlotPanel.java	/^  void computeDrawingConstants (Graphics g)$/;"	m	class:SimplePlotPanel
+makeTicks	5/classifierJar/SimplePlotPanel.java	/^  void makeTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+drawTicks	5/classifierJar/SimplePlotPanel.java	/^  void drawTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+estimateNumXTicks	5/classifierJar/SimplePlotPanel.java	/^  int estimateNumXTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+makeXTicks	5/classifierJar/SimplePlotPanel.java	/^  void makeXTicks ()$/;"	m	class:SimplePlotPanel
+makeYTicks	5/classifierJar/SimplePlotPanel.java	/^  void makeYTicks ()$/;"	m	class:SimplePlotPanel
+createFormats	5/classifierJar/SimplePlotPanel.java	/^  void createFormats ()$/;"	m	class:SimplePlotPanel
+makeFormat	5/classifierJar/SimplePlotPanel.java	/^  DecimalFormat makeFormat (double low, double high)$/;"	m	class:SimplePlotPanel
+makeDoubleFormatX	5/classifierJar/SimplePlotPanel.java	/^  String makeDoubleFormatX (double x)$/;"	m	class:SimplePlotPanel
+makeDoubleFormatY	5/classifierJar/SimplePlotPanel.java	/^  String makeDoubleFormatY (double y)$/;"	m	class:SimplePlotPanel
+drawXTick	5/classifierJar/SimplePlotPanel.java	/^  void drawXTick (Graphics g, double x, String tickLabel)$/;"	m	class:SimplePlotPanel
+drawYTick	5/classifierJar/SimplePlotPanel.java	/^  void drawYTick (Graphics g, double y, String tickLabel)$/;"	m	class:SimplePlotPanel
+writeLegends	5/classifierJar/SimplePlotPanel.java	/^  void writeLegends (Graphics g)$/;"	m	class:SimplePlotPanel
+plotCurve	5/classifierJar/SimplePlotPanel.java	/^  void plotCurve (Graphics g, SimplePlotCurve curve)$/;"	m	class:SimplePlotPanel
+SimplePlotCurve	5/classifierJar/SimplePlotPanel.java	/^class SimplePlotCurve {$/;"	c
+maxNumValues	5/classifierJar/SimplePlotPanel.java	/^  private int maxNumValues;          \/\/ Maximum number of points.$/;"	f	class:SimplePlotCurve	file:
+numXValues	5/classifierJar/SimplePlotPanel.java	/^  private int numXValues;            \/\/ Actual number of points.$/;"	f	class:SimplePlotCurve	file:
+numCurrentYValues	5/classifierJar/SimplePlotPanel.java	/^  private int numCurrentYValues;     \/\/ Number of Y values added so far.$/;"	f	class:SimplePlotCurve	file:
+legendString	5/classifierJar/SimplePlotPanel.java	/^  String legendString;               \/\/ String to print in legend.$/;"	f	class:SimplePlotCurve
+color	5/classifierJar/SimplePlotPanel.java	/^  Color color;                       \/\/ Preferred color.$/;"	f	class:SimplePlotCurve
+X	5/classifierJar/SimplePlotPanel.java	/^  private double[] X, Y;     \/\/ The points.$/;"	f	class:SimplePlotCurve	file:
+Y	5/classifierJar/SimplePlotPanel.java	/^  private double[] X, Y;     \/\/ The points.$/;"	f	class:SimplePlotCurve	file:
+SimplePlotCurve	5/classifierJar/SimplePlotPanel.java	/^  public SimplePlotCurve (int maxNumValues)$/;"	m	class:SimplePlotCurve
+setXValues	5/classifierJar/SimplePlotPanel.java	/^  public void setXValues (double[] X)$/;"	m	class:SimplePlotCurve
+setYValues	5/classifierJar/SimplePlotPanel.java	/^  public void setYValues (double[] Y)$/;"	m	class:SimplePlotCurve
+addNewYValue	5/classifierJar/SimplePlotPanel.java	/^  public void addNewYValue (double y)$/;"	m	class:SimplePlotCurve
+getNumXValues	5/classifierJar/SimplePlotPanel.java	/^  public int getNumXValues ()$/;"	m	class:SimplePlotCurve
+getNumValues	5/classifierJar/SimplePlotPanel.java	/^  public int getNumValues ()$/;"	m	class:SimplePlotCurve
+getNumYValues	5/classifierJar/SimplePlotPanel.java	/^  public int getNumYValues ()$/;"	m	class:SimplePlotCurve
+getX	5/classifierJar/SimplePlotPanel.java	/^  public double getX (int i)$/;"	m	class:SimplePlotCurve
+getY	5/classifierJar/SimplePlotPanel.java	/^  public double getY (int i)$/;"	m	class:SimplePlotCurve
+CharFeatures	8/classifierJar/CharFeatures.java	/^public class CharFeatures {$/;"	c
+getInstance	8/classifierJar/CharFeatures.java	/^    public static CharFeatures getInstance ()$/;"	m	class:CharFeatures
+extractSingle	8/classifierJar/CharFeatures.java	/^    public Vector<Double> extractSingle (Vector<LineSegmentd> segments)$/;"	m	class:CharFeatures
+extractSet	8/classifierJar/CharFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<Vector<LineSegmentd>>[] classData)$/;"	m	class:CharFeatures
+CharProblem	8/classifierJar/CharProblem.java	/^public class CharProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	8/classifierJar/CharProblem.java	/^    static int numClasses = 2;$/;"	f	class:CharProblem
+dirPath	8/classifierJar/CharProblem.java	/^    static String dirPath = "data\/charProblem1\/training\/";$/;"	f	class:CharProblem
+status	8/classifierJar/CharProblem.java	/^    JLabel status;$/;"	f	class:CharProblem
+leftPanel	8/classifierJar/CharProblem.java	/^    ScribblePanel leftPanel, rightPanel;$/;"	f	class:CharProblem
+rightPanel	8/classifierJar/CharProblem.java	/^    ScribblePanel leftPanel, rightPanel;$/;"	f	class:CharProblem
+features	8/classifierJar/CharProblem.java	/^    CharFeatures features = CharFeatures.getInstance ();$/;"	f	class:CharProblem
+CharProblem	8/classifierJar/CharProblem.java	/^    public CharProblem (JLabel status)$/;"	m	class:CharProblem
+getNumClasses	8/classifierJar/CharProblem.java	/^    public int getNumClasses ()$/;"	m	class:CharProblem
+isFixedDimension	8/classifierJar/CharProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:CharProblem
+getTrainingData	8/classifierJar/CharProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:CharProblem
+getSample	8/classifierJar/CharProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:CharProblem
+paintComponent	8/classifierJar/CharProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:CharProblem
+getFullPanel	8/classifierJar/CharProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:CharProblem
+ScribblePanel	8/classifierJar/CharProblem.java	/^class ScribblePanel extends JPanel {$/;"	c
+numClasses	8/classifierJar/CharProblem.java	/^    int numClasses;$/;"	f	class:ScribblePanel
+currentSample	8/classifierJar/CharProblem.java	/^    int currentSample = 0;$/;"	f	class:ScribblePanel
+currentClass	8/classifierJar/CharProblem.java	/^    int currentClass = 0;$/;"	f	class:ScribblePanel
+status	8/classifierJar/CharProblem.java	/^    JLabel status;$/;"	f	class:ScribblePanel
+isFullPanel	8/classifierJar/CharProblem.java	/^    boolean isFullPanel = false;$/;"	f	class:ScribblePanel
+classField	8/classifierJar/CharProblem.java	/^    JTextField classField = new JTextField (2);$/;"	f	class:ScribblePanel
+drawPanel	8/classifierJar/CharProblem.java	/^    DrawPanel drawPanel;$/;"	f	class:ScribblePanel
+classData	8/classifierJar/CharProblem.java	/^    ArrayList<Vector<LineSegmentd>>[] classData;$/;"	f	class:ScribblePanel
+ScribblePanel	8/classifierJar/CharProblem.java	/^    public ScribblePanel (boolean isFullPanel, int numClasses, JLabel status)$/;"	m	class:ScribblePanel
+makeFullControls	8/classifierJar/CharProblem.java	/^    JPanel makeFullControls ()$/;"	m	class:ScribblePanel
+makeSubControls	8/classifierJar/CharProblem.java	/^    JPanel makeSubControls ()$/;"	m	class:ScribblePanel
+clear	8/classifierJar/CharProblem.java	/^    void clear ()$/;"	m	class:ScribblePanel
+add	8/classifierJar/CharProblem.java	/^    void add ()$/;"	m	class:ScribblePanel
+load	8/classifierJar/CharProblem.java	/^    void load ()$/;"	m	class:ScribblePanel
+readFromFile	8/classifierJar/CharProblem.java	/^    Vector<LineSegmentd> readFromFile (String fileName)$/;"	m	class:ScribblePanel
+save	8/classifierJar/CharProblem.java	/^    void save ()$/;"	m	class:ScribblePanel
+writeToFile	8/classifierJar/CharProblem.java	/^    void writeToFile (String fileName, Vector<LineSegmentd> segments)$/;"	m	class:ScribblePanel
+prev	8/classifierJar/CharProblem.java	/^    void prev ()$/;"	m	class:ScribblePanel
+next	8/classifierJar/CharProblem.java	/^    void next ()$/;"	m	class:ScribblePanel
+getFromClassAndSample	8/classifierJar/CharProblem.java	/^    void getFromClassAndSample (int c, int s)$/;"	m	class:ScribblePanel
+getClassNum	8/classifierJar/CharProblem.java	/^    int getClassNum ()$/;"	m	class:ScribblePanel
+isComplete	8/classifierJar/CharProblem.java	/^    boolean isComplete ()$/;"	m	class:ScribblePanel
+prevClass	8/classifierJar/CharProblem.java	/^    void prevClass ()$/;"	m	class:ScribblePanel
+nextClass	8/classifierJar/CharProblem.java	/^    void nextClass () $/;"	m	class:ScribblePanel
+DrawPanel	8/classifierJar/CharProblem.java	/^class DrawPanel extends JPanel implements MouseInputListener {$/;"	c
+segments	8/classifierJar/CharProblem.java	/^    Vector<LineSegmentd> segments;$/;"	f	class:DrawPanel
+prevX	8/classifierJar/CharProblem.java	/^    double prevX = -1, prevY = -1;$/;"	f	class:DrawPanel
+prevY	8/classifierJar/CharProblem.java	/^    double prevX = -1, prevY = -1;$/;"	f	class:DrawPanel
+startOver	8/classifierJar/CharProblem.java	/^    boolean startOver = true;$/;"	f	class:DrawPanel
+startNewSequence	8/classifierJar/CharProblem.java	/^    boolean startNewSequence = true;$/;"	f	class:DrawPanel
+DrawPanel	8/classifierJar/CharProblem.java	/^    public DrawPanel ()$/;"	m	class:DrawPanel
+clear	8/classifierJar/CharProblem.java	/^    public void clear ()$/;"	m	class:DrawPanel
+paintComponent	8/classifierJar/CharProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:DrawPanel
+mouseClicked	8/classifierJar/CharProblem.java	/^    public void mouseClicked (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseMoved	8/classifierJar/CharProblem.java	/^    public void mouseMoved (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseEntered	8/classifierJar/CharProblem.java	/^    public void mouseEntered (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseExited	8/classifierJar/CharProblem.java	/^    public void mouseExited (MouseEvent e) {}$/;"	m	class:DrawPanel
+mousePressed	8/classifierJar/CharProblem.java	/^    public void mousePressed (MouseEvent e) {}$/;"	m	class:DrawPanel
+mouseDragged	8/classifierJar/CharProblem.java	/^    public void mouseDragged (MouseEvent e) $/;"	m	class:DrawPanel
+mouseReleased	8/classifierJar/CharProblem.java	/^    public void mouseReleased (MouseEvent e) $/;"	m	class:DrawPanel
+ClassificationProblem	8/classifierJar/ClassificationProblem.java	/^public interface ClassificationProblem {$/;"	i
+getNumClasses	8/classifierJar/ClassificationProblem.java	/^    public int getNumClasses ();$/;"	m	interface:ClassificationProblem
+isFixedDimension	8/classifierJar/ClassificationProblem.java	/^    public boolean isFixedDimension ();$/;"	m	interface:ClassificationProblem
+getTrainingData	8/classifierJar/ClassificationProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ();$/;"	m	interface:ClassificationProblem
+getSample	8/classifierJar/ClassificationProblem.java	/^    public Vector<Double> getSample ();$/;"	m	interface:ClassificationProblem
+Classifier	8/classifierJar/Classifier.java	/^public interface Classifier {$/;"	i
+train	8/classifierJar/Classifier.java	/^    public String train (int numClasses, boolean isFixedDimension, ArrayList<Vector<Double>>[] trainingData);$/;"	m	interface:Classifier
+classify	8/classifierJar/Classifier.java	/^    public int classify (Vector<Double> sample);$/;"	m	interface:Classifier
+ClassifierGUI	8/classifierJar/ClassifierGUI.java	/^public class ClassifierGUI extends JFrame {$/;"	c
+status	8/classifierJar/ClassifierGUI.java	/^    JLabel status = new JLabel (" ");$/;"	f	class:ClassifierGUI
+tabbedPane	8/classifierJar/ClassifierGUI.java	/^    JTabbedPane tabbedPane;$/;"	f	class:ClassifierGUI
+algField	8/classifierJar/ClassifierGUI.java	/^    JTextField algField = new JTextField (20);$/;"	f	class:ClassifierGUI
+nextB	8/classifierJar/ClassifierGUI.java	/^    JButton nextB = new JButton ("Classify");$/;"	f	class:ClassifierGUI
+pointProblem	8/classifierJar/ClassifierGUI.java	/^    PointProblem pointProblem;$/;"	f	class:ClassifierGUI
+charProblem	8/classifierJar/ClassifierGUI.java	/^    CharProblem charProblem;$/;"	f	class:ClassifierGUI
+faceProblem	8/classifierJar/ClassifierGUI.java	/^    FaceProblem faceProblem;$/;"	f	class:ClassifierGUI
+classifier	8/classifierJar/ClassifierGUI.java	/^    Classifier classifier;$/;"	f	class:ClassifierGUI
+problem	8/classifierJar/ClassifierGUI.java	/^    ClassificationProblem problem;$/;"	f	class:ClassifierGUI
+main	8/classifierJar/ClassifierGUI.java	/^    public static void main (String[] argv)$/;"	m	class:ClassifierGUI
+ClassifierGUI	8/classifierJar/ClassifierGUI.java	/^    public ClassifierGUI () $/;"	m	class:ClassifierGUI
+makeBottomPanel	8/classifierJar/ClassifierGUI.java	/^    JPanel makeBottomPanel ()$/;"	m	class:ClassifierGUI
+tabChange	8/classifierJar/ClassifierGUI.java	/^    void tabChange ()$/;"	m	class:ClassifierGUI
+loadAlgorithm	8/classifierJar/ClassifierGUI.java	/^    void loadAlgorithm ()$/;"	m	class:ClassifierGUI
+train	8/classifierJar/ClassifierGUI.java	/^    void train ()$/;"	m	class:ClassifierGUI
+next	8/classifierJar/ClassifierGUI.java	/^    void next ()$/;"	m	class:ClassifierGUI
+FaceFeatures	8/classifierJar/FaceFeatures.java	/^public class FaceFeatures {$/;"	c
+getInstance	8/classifierJar/FaceFeatures.java	/^    public static FaceFeatures getInstance ()$/;"	m	class:FaceFeatures
+extractSingle	8/classifierJar/FaceFeatures.java	/^    public Vector<Double> extractSingle (Image image)$/;"	m	class:FaceFeatures
+extractSet	8/classifierJar/FaceFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<Image>[] classData)$/;"	m	class:FaceFeatures
+toGreyPixels	8/classifierJar/FaceFeatures.java	/^    int[][] toGreyPixels (Image image)$/;"	m	class:FaceFeatures
+toGreyScale	8/classifierJar/FaceFeatures.java	/^    int[][] toGreyScale (int[][][] pixels)$/;"	m	class:FaceFeatures
+FaceFeatures2	8/classifierJar/FaceFeatures.java	/^class FaceFeatures2 extends FaceFeatures {$/;"	c
+numBlocks	8/classifierJar/FaceFeatures.java	/^    int numBlocks = 2;$/;"	f	class:FaceFeatures2
+numBins	8/classifierJar/FaceFeatures.java	/^    int numBins = 10;$/;"	f	class:FaceFeatures2
+extractSingle	8/classifierJar/FaceFeatures.java	/^    public Vector<Double> extractSingle (Image image)$/;"	m	class:FaceFeatures2
+makeHOG	8/classifierJar/FaceFeatures.java	/^    double[] makeHOG (int[][] pixels, int rowStart, int rowEnd, int colStart, int colEnd)$/;"	m	class:FaceFeatures2
+gradientOrientation	8/classifierJar/FaceFeatures.java	/^    double gradientOrientation (int[][] pixels, int row, int col)$/;"	m	class:FaceFeatures2
+FaceProblem	8/classifierJar/FaceProblem.java	/^public class FaceProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	8/classifierJar/FaceProblem.java	/^    static int numClasses = 2;$/;"	f	class:FaceProblem
+trainPath	8/classifierJar/FaceProblem.java	/^    static String trainPath = "data\/faceProblem1\/training\/";$/;"	f	class:FaceProblem
+testPath	8/classifierJar/FaceProblem.java	/^    static String testPath = "data\/faceProblem1\/test\/";$/;"	f	class:FaceProblem
+status	8/classifierJar/FaceProblem.java	/^    JLabel status;$/;"	f	class:FaceProblem
+leftPanel	8/classifierJar/FaceProblem.java	/^    ImageBrowsePanel leftPanel, rightPanel;$/;"	f	class:FaceProblem
+rightPanel	8/classifierJar/FaceProblem.java	/^    ImageBrowsePanel leftPanel, rightPanel;$/;"	f	class:FaceProblem
+features	8/classifierJar/FaceProblem.java	/^    FaceFeatures features = FaceFeatures.getInstance ();$/;"	f	class:FaceProblem
+FaceProblem	8/classifierJar/FaceProblem.java	/^    public FaceProblem (JLabel status)$/;"	m	class:FaceProblem
+getNumClasses	8/classifierJar/FaceProblem.java	/^    public int getNumClasses ()$/;"	m	class:FaceProblem
+isFixedDimension	8/classifierJar/FaceProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:FaceProblem
+getTrainingData	8/classifierJar/FaceProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:FaceProblem
+getSample	8/classifierJar/FaceProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:FaceProblem
+getFullPanel	8/classifierJar/FaceProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:FaceProblem
+ImageBrowsePanel	8/classifierJar/FaceProblem.java	/^class ImageBrowsePanel extends JPanel {$/;"	c
+status	8/classifierJar/FaceProblem.java	/^    JLabel status;$/;"	f	class:ImageBrowsePanel
+classField	8/classifierJar/FaceProblem.java	/^    JTextField classField = new JTextField (2);$/;"	f	class:ImageBrowsePanel
+displayPanel	8/classifierJar/FaceProblem.java	/^    ImageDisplayPanel displayPanel;$/;"	f	class:ImageBrowsePanel
+classData	8/classifierJar/FaceProblem.java	/^    ArrayList<Image>[] classData;$/;"	f	class:ImageBrowsePanel
+numClasses	8/classifierJar/FaceProblem.java	/^    int numClasses;$/;"	f	class:ImageBrowsePanel
+currentClass	8/classifierJar/FaceProblem.java	/^    int currentClass = 0;$/;"	f	class:ImageBrowsePanel
+currentSample	8/classifierJar/FaceProblem.java	/^    int currentSample = 0;$/;"	f	class:ImageBrowsePanel
+dirPath	8/classifierJar/FaceProblem.java	/^    String dirPath;$/;"	f	class:ImageBrowsePanel
+ImageBrowsePanel	8/classifierJar/FaceProblem.java	/^    public ImageBrowsePanel (int numClasses, JLabel status, String dirPath)$/;"	m	class:ImageBrowsePanel
+makeControls	8/classifierJar/FaceProblem.java	/^    JPanel makeControls ()$/;"	m	class:ImageBrowsePanel
+load	8/classifierJar/FaceProblem.java	/^    void load ()$/;"	m	class:ImageBrowsePanel
+getFromClassAndSample	8/classifierJar/FaceProblem.java	/^    void getFromClassAndSample (int c, int s)$/;"	m	class:ImageBrowsePanel
+prev	8/classifierJar/FaceProblem.java	/^    void prev ()$/;"	m	class:ImageBrowsePanel
+next	8/classifierJar/FaceProblem.java	/^    void next ()$/;"	m	class:ImageBrowsePanel
+getCurrent	8/classifierJar/FaceProblem.java	/^    Image getCurrent ()$/;"	m	class:ImageBrowsePanel
+prevClass	8/classifierJar/FaceProblem.java	/^    void prevClass ()$/;"	m	class:ImageBrowsePanel
+nextClass	8/classifierJar/FaceProblem.java	/^    void nextClass () $/;"	m	class:ImageBrowsePanel
+getClassNum	8/classifierJar/FaceProblem.java	/^    int getClassNum ()$/;"	m	class:ImageBrowsePanel
+isComplete	8/classifierJar/FaceProblem.java	/^    boolean isComplete ()$/;"	m	class:ImageBrowsePanel
+ImageDisplayPanel	8/classifierJar/FaceProblem.java	/^class ImageDisplayPanel extends JPanel {$/;"	c
+image	8/classifierJar/FaceProblem.java	/^    Image image;$/;"	f	class:ImageDisplayPanel
+paintComponent	8/classifierJar/FaceProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:ImageDisplayPanel
+Function	8/classifierJar/Function.java	/^public class Function {$/;"	c
+name	8/classifierJar/Function.java	/^    String name = "Func";$/;"	f	class:Function
+xLabel	8/classifierJar/Function.java	/^    String xLabel = "x";$/;"	f	class:Function
+points	8/classifierJar/Function.java	/^    Vector<Point2D.Double> points = new Vector<Point2D.Double>();$/;"	f	class:Function
+minX	8/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+maxX	8/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+minY	8/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+maxY	8/classifierJar/Function.java	/^    double minX, maxX, minY, maxY;$/;"	f	class:Function
+Function	8/classifierJar/Function.java	/^    public Function (String name)$/;"	m	class:Function
+Function	8/classifierJar/Function.java	/^    public Function (String name, String xLabel)$/;"	m	class:Function
+getName	8/classifierJar/Function.java	/^    public String getName ()$/;"	m	class:Function
+add	8/classifierJar/Function.java	/^    public void add (double x, double y)$/;"	m	class:Function
+get	8/classifierJar/Function.java	/^    public double get (double x)$/;"	m	class:Function
+getNumValues	8/classifierJar/Function.java	/^    public int getNumValues ()$/;"	m	class:Function
+maxX	8/classifierJar/Function.java	/^    public double maxX ()$/;"	m	class:Function
+minX	8/classifierJar/Function.java	/^    public double minX ()$/;"	m	class:Function
+maxY	8/classifierJar/Function.java	/^    public double maxY ()$/;"	m	class:Function
+minY	8/classifierJar/Function.java	/^    public double minY ()$/;"	m	class:Function
+distance	8/classifierJar/Function.java	/^    public double distance (Function F, int numPoints)$/;"	m	class:Function
+toString	8/classifierJar/Function.java	/^    public String toString ()$/;"	m	class:Function
+format	8/classifierJar/Function.java	/^    String format (double x)$/;"	m	class:Function
+show	8/classifierJar/Function.java	/^    public void show ()$/;"	m	class:Function
+show	8/classifierJar/Function.java	/^    public static void show (Function F1, Function F2)$/;"	m	class:Function
+show	8/classifierJar/Function.java	/^    public static void show (Function F1, Function F2, Function F3)$/;"	m	class:Function
+main	8/classifierJar/Function.java	/^    public static void main (String[] argv)$/;"	m	class:Function
+test1	8/classifierJar/Function.java	/^    static void test1 ()$/;"	m	class:Function
+test2	8/classifierJar/Function.java	/^    static void test2 ()$/;"	m	class:Function
+ImagePanel	8/classifierJar/ImageTool.java	/^class ImagePanel extends JPanel {$/;"	c
+image	8/classifierJar/ImageTool.java	/^    Image image;$/;"	f	class:ImagePanel
+paintComponent	8/classifierJar/ImageTool.java	/^    public void paintComponent (Graphics g)$/;"	m	class:ImagePanel
+ImageTool	8/classifierJar/ImageTool.java	/^public class ImageTool extends JFrame {$/;"	c
+locationX	8/classifierJar/ImageTool.java	/^    static int locationX = 0;$/;"	f	class:ImageTool
+locationY	8/classifierJar/ImageTool.java	/^    static int locationY = 0;$/;"	f	class:ImageTool
+showImage	8/classifierJar/ImageTool.java	/^    public void showImage (Image image)$/;"	m	class:ImageTool
+showImage	8/classifierJar/ImageTool.java	/^    public void showImage (Image image, String title)$/;"	m	class:ImageTool
+imageToPixels	8/classifierJar/ImageTool.java	/^    public int[][][] imageToPixels (Image image)$/;"	m	class:ImageTool
+pixelsToImage	8/classifierJar/ImageTool.java	/^    public Image pixelsToImage (int[][][] pixels)$/;"	m	class:ImageTool
+readImageFile	8/classifierJar/ImageTool.java	/^    public Image readImageFile (String fileName)$/;"	m	class:ImageTool
+imageFileToPixels	8/classifierJar/ImageTool.java	/^    public int[][][] imageFileToPixels (String fileName)$/;"	m	class:ImageTool
+toBufferedImage	8/classifierJar/ImageTool.java	/^    public BufferedImage toBufferedImage (Image image)$/;"	m	class:ImageTool
+writeToJPGFile	8/classifierJar/ImageTool.java	/^    public void writeToJPGFile (Image image, String fileName)$/;"	m	class:ImageTool
+writeToJPGFile	8/classifierJar/ImageTool.java	/^    public void writeToJPGFile (int[][][] pixels, String fileName)$/;"	m	class:ImageTool
+main	8/classifierJar/ImageTool.java	/^    public static void main (String[] argv)$/;"	m	class:ImageTool
+LineSegmentd	8/classifierJar/LineSegmentd.java	/^class LineSegmentd {$/;"	c
+x1	8/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+y1	8/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+x2	8/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+y2	8/classifierJar/LineSegmentd.java	/^    double x1,y1, x2,y2;$/;"	f	class:LineSegmentd
+LineSegmentd	8/classifierJar/LineSegmentd.java	/^    public LineSegmentd (double x1, double y1, double x2, double y2)$/;"	m	class:LineSegmentd
+toString	8/classifierJar/LineSegmentd.java	/^    public String toString ()$/;"	m	class:LineSegmentd
+NearestNeighbor	8/classifierJar/NearestNeighbor.java	/^public class NearestNeighbor extends NullClassifier {$/;"	c
+trainingData	8/classifierJar/NearestNeighbor.java	/^		ArrayList<Vector<Double> >[] trainingData;$/;"	f	class:NearestNeighbor
+train	8/classifierJar/NearestNeighbor.java	/^		public String train(int numClasses, boolean isFixedDimension, ArrayList<Vector<Double> >[] trainingData){$/;"	m	class:NearestNeighbor
+classify	8/classifierJar/NearestNeighbor.java	/^		public int classify(Vector<Double> V){$/;"	m	class:NearestNeighbor
+NullClassifier	8/classifierJar/NullClassifier.java	/^public class NullClassifier implements Classifier {$/;"	c
+printAll	8/classifierJar/NullClassifier.java	/^    boolean printAll = true;$/;"	f	class:NullClassifier
+trainingData	8/classifierJar/NullClassifier.java	/^    ArrayList<Vector<Double>>[] trainingData;$/;"	f	class:NullClassifier
+numClasses	8/classifierJar/NullClassifier.java	/^    int numClasses = -1;$/;"	f	class:NullClassifier
+dim	8/classifierJar/NullClassifier.java	/^    int dim = -1;$/;"	f	class:NullClassifier
+component	8/classifierJar/NullClassifier.java	/^    int component = -1;$/;"	f	class:NullClassifier
+train	8/classifierJar/NullClassifier.java	/^    public String train (int numClasses, boolean isFixedDimension, ArrayList<Vector<Double>>[] trainingData)$/;"	m	class:NullClassifier
+classify	8/classifierJar/NullClassifier.java	/^    public int classify (Vector<Double> sample)$/;"	m	class:NullClassifier
+makeFixedDimension	8/classifierJar/NullClassifier.java	/^    public ArrayList<Vector<Double>>[] makeFixedDimension (int numClasses, ArrayList<Vector<Double>>[] data)$/;"	m	class:NullClassifier
+makeFixedDimension	8/classifierJar/NullClassifier.java	/^    Vector<Double> makeFixedDimension (Vector<Double> v)$/;"	m	class:NullClassifier
+clip	8/classifierJar/NullClassifier.java	/^    Vector<Double> clip (Vector<Double> v, int n)$/;"	m	class:NullClassifier
+pad	8/classifierJar/NullClassifier.java	/^    Vector<Double> pad (Vector<Double> v, int n)$/;"	m	class:NullClassifier
+distance	8/classifierJar/NullClassifier.java	/^    double distance (Vector<Double> v1, Vector<Double> v2) $/;"	m	class:NullClassifier
+addUnitX	8/classifierJar/NullClassifier.java	/^    public ArrayList<Vector<Double>>[] addUnitX (int numClasses, ArrayList<Vector<Double>>[] data)$/;"	m	class:NullClassifier
+copy	8/classifierJar/NullClassifier.java	/^    Vector<Double> copy (Vector<Double> v)$/;"	m	class:NullClassifier
+distance	8/classifierJar/NullClassifier.java	/^    double distance (Vector<Double> v1, Vector<Double> v2, int component) $/;"	m	class:NullClassifier
+classDistance	8/classifierJar/NullClassifier.java	/^    double classDistance (int c, Vector<Double> v, int k) $/;"	m	class:NullClassifier
+PlotPoint	8/classifierJar/PlotPoint.java	/^public class PlotPoint {$/;"	c
+x	8/classifierJar/PlotPoint.java	/^    double x,y;$/;"	f	class:PlotPoint
+y	8/classifierJar/PlotPoint.java	/^    double x,y;$/;"	f	class:PlotPoint
+color	8/classifierJar/PlotPoint.java	/^    Color color;$/;"	f	class:PlotPoint
+isTest	8/classifierJar/PlotPoint.java	/^    boolean isTest = false;$/;"	f	class:PlotPoint
+classNum	8/classifierJar/PlotPoint.java	/^    int classNum = -1;$/;"	f	class:PlotPoint
+PlotPoint	8/classifierJar/PlotPoint.java	/^    public PlotPoint (double x, double y, int classNum, boolean isTest)$/;"	m	class:PlotPoint
+setColor	8/classifierJar/PlotPoint.java	/^    void setColor (int c)$/;"	m	class:PlotPoint
+PointFeatures	8/classifierJar/PointFeatures.java	/^public class PointFeatures {$/;"	c
+getInstance	8/classifierJar/PointFeatures.java	/^    public static PointFeatures getInstance ()$/;"	m	class:PointFeatures
+extractSingle	8/classifierJar/PointFeatures.java	/^    public Vector<Double> extractSingle (PlotPoint p)$/;"	m	class:PointFeatures
+extractSet	8/classifierJar/PointFeatures.java	/^    public ArrayList<Vector<Double>>[] extractSet (int numClasses, ArrayList<PlotPoint>[] points)$/;"	m	class:PointFeatures
+PointProblem	8/classifierJar/PointProblem.java	/^public class PointProblem extends JPanel implements ClassificationProblem {$/;"	c
+numClasses	8/classifierJar/PointProblem.java	/^    static int numClasses = 2;$/;"	f	class:PointProblem
+uniformOverlap	8/classifierJar/PointProblem.java	/^    static double uniformOverlap = 1;$/;"	f	class:PointProblem
+gaussianStdDev	8/classifierJar/PointProblem.java	/^    static double gaussianStdDev = 1;$/;"	f	class:PointProblem
+status	8/classifierJar/PointProblem.java	/^    JLabel status;$/;"	f	class:PointProblem
+models	8/classifierJar/PointProblem.java	/^    String[] models = {"Uniform", "Gaussian", "Split-Uniform", "Split-Gaussian"};$/;"	f	class:PointProblem
+modelBox	8/classifierJar/PointProblem.java	/^    JComboBox modelBox = new JComboBox (models);$/;"	f	class:PointProblem
+pointsField	8/classifierJar/PointProblem.java	/^    JTextField pointsField = new JTextField (5);$/;"	f	class:PointProblem
+xField	8/classifierJar/PointProblem.java	/^    JTextField xField = new JTextField (5);$/;"	f	class:PointProblem
+yField	8/classifierJar/PointProblem.java	/^    JTextField yField = new JTextField (5);$/;"	f	class:PointProblem
+cField	8/classifierJar/PointProblem.java	/^    JTextField cField = new JTextField (2);$/;"	f	class:PointProblem
+inset	8/classifierJar/PointProblem.java	/^    int inset=20;            $/;"	f	class:PointProblem
+df	8/classifierJar/PointProblem.java	/^    DecimalFormat df = new DecimalFormat();$/;"	f	class:PointProblem
+currentX	8/classifierJar/PointProblem.java	/^    double currentX=-1, currentY=-1;$/;"	f	class:PointProblem
+currentY	8/classifierJar/PointProblem.java	/^    double currentX=-1, currentY=-1;$/;"	f	class:PointProblem
+currentClass	8/classifierJar/PointProblem.java	/^    int currentClass = -1;$/;"	f	class:PointProblem
+numPoints	8/classifierJar/PointProblem.java	/^    int numPoints;$/;"	f	class:PointProblem
+points	8/classifierJar/PointProblem.java	/^    ArrayList<PlotPoint>[] points;$/;"	f	class:PointProblem
+currentTestPoint	8/classifierJar/PointProblem.java	/^    PlotPoint currentTestPoint;$/;"	f	class:PointProblem
+features	8/classifierJar/PointProblem.java	/^    PointFeatures features = PointFeatures.getInstance ();$/;"	f	class:PointProblem
+PointProblem	8/classifierJar/PointProblem.java	/^    public PointProblem (JLabel status)$/;"	m	class:PointProblem
+getNumClasses	8/classifierJar/PointProblem.java	/^    public int getNumClasses ()$/;"	m	class:PointProblem
+isFixedDimension	8/classifierJar/PointProblem.java	/^    public boolean isFixedDimension ()$/;"	m	class:PointProblem
+getTrainingData	8/classifierJar/PointProblem.java	/^    public ArrayList<Vector<Double>>[] getTrainingData ()$/;"	m	class:PointProblem
+getSample	8/classifierJar/PointProblem.java	/^    public Vector<Double> getSample ()$/;"	m	class:PointProblem
+generateUniform	8/classifierJar/PointProblem.java	/^    void generateUniform ()$/;"	m	class:PointProblem
+generateSplitUniform	8/classifierJar/PointProblem.java	/^    void generateSplitUniform ()$/;"	m	class:PointProblem
+generateGaussian	8/classifierJar/PointProblem.java	/^    void generateGaussian ()$/;"	m	class:PointProblem
+generateSplitGaussian	8/classifierJar/PointProblem.java	/^    void generateSplitGaussian ()$/;"	m	class:PointProblem
+generateGaussian	8/classifierJar/PointProblem.java	/^    void generateGaussian (int n, int c, double centerX, double centerY, boolean makeNew)$/;"	m	class:PointProblem
+paintComponent	8/classifierJar/PointProblem.java	/^    public void paintComponent (Graphics g)$/;"	m	class:PointProblem
+getFullPanel	8/classifierJar/PointProblem.java	/^    public JPanel getFullPanel ()$/;"	m	class:PointProblem
+makeBottomPanel	8/classifierJar/PointProblem.java	/^    JPanel makeBottomPanel ()$/;"	m	class:PointProblem
+generate	8/classifierJar/PointProblem.java	/^    void generate ()$/;"	m	class:PointProblem
+setNumPoints	8/classifierJar/PointProblem.java	/^    void setNumPoints ()$/;"	m	class:PointProblem
+addToTrainingSet	8/classifierJar/PointProblem.java	/^    void addToTrainingSet ()$/;"	m	class:PointProblem
+getXY	8/classifierJar/PointProblem.java	/^    void getXY ()$/;"	m	class:PointProblem
+setAsTest	8/classifierJar/PointProblem.java	/^    void setAsTest ()$/;"	m	class:PointProblem
+RandTool	8/classifierJar/RandTool.java	/^public class RandTool {$/;"	c
+m	8/classifierJar/RandTool.java	/^    static final long m = 2147483647L;$/;"	f	class:RandTool
+a	8/classifierJar/RandTool.java	/^    static final long a = 48271L;$/;"	f	class:RandTool
+q	8/classifierJar/RandTool.java	/^    static final long q = 44488L;$/;"	f	class:RandTool
+r	8/classifierJar/RandTool.java	/^    static final long r = 3399L;$/;"	f	class:RandTool
+r_seed	8/classifierJar/RandTool.java	/^    static long r_seed = 12345678L; $/;"	f	class:RandTool
+rand	8/classifierJar/RandTool.java	/^    static Random rand = new Random (r_seed);$/;"	f	class:RandTool
+setSeed	8/classifierJar/RandTool.java	/^    public static void setSeed (long seed)$/;"	m	class:RandTool
+uniform	8/classifierJar/RandTool.java	/^    public static double uniform ()$/;"	m	class:RandTool
+uniform	8/classifierJar/RandTool.java	/^    public static double uniform (double a, double b)$/;"	m	class:RandTool
+uniform	8/classifierJar/RandTool.java	/^    public static long uniform (long a, long b)$/;"	m	class:RandTool
+uniform	8/classifierJar/RandTool.java	/^    public static int uniform (int a, int b)$/;"	m	class:RandTool
+exponential	8/classifierJar/RandTool.java	/^    public static double exponential (double lambda)$/;"	m	class:RandTool
+gaussian	8/classifierJar/RandTool.java	/^    public static double gaussian ()$/;"	m	class:RandTool
+gaussian	8/classifierJar/RandTool.java	/^    public static double gaussian (double mean, double stdDeviation)$/;"	m	class:RandTool
+SimplePlotPanel	8/classifierJar/SimplePlotPanel.java	/^public class SimplePlotPanel extends JPanel {$/;"	c
+glueSpace	8/classifierJar/SimplePlotPanel.java	/^  public static int glueSpace = 3;                    \/\/ Generic spacing between lines, text.$/;"	f	class:SimplePlotPanel
+axisLabelFontSize	8/classifierJar/SimplePlotPanel.java	/^  public static int axisLabelFontSize = 10;           \/\/ Font size for axis labels.$/;"	f	class:SimplePlotPanel
+tickFontSize	8/classifierJar/SimplePlotPanel.java	/^  public static int tickFontSize = 8;                 \/\/ Same for tickmark labels.$/;"	f	class:SimplePlotPanel
+legendFontSize	8/classifierJar/SimplePlotPanel.java	/^  public static int legendFontSize = 16;              \/\/ Legend.$/;"	f	class:SimplePlotPanel
+tickSize	8/classifierJar/SimplePlotPanel.java	/^  public static int tickSize = 6;                     \/\/ Length of each tick mark.$/;"	f	class:SimplePlotPanel
+titleFontSize	8/classifierJar/SimplePlotPanel.java	/^  public static int titleFontSize = 12;               \/\/ Length of each tick mark.$/;"	f	class:SimplePlotPanel
+pointBlobRadius	8/classifierJar/SimplePlotPanel.java	/^  public static int pointBlobRadius = 4;              \/\/ Size of circle to mark a point.$/;"	f	class:SimplePlotPanel
+legendFont	8/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+tickFont	8/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+axisLabelFont	8/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+titleFont	8/classifierJar/SimplePlotPanel.java	/^  Font legendFont, tickFont, axisLabelFont, titleFont;$/;"	f	class:SimplePlotPanel
+tickFontMetrics	8/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+axisLabelFontMetrics	8/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+legendFontMetrics	8/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+titleFontMetrics	8/classifierJar/SimplePlotPanel.java	/^  FontMetrics tickFontMetrics, axisLabelFontMetrics, legendFontMetrics, titleFontMetrics;$/;"	f	class:SimplePlotPanel
+panelHeight	8/classifierJar/SimplePlotPanel.java	/^  int panelHeight, panelWidth;$/;"	f	class:SimplePlotPanel
+panelWidth	8/classifierJar/SimplePlotPanel.java	/^  int panelHeight, panelWidth;$/;"	f	class:SimplePlotPanel
+bboxLeft	8/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxRight	8/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxTop	8/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxBottom	8/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxHeight	8/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+bboxWidth	8/classifierJar/SimplePlotPanel.java	/^  int bboxLeft, bboxRight, bboxTop, bboxBottom, bboxHeight, bboxWidth;$/;"	f	class:SimplePlotPanel
+plotBoxTopInset	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxBottomInset	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxLeftInset	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxRightInset	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxTopInset, plotBoxBottomInset, plotBoxLeftInset, plotBoxRightInset;$/;"	f	class:SimplePlotPanel
+plotBoxHeight	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxWidth	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxLeft	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxRight	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxTop	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+plotBoxBottom	8/classifierJar/SimplePlotPanel.java	/^  int plotBoxHeight, plotBoxWidth, plotBoxLeft, plotBoxRight, plotBoxTop, plotBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxHeight	8/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxWidth	8/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxLeft	8/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxRight	8/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxTop	8/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+graphBoxBottom	8/classifierJar/SimplePlotPanel.java	/^  int graphBoxHeight, graphBoxWidth, graphBoxLeft, graphBoxRight, graphBoxTop, graphBoxBottom;$/;"	f	class:SimplePlotPanel
+legendBoxHeight	8/classifierJar/SimplePlotPanel.java	/^  int legendBoxHeight, legendBoxWidth;$/;"	f	class:SimplePlotPanel
+legendBoxWidth	8/classifierJar/SimplePlotPanel.java	/^  int legendBoxHeight, legendBoxWidth;$/;"	f	class:SimplePlotPanel
+maxNumCurves	8/classifierJar/SimplePlotPanel.java	/^  int maxNumCurves;                              \/\/ Max allowable curves: for storage.$/;"	f	class:SimplePlotPanel
+numCurves	8/classifierJar/SimplePlotPanel.java	/^  int numCurves;                                 \/\/ Actual number of curves.$/;"	f	class:SimplePlotPanel
+maxNumValues	8/classifierJar/SimplePlotPanel.java	/^  int maxNumValues;$/;"	f	class:SimplePlotPanel
+curves	8/classifierJar/SimplePlotPanel.java	/^  SimplePlotCurve[] curves;                      \/\/ The curves themselves.$/;"	f	class:SimplePlotPanel
+Xmax	8/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Xmin	8/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Xrange	8/classifierJar/SimplePlotPanel.java	/^  double Xmax, Xmin, Xrange;                     \/\/ Lowest, highest, and range of X values.$/;"	f	class:SimplePlotPanel
+Ymax	8/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+Ymin	8/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+Yrange	8/classifierJar/SimplePlotPanel.java	/^  double Ymax, Ymin, Yrange;                     \/\/ Same for Y.$/;"	f	class:SimplePlotPanel
+numXTicks	8/classifierJar/SimplePlotPanel.java	/^  int numXTicks, numYTicks;                      \/\/ Number of tick marks.$/;"	f	class:SimplePlotPanel
+numYTicks	8/classifierJar/SimplePlotPanel.java	/^  int numXTicks, numYTicks;                      \/\/ Number of tick marks.$/;"	f	class:SimplePlotPanel
+XTicks	8/classifierJar/SimplePlotPanel.java	/^  double[] XTicks, YTicks;                       \/\/ The actual points for the ticks.$/;"	f	class:SimplePlotPanel
+YTicks	8/classifierJar/SimplePlotPanel.java	/^  double[] XTicks, YTicks;                       \/\/ The actual points for the ticks.$/;"	f	class:SimplePlotPanel
+XTickLabels	8/classifierJar/SimplePlotPanel.java	/^  String[] XTickLabels, YTickLabels;             \/\/ Labels.$/;"	f	class:SimplePlotPanel
+YTickLabels	8/classifierJar/SimplePlotPanel.java	/^  String[] XTickLabels, YTickLabels;             \/\/ Labels.$/;"	f	class:SimplePlotPanel
+XTickWidth	8/classifierJar/SimplePlotPanel.java	/^  int XTickWidth, XTickHeight;                   \/\/ Font heights and widths.$/;"	f	class:SimplePlotPanel
+XTickHeight	8/classifierJar/SimplePlotPanel.java	/^  int XTickWidth, XTickHeight;                   \/\/ Font heights and widths.$/;"	f	class:SimplePlotPanel
+YTickWidth	8/classifierJar/SimplePlotPanel.java	/^  int YTickWidth, YTickHeight;$/;"	f	class:SimplePlotPanel
+YTickHeight	8/classifierJar/SimplePlotPanel.java	/^  int YTickWidth, YTickHeight;$/;"	f	class:SimplePlotPanel
+XaxisLabelString	8/classifierJar/SimplePlotPanel.java	/^  String XaxisLabelString = "", YaxisLabelString = "";     \/\/ Axis labels.$/;"	f	class:SimplePlotPanel
+YaxisLabelString	8/classifierJar/SimplePlotPanel.java	/^  String XaxisLabelString = "", YaxisLabelString = "";     \/\/ Axis labels.$/;"	f	class:SimplePlotPanel
+Xformat	8/classifierJar/SimplePlotPanel.java	/^  DecimalFormat Xformat, Yformat;                \/\/ Format labels\/ticks.$/;"	f	class:SimplePlotPanel
+Yformat	8/classifierJar/SimplePlotPanel.java	/^  DecimalFormat Xformat, Yformat;                \/\/ Format labels\/ticks.$/;"	f	class:SimplePlotPanel
+titleString	8/classifierJar/SimplePlotPanel.java	/^  String titleString = "";                       \/\/ Title to appear center-top.$/;"	f	class:SimplePlotPanel
+colors	8/classifierJar/SimplePlotPanel.java	/^  static Color colors[] = {Color.red, Color.blue, Color.green, Color.magenta};$/;"	f	class:SimplePlotPanel
+SimplePlotPanel	8/classifierJar/SimplePlotPanel.java	/^  public SimplePlotPanel (int maxNumCurves, int maxNumValues)$/;"	m	class:SimplePlotPanel
+frame	8/classifierJar/SimplePlotPanel.java	/^  static JFrame frame;$/;"	f	class:SimplePlotPanel
+makePlotFrame	8/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector points, String name, int frameWidth, int frameHeight)$/;"	m	class:SimplePlotPanel
+makePlotFrame	8/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector points)$/;"	m	class:SimplePlotPanel
+makePlotFrame	8/classifierJar/SimplePlotPanel.java	/^  public static void makePlotFrame (Vector[] pointSets, String[] names, String xLabel, int frameWidth, int frameHeight)$/;"	m	class:SimplePlotPanel
+paintComponent	8/classifierJar/SimplePlotPanel.java	/^  public void paintComponent (Graphics g)$/;"	m	class:SimplePlotPanel
+setBounds	8/classifierJar/SimplePlotPanel.java	/^  private void setBounds ()$/;"	m	class:SimplePlotPanel	file:
+setTitle	8/classifierJar/SimplePlotPanel.java	/^  public void setTitle (String titleString)$/;"	m	class:SimplePlotPanel
+createNewCurve	8/classifierJar/SimplePlotPanel.java	/^  public int createNewCurve (String legendString, Color color)$/;"	m	class:SimplePlotPanel
+setXaxisLabel	8/classifierJar/SimplePlotPanel.java	/^  public void setXaxisLabel (String XaxisLabelString)$/;"	m	class:SimplePlotPanel
+setYaxisLabel	8/classifierJar/SimplePlotPanel.java	/^  public void setYaxisLabel (String YaxisLabelString)$/;"	m	class:SimplePlotPanel
+setNumXTicks	8/classifierJar/SimplePlotPanel.java	/^  public void setNumXTicks (int numXTicks)$/;"	m	class:SimplePlotPanel
+setNumYTicks	8/classifierJar/SimplePlotPanel.java	/^  public void setNumYTicks (int numYTicks)$/;"	m	class:SimplePlotPanel
+setPointRadius	8/classifierJar/SimplePlotPanel.java	/^  public void setPointRadius (int numPixels)$/;"	m	class:SimplePlotPanel
+setXVector	8/classifierJar/SimplePlotPanel.java	/^  public void setXVector (int curveID, double[] X)$/;"	m	class:SimplePlotPanel
+setYVector	8/classifierJar/SimplePlotPanel.java	/^  public void setYVector (int curveID, double[] Y)$/;"	m	class:SimplePlotPanel
+addNewYValue	8/classifierJar/SimplePlotPanel.java	/^  public void addNewYValue (int curveID, double y)$/;"	m	class:SimplePlotPanel
+setXYPoints	8/classifierJar/SimplePlotPanel.java	/^  public void setXYPoints (int curveID, Vector points)$/;"	m	class:SimplePlotPanel
+makePlot	8/classifierJar/SimplePlotPanel.java	/^  public void makePlot (Graphics g, int boundingBoxTopLeftX, int boundingBoxTopLeftY, $/;"	m	class:SimplePlotPanel
+makePlot	8/classifierJar/SimplePlotPanel.java	/^  void makePlot (Graphics g)$/;"	m	class:SimplePlotPanel
+dataXToPixelValue	8/classifierJar/SimplePlotPanel.java	/^  int dataXToPixelValue (double x)$/;"	m	class:SimplePlotPanel
+dataYToPixelValue	8/classifierJar/SimplePlotPanel.java	/^  int dataYToPixelValue (double y)$/;"	m	class:SimplePlotPanel
+computeDrawingConstants	8/classifierJar/SimplePlotPanel.java	/^  void computeDrawingConstants (Graphics g)$/;"	m	class:SimplePlotPanel
+makeTicks	8/classifierJar/SimplePlotPanel.java	/^  void makeTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+drawTicks	8/classifierJar/SimplePlotPanel.java	/^  void drawTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+estimateNumXTicks	8/classifierJar/SimplePlotPanel.java	/^  int estimateNumXTicks (Graphics g)$/;"	m	class:SimplePlotPanel
+makeXTicks	8/classifierJar/SimplePlotPanel.java	/^  void makeXTicks ()$/;"	m	class:SimplePlotPanel
+makeYTicks	8/classifierJar/SimplePlotPanel.java	/^  void makeYTicks ()$/;"	m	class:SimplePlotPanel
+createFormats	8/classifierJar/SimplePlotPanel.java	/^  void createFormats ()$/;"	m	class:SimplePlotPanel
+makeFormat	8/classifierJar/SimplePlotPanel.java	/^  DecimalFormat makeFormat (double low, double high)$/;"	m	class:SimplePlotPanel
+makeDoubleFormatX	8/classifierJar/SimplePlotPanel.java	/^  String makeDoubleFormatX (double x)$/;"	m	class:SimplePlotPanel
+makeDoubleFormatY	8/classifierJar/SimplePlotPanel.java	/^  String makeDoubleFormatY (double y)$/;"	m	class:SimplePlotPanel
+drawXTick	8/classifierJar/SimplePlotPanel.java	/^  void drawXTick (Graphics g, double x, String tickLabel)$/;"	m	class:SimplePlotPanel
+drawYTick	8/classifierJar/SimplePlotPanel.java	/^  void drawYTick (Graphics g, double y, String tickLabel)$/;"	m	class:SimplePlotPanel
+writeLegends	8/classifierJar/SimplePlotPanel.java	/^  void writeLegends (Graphics g)$/;"	m	class:SimplePlotPanel
+plotCurve	8/classifierJar/SimplePlotPanel.java	/^  void plotCurve (Graphics g, SimplePlotCurve curve)$/;"	m	class:SimplePlotPanel
+SimplePlotCurve	8/classifierJar/SimplePlotPanel.java	/^class SimplePlotCurve {$/;"	c
+maxNumValues	8/classifierJar/SimplePlotPanel.java	/^  private int maxNumValues;          \/\/ Maximum number of points.$/;"	f	class:SimplePlotCurve	file:
+numXValues	8/classifierJar/SimplePlotPanel.java	/^  private int numXValues;            \/\/ Actual number of points.$/;"	f	class:SimplePlotCurve	file:
+numCurrentYValues	8/classifierJar/SimplePlotPanel.java	/^  private int numCurrentYValues;     \/\/ Number of Y values added so far.$/;"	f	class:SimplePlotCurve	file:
+legendString	8/classifierJar/SimplePlotPanel.java	/^  String legendString;               \/\/ String to print in legend.$/;"	f	class:SimplePlotCurve
+color	8/classifierJar/SimplePlotPanel.java	/^  Color color;                       \/\/ Preferred color.$/;"	f	class:SimplePlotCurve
+X	8/classifierJar/SimplePlotPanel.java	/^  private double[] X, Y;     \/\/ The points.$/;"	f	class:SimplePlotCurve	file:
+Y	8/classifierJar/SimplePlotPanel.java	/^  private double[] X, Y;     \/\/ The points.$/;"	f	class:SimplePlotCurve	file:
+SimplePlotCurve	8/classifierJar/SimplePlotPanel.java	/^  public SimplePlotCurve (int maxNumValues)$/;"	m	class:SimplePlotCurve
+setXValues	8/classifierJar/SimplePlotPanel.java	/^  public void setXValues (double[] X)$/;"	m	class:SimplePlotCurve
+setYValues	8/classifierJar/SimplePlotPanel.java	/^  public void setYValues (double[] Y)$/;"	m	class:SimplePlotCurve
+addNewYValue	8/classifierJar/SimplePlotPanel.java	/^  public void addNewYValue (double y)$/;"	m	class:SimplePlotCurve
+getNumXValues	8/classifierJar/SimplePlotPanel.java	/^  public int getNumXValues ()$/;"	m	class:SimplePlotCurve
+getNumValues	8/classifierJar/SimplePlotPanel.java	/^  public int getNumValues ()$/;"	m	class:SimplePlotCurve
+getNumYValues	8/classifierJar/SimplePlotPanel.java	/^  public int getNumYValues ()$/;"	m	class:SimplePlotCurve
+getX	8/classifierJar/SimplePlotPanel.java	/^  public double getX (int i)$/;"	m	class:SimplePlotCurve
+getY	8/classifierJar/SimplePlotPanel.java	/^  public double getY (int i)$/;"	m	class:SimplePlotCurve

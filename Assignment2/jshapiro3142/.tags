@@ -1,0 +1,243 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AdvSensorPack	AdvSensorPack.java	/^public class AdvSensorPack extends BasicSensorPack {$/;"	c
+BasicSensorPack	BasicSensorPack.java	/^public class BasicSensorPack extends GroundTruthSensor {$/;"	c
+CarController	CarController.java	/^public interface CarController {$/;"	i
+CarGUI	CarGUI.java	/^public class CarGUI extends JPanel {$/;"	c
+CarSimulator	CarSimulator.java	/^public interface CarSimulator {$/;"	i
+DubinCarController	DubinCarController.java	/^public class DubinCarController implements CarController {$/;"	c
+GroundTruthSensor	GroundTruthSensor.java	/^public class GroundTruthSensor implements SensorPack {$/;"	c
+SensorPack	SensorPack.java	/^public interface SensorPack {$/;"	i
+SimpleCarController	SimpleCarController.java	/^public class SimpleCarController implements CarController {$/;"	c
+State	State.java	/^public abstract class State {$/;"	c
+acc	SimpleCarController.java	/^    double acc;       \/\/ Acceleration.$/;"	f	class:SimpleCarController
+accuracyBox	CarGUI.java	/^    JComboBox sceneBox, carBox, gridBox, trackBox, accuracyBox, sensorBox;$/;"	f	class:CarGUI
+accuracyLevels	CarGUI.java	/^    String[] accuracyLevels = {"low-accuracy","high-accuracy"};$/;"	f	class:CarGUI
+angVel	jshapiro314UnicycleController.java	/^    double angVel = 0;$/;"	f	class:jshapiro314UnicycleController
+angleFix	AdvSensorPack.java	/^    double angleFix (double a)$/;"	m	class:AdvSensorPack
+angleFix	BasicSensorPack.java	/^    double angleFix (double a)$/;"	m	class:BasicSensorPack
+animate	CarGUI.java	/^    void animate ()$/;"	m	class:CarGUI
+areNeighbors	jshapiro314UnicycleProblem.java	/^    boolean areNeighbors (jshapiro314UnicycleState a1, jshapiro314UnicycleState a2) {$/;"	m	class:jshapiro314UnicycleProblem
+carBox	CarGUI.java	/^    JComboBox sceneBox, carBox, gridBox, trackBox, accuracyBox, sensorBox;$/;"	f	class:CarGUI
+carControl	CarGUI.java	/^    CarController carControl;$/;"	f	class:CarGUI
+carSim	CarGUI.java	/^    CarSimulator carSim = null;$/;"	f	class:CarGUI
+cars	CarGUI.java	/^    String[] cars = {"Unicycle", "Unicycle-acc", "Simple", "Simple-acc", "Dubin", "Dubin-acc"};$/;"	f	class:CarGUI
+checkControls	CarGUI.java	/^    void checkControls ()$/;"	m	class:CarGUI
+control1	CarGUI.java	/^    double control1, control2;$/;"	f	class:CarGUI
+control2	CarGUI.java	/^    double control1, control2;$/;"	f	class:CarGUI
+controllerField	CarGUI.java	/^    JTextField controllerField;$/;"	f	class:CarGUI
+copy	jshapiro314UnicycleProblem.java	/^    jshapiro314UnicycleState copy (jshapiro314UnicycleState a){$/;"	m	class:jshapiro314UnicycleProblem
+costFromStart	State.java	/^    public double costFromStart = 0;$/;"	f	class:State
+costFromStart	jshapiro314UnicycleState.java	/^    public double costFromStart = 0;$/;"	f	class:jshapiro314UnicycleState
+count	jshapiro314UnicycleController.java	/^    int count = 0;$/;"	f	class:jshapiro314UnicycleController
+currentState	jshapiro314UnicycleProblem.java	/^    jshapiro314UnicycleState currentState;$/;"	f	class:jshapiro314UnicycleProblem
+currentThread	CarGUI.java	/^    Thread currentThread;$/;"	f	class:CarGUI
+delT	CarGUI.java	/^    double delT = 0.1;$/;"	f	class:CarGUI
+delta	jshapiro314UnicycleProblem.java	/^    static double delta = 5;  \/\/ 5 pixels;$/;"	f	class:jshapiro314UnicycleProblem
+df	CarGUI.java	/^    DecimalFormat df = new DecimalFormat ("##.##");$/;"	f	class:CarGUI
+dist	AdvSensorPack.java	/^    double dist (double x1, double y1, double x2, double y2)$/;"	m	class:AdvSensorPack
+dist	BasicSensorPack.java	/^    double dist (double x1, double y1, double x2, double y2)$/;"	m	class:BasicSensorPack
+distance	jshapiro314UnicycleProblem.java	/^    double distance (Point2D.Double p, Point2D.Double q){$/;"	m	class:jshapiro314UnicycleProblem
+distance	jshapiro314UnicycleProblem.java	/^    double distance (double x1, double y1, double x2, double y2){$/;"	m	class:jshapiro314UnicycleProblem
+distance	jshapiro314UnicycleState.java	/^   public double distance (double targetX, double targetY){$/;"	m	class:jshapiro314UnicycleState
+doSensing	AdvSensorPack.java	/^    public void doSensing (double x, double y, double theta, double time)$/;"	m	class:AdvSensorPack
+doSensing	BasicSensorPack.java	/^    public void doSensing (double x, double y, double theta, double time)$/;"	m	class:BasicSensorPack
+doSensing	GroundTruthSensor.java	/^    public void doSensing (double x, double y, double theta, double time)$/;"	m	class:GroundTruthSensor
+doSensing	SensorPack.java	/^    public void doSensing (double x, double y, double theta, double time);$/;"	m	interface:SensorPack
+draw	AdvSensorPack.java	/^    public void draw (Graphics2D g2, Dimension D)$/;"	m	class:AdvSensorPack
+draw	BasicSensorPack.java	/^    public void draw (Graphics2D g2, Dimension D)$/;"	m	class:BasicSensorPack
+draw	CarController.java	/^    public void draw (Graphics2D g2, Dimension D);$/;"	m	interface:CarController
+draw	CarSimulator.java	/^    public void draw (Graphics2D g2, Dimension D);$/;"	m	interface:CarSimulator
+draw	DubinCarController.java	/^    public void draw (Graphics2D g2, Dimension D)$/;"	m	class:DubinCarController
+draw	GroundTruthSensor.java	/^    public void draw (Graphics2D g2, Dimension D)$/;"	m	class:GroundTruthSensor
+draw	SensorPack.java	/^    public void draw (Graphics2D g2, Dimension D);$/;"	m	interface:SensorPack
+draw	SimpleCarController.java	/^    public void draw (Graphics2D g2, Dimension D)$/;"	m	class:SimpleCarController
+draw	jshapiro314UnicycleController.java	/^    public void draw (Graphics2D g2, Dimension D)$/;"	m	class:jshapiro314UnicycleController
+endTheta	CarGUI.java	/^    double endX=550, endY=initY, endTheta=0, endV;$/;"	f	class:CarGUI
+endV	CarGUI.java	/^    double endX=550, endY=initY, endTheta=0, endV;$/;"	f	class:CarGUI
+endX	CarGUI.java	/^    double endX=550, endY=initY, endTheta=0, endV;$/;"	f	class:CarGUI
+endY	CarGUI.java	/^    double endX=550, endY=initY, endTheta=0, endV;$/;"	f	class:CarGUI
+epsilon	AdvSensorPack.java	/^    static double epsilon = 0.0001;$/;"	f	class:AdvSensorPack
+epsilon	BasicSensorPack.java	/^    static double epsilon = 0.0001;$/;"	f	class:BasicSensorPack
+epsilon	jshapiro314UnicycleController.java	/^    double epsilon = 0.2;$/;"	f	class:jshapiro314UnicycleController
+epsilon	jshapiro314UnicycleProblem.java	/^    static double epsilon = 0.01;$/;"	f	class:jshapiro314UnicycleProblem
+epsilon	jshapiro314UnicycleState.java	/^    private double epsilon = 1;$/;"	f	class:jshapiro314UnicycleState	file:
+epsilonAngle	jshapiro314UnicycleController.java	/^    double epsilonAngle = 0.05;$/;"	f	class:jshapiro314UnicycleController
+equals	State.java	/^    public abstract boolean equals (Object obj);$/;"	m	class:State
+equals	jshapiro314UnicycleState.java	/^   public boolean equals (Object obj)$/;"	m	class:jshapiro314UnicycleState
+estimatedCostToGoal	State.java	/^    public double estimatedCostToGoal = 0;$/;"	f	class:State
+estimatedCostToGoal	jshapiro314UnicycleState.java	/^    public double estimatedCostToGoal = -1;$/;"	f	class:jshapiro314UnicycleState
+extLineIntersectVertical	AdvSensorPack.java	/^    Point2D.Double extLineIntersectVertical (double c1, double m2, double c2)$/;"	m	class:AdvSensorPack
+extLineIntersectVertical	BasicSensorPack.java	/^    Point2D.Double extLineIntersectVertical (double c1, double m2, double c2)$/;"	m	class:BasicSensorPack
+frontier	jshapiro314Planner.java	/^    LinkedList<jshapiro314UnicycleState> frontier;$/;"	f	class:jshapiro314Planner
+getControl	CarController.java	/^    public double getControl  (int i);$/;"	m	interface:CarController
+getControl	DubinCarController.java	/^    public double getControl (int i)$/;"	m	class:DubinCarController
+getControl	SimpleCarController.java	/^    public double getControl (int i)$/;"	m	class:SimpleCarController
+getControl	jshapiro314UnicycleController.java	/^    public double getControl (int i)$/;"	m	class:jshapiro314UnicycleController
+getDistanceMoved	CarSimulator.java	/^    public double getDistanceMoved ();$/;"	m	interface:CarSimulator
+getNeighbors	jshapiro314UnicycleProblem.java	/^    public ArrayList<jshapiro314UnicycleState> getNeighbors (State state){$/;"	m	class:jshapiro314UnicycleProblem
+getParent	State.java	/^    public abstract State getParent ();$/;"	m	class:State
+getParent	jshapiro314UnicycleState.java	/^    public jshapiro314UnicycleState getParent ()$/;"	m	class:jshapiro314UnicycleState
+getStartState	jshapiro314UnicycleProblem.java	/^    public State getStartState (){$/;"	m	class:jshapiro314UnicycleProblem
+getTheta	AdvSensorPack.java	/^    public double getTheta ()$/;"	m	class:AdvSensorPack
+getTheta	BasicSensorPack.java	/^    public double getTheta ()$/;"	m	class:BasicSensorPack
+getTheta	CarSimulator.java	/^    public double getTheta ();$/;"	m	interface:CarSimulator
+getTheta	GroundTruthSensor.java	/^    public double getTheta ()$/;"	m	class:GroundTruthSensor
+getTheta	SensorPack.java	/^    public double getTheta ();$/;"	m	interface:SensorPack
+getTheta	jshapiro314UnicycleState.java	/^       public double getTheta ()$/;"	m	class:jshapiro314UnicycleState
+getTime	AdvSensorPack.java	/^    public double getTime ()$/;"	m	class:AdvSensorPack
+getTime	BasicSensorPack.java	/^    public double getTime ()$/;"	m	class:BasicSensorPack
+getTime	CarSimulator.java	/^    public double getTime ();$/;"	m	interface:CarSimulator
+getTime	GroundTruthSensor.java	/^    public double getTime ()$/;"	m	class:GroundTruthSensor
+getTime	SensorPack.java	/^    public double getTime ();$/;"	m	interface:SensorPack
+getTrueTheta	AdvSensorPack.java	/^    public double getTrueTheta ()$/;"	m	class:AdvSensorPack
+getTrueTheta	BasicSensorPack.java	/^    public double getTrueTheta ()$/;"	m	class:BasicSensorPack
+getTrueX	AdvSensorPack.java	/^    public double getTrueX ()$/;"	m	class:AdvSensorPack
+getTrueX	BasicSensorPack.java	/^    public double getTrueX ()$/;"	m	class:BasicSensorPack
+getTrueY	AdvSensorPack.java	/^    public double getTrueY ()$/;"	m	class:AdvSensorPack
+getTrueY	BasicSensorPack.java	/^    public double getTrueY ()$/;"	m	class:BasicSensorPack
+getV	CarSimulator.java	/^    public double getV ();$/;"	m	interface:CarSimulator
+getX	AdvSensorPack.java	/^    public double getX ()$/;"	m	class:AdvSensorPack
+getX	BasicSensorPack.java	/^    public double getX ()$/;"	m	class:BasicSensorPack
+getX	CarSimulator.java	/^    public double getX ();$/;"	m	interface:CarSimulator
+getX	GroundTruthSensor.java	/^    public double getX ()$/;"	m	class:GroundTruthSensor
+getX	SensorPack.java	/^    public double getX ();$/;"	m	interface:SensorPack
+getX	jshapiro314UnicycleState.java	/^       public double getX ()$/;"	m	class:jshapiro314UnicycleState
+getY	AdvSensorPack.java	/^    public double getY ()$/;"	m	class:AdvSensorPack
+getY	BasicSensorPack.java	/^    public double getY ()$/;"	m	class:BasicSensorPack
+getY	CarSimulator.java	/^    public double getY ();$/;"	m	interface:CarSimulator
+getY	GroundTruthSensor.java	/^    public double getY ()$/;"	m	class:GroundTruthSensor
+getY	SensorPack.java	/^    public double getY ();$/;"	m	interface:SensorPack
+getY	jshapiro314UnicycleState.java	/^       public double getY ()$/;"	m	class:jshapiro314UnicycleState
+go	CarGUI.java	/^    void go ()$/;"	m	class:CarGUI
+gridBox	CarGUI.java	/^    JComboBox sceneBox, carBox, gridBox, trackBox, accuracyBox, sensorBox;$/;"	f	class:CarGUI
+gridColor	CarGUI.java	/^    Color gridColor = Color.lightGray;$/;"	f	class:CarGUI
+grids	CarGUI.java	/^    String[] grids = {"no grid", "grid-50", "grid-100"};$/;"	f	class:CarGUI
+hitObstacle	CarSimulator.java	/^    public boolean hitObstacle ();$/;"	m	interface:CarSimulator
+init	AdvSensorPack.java	/^    public void init (double initX, double initY, double initTheta, ArrayList<Rectangle2D.Double> obstacles)$/;"	m	class:AdvSensorPack
+init	BasicSensorPack.java	/^    public void init (double initX, double initY, double initTheta, ArrayList<Rectangle2D.Double> obstacles)$/;"	m	class:BasicSensorPack
+init	CarController.java	/^    public void init (double initX, double initY, double initTheta, double endX, double endY, double endTheta, ArrayList<Rectangle2D.Double> obstacles, SensorPack sensors);$/;"	m	interface:CarController
+init	CarSimulator.java	/^    public void init (double initX, double initY, double initTheta, ArrayList<Rectangle2D.Double> obstacles);$/;"	m	interface:CarSimulator
+init	DubinCarController.java	/^    public void init (double initX, double initY, double initTheta, double endX, double endY, double endTheta, ArrayList<Rectangle2D.Double> obstacles, SensorPack sensors)$/;"	m	class:DubinCarController
+init	GroundTruthSensor.java	/^    public void init (double initX, double initY, double initTheta, ArrayList<Rectangle2D.Double> obstacles)$/;"	m	class:GroundTruthSensor
+init	SensorPack.java	/^    public void init (double initX, double initY, double initTheta, ArrayList<Rectangle2D.Double> obstacles);$/;"	m	interface:SensorPack
+init	SimpleCarController.java	/^    public void init (double initX, double initY, double initTheta, double endX, double endY, double endTheta, ArrayList<Rectangle2D.Double> obstacles, SensorPack sensors)$/;"	m	class:SimpleCarController
+init	jshapiro314UnicycleController.java	/^    public void init (double initX, double initY, double initTheta, double endX, double endY, double endTheta, ArrayList<Rectangle2D.Double> obstacles, SensorPack sensors)$/;"	m	class:jshapiro314UnicycleController
+initTheta	CarGUI.java	/^    double initX=50, initY=50, initTheta=0;$/;"	f	class:CarGUI
+initX	CarGUI.java	/^    double initX=50, initY=50, initTheta=0;$/;"	f	class:CarGUI
+initY	CarGUI.java	/^    double initX=50, initY=50, initTheta=0;$/;"	f	class:CarGUI
+intersect	AdvSensorPack.java	/^    Point2D.Double intersect (double x, double y, double angle, Line2D.Double L)$/;"	m	class:AdvSensorPack
+intersect	BasicSensorPack.java	/^    Point2D.Double intersect (double x, double y, double angle, Line2D.Double L)$/;"	m	class:BasicSensorPack
+isAccelModel	DubinCarController.java	/^    boolean isAccelModel;$/;"	f	class:DubinCarController
+isAccelModel	SimpleCarController.java	/^    boolean isAccelModel = false;$/;"	f	class:SimpleCarController
+isAccelModel	jshapiro314UnicycleController.java	/^    boolean isAccelModel;$/;"	f	class:jshapiro314UnicycleController
+isAccurate	CarGUI.java	/^    boolean isAccurate = false;$/;"	f	class:CarGUI
+isBetween	AdvSensorPack.java	/^    boolean isBetween (double angle, double angleToPoint1, double angleToPoint2)$/;"	m	class:AdvSensorPack
+isBetween	BasicSensorPack.java	/^    boolean isBetween (double angle, double angleToPoint1, double angleToPoint2)$/;"	m	class:BasicSensorPack
+isPaused	CarGUI.java	/^    boolean isPaused = false;$/;"	f	class:CarGUI
+isValid	jshapiro314UnicycleProblem.java	/^    boolean isValid (jshapiro314UnicycleState a){$/;"	m	class:jshapiro314UnicycleProblem
+jshapiro314Planner	jshapiro314Planner.java	/^    public jshapiro314Planner(){$/;"	m	class:jshapiro314Planner
+jshapiro314Planner	jshapiro314Planner.java	/^public class jshapiro314Planner {$/;"	c
+jshapiro314UnicycleController	jshapiro314UnicycleController.java	/^public class jshapiro314UnicycleController implements CarController {$/;"	c
+jshapiro314UnicycleProblem	jshapiro314UnicycleProblem.java	/^    public jshapiro314UnicycleProblem(double targetX, double targetY, ArrayList<Rectangle2D.Double> obstacles, jshapiro314UnicycleState startState){$/;"	m	class:jshapiro314UnicycleProblem
+jshapiro314UnicycleProblem	jshapiro314UnicycleProblem.java	/^public class jshapiro314UnicycleProblem {$/;"	c
+jshapiro314UnicycleState	jshapiro314UnicycleState.java	/^    public jshapiro314UnicycleState (jshapiro314UnicycleState parent, double x, double y, double theta)$/;"	m	class:jshapiro314UnicycleState
+jshapiro314UnicycleState	jshapiro314UnicycleState.java	/^public class jshapiro314UnicycleState extends State{$/;"	c
+linVel	jshapiro314UnicycleController.java	/^    double linVel = 0;$/;"	f	class:jshapiro314UnicycleController
+lineSegIntersect	AdvSensorPack.java	/^    Point2D.Double lineSegIntersect (Line2D.Double La, Line2D.Double Lb)$/;"	m	class:AdvSensorPack
+lineSegIntersect	BasicSensorPack.java	/^    Point2D.Double lineSegIntersect (Line2D.Double La, Line2D.Double Lb)$/;"	m	class:BasicSensorPack
+lineSegIntersectSlope	AdvSensorPack.java	/^    Point2D.Double lineSegIntersectSlope (double m1, double c1, double m2, double c2)$/;"	m	class:AdvSensorPack
+lineSegIntersectSlope	BasicSensorPack.java	/^    Point2D.Double lineSegIntersectSlope (double m1, double c1, double m2, double c2)$/;"	m	class:BasicSensorPack
+loadController	CarGUI.java	/^    void loadController ()$/;"	m	class:CarGUI
+main	CarGUI.java	/^    public static void main (String[] argv)$/;"	m	class:CarGUI
+makeBottomPanel	CarGUI.java	/^    JPanel makeBottomPanel ()$/;"	m	class:CarGUI
+makeControlPanel	CarGUI.java	/^    JPanel makeControlPanel ()$/;"	m	class:CarGUI
+makeFrame	CarGUI.java	/^    void makeFrame ()$/;"	m	class:CarGUI
+makePlan	jshapiro314Planner.java	/^    public LinkedList<jshapiro314UnicycleState> makePlan (jshapiro314UnicycleProblem problem, jshapiro314UnicycleState start)$/;"	m	class:jshapiro314Planner
+makeSetupPanel	CarGUI.java	/^    JPanel makeSetupPanel ()$/;"	m	class:CarGUI
+makeSolution	jshapiro314Planner.java	/^    public LinkedList<jshapiro314UnicycleState> makeSolution (jshapiro314UnicycleState goalState)$/;"	m	class:jshapiro314Planner
+makeState	jshapiro314UnicycleProblem.java	/^    public jshapiro314UnicycleState makeState (jshapiro314UnicycleState a, double deltaX, double deltaY){$/;"	m	class:jshapiro314UnicycleProblem
+maxMoves	jshapiro314Planner.java	/^    static int maxMoves = 100000;$/;"	f	class:jshapiro314Planner
+move	CarController.java	/^    public void move ();$/;"	m	interface:CarController
+move	DubinCarController.java	/^    public void move ()$/;"	m	class:DubinCarController
+move	SimpleCarController.java	/^    public void move ()$/;"	m	class:SimpleCarController
+move	jshapiro314UnicycleController.java	/^    public void move ()$/;"	m	class:jshapiro314UnicycleController
+msgFont	CarGUI.java	/^    Font msgFont = new Font ("Serif", Font.PLAIN, 15);$/;"	f	class:CarGUI
+mu1	DubinCarController.java	/^    double mu1=0, mu2=1;$/;"	f	class:DubinCarController
+mu2	DubinCarController.java	/^    double mu1=0, mu2=1;$/;"	f	class:DubinCarController
+nextStep	CarGUI.java	/^    boolean nextStep ()$/;"	m	class:CarGUI
+nextStep	CarSimulator.java	/^    public void nextStep (double control1, double control2, double delT);$/;"	m	interface:CarSimulator
+numMoves	jshapiro314Planner.java	/^    int numMoves;$/;"	f	class:jshapiro314Planner
+numObstacleHits	CarGUI.java	/^    int numObstacleHits = 0;$/;"	f	class:CarGUI
+numSonar	AdvSensorPack.java	/^    int numSonar = 8;$/;"	f	class:AdvSensorPack
+numSonar	BasicSensorPack.java	/^    int numSonar = 8;$/;"	f	class:BasicSensorPack
+obstacles	AdvSensorPack.java	/^    ArrayList<Rectangle2D.Double> obstacles;$/;"	f	class:AdvSensorPack
+obstacles	BasicSensorPack.java	/^    ArrayList<Rectangle2D.Double> obstacles;$/;"	f	class:BasicSensorPack
+obstacles	CarGUI.java	/^    ArrayList<Rectangle2D.Double> obstacles = new ArrayList<Rectangle2D.Double>();$/;"	f	class:CarGUI
+obstacles	DubinCarController.java	/^    ArrayList<Rectangle2D.Double> obstacles;$/;"	f	class:DubinCarController
+obstacles	GroundTruthSensor.java	/^    ArrayList<Rectangle2D.Double> obstacles;$/;"	f	class:GroundTruthSensor
+obstacles	SimpleCarController.java	/^    ArrayList<Rectangle2D.Double> obstacles;$/;"	f	class:SimpleCarController
+obstacles	jshapiro314UnicycleController.java	/^    ArrayList<Rectangle2D.Double> obstacles;$/;"	f	class:jshapiro314UnicycleController
+obstacles	jshapiro314UnicycleProblem.java	/^    ArrayList<Rectangle2D.Double> obstacles;$/;"	f	class:jshapiro314UnicycleProblem
+paintComponent	CarGUI.java	/^    public void paintComponent (Graphics g)$/;"	m	class:CarGUI
+parent	jshapiro314UnicycleState.java	/^    private jshapiro314UnicycleState parent = null;$/;"	f	class:jshapiro314UnicycleState	file:
+pause	CarGUI.java	/^    void pause () $/;"	m	class:CarGUI
+phi	SimpleCarController.java	/^    double phi;       \/\/ Steering angle.$/;"	f	class:SimpleCarController
+printStr	AdvSensorPack.java	/^    String printStr (Line2D.Double L)$/;"	m	class:AdvSensorPack
+printStr	BasicSensorPack.java	/^    String printStr (Line2D.Double L)$/;"	m	class:BasicSensorPack
+removeBest	jshapiro314Planner.java	/^    jshapiro314UnicycleState removeBest ()$/;"	m	class:jshapiro314Planner
+reset	CarGUI.java	/^    void reset ()$/;"	m	class:CarGUI
+satisfiesGoal	jshapiro314UnicycleProblem.java	/^    public boolean satisfiesGoal (State state){$/;"	m	class:jshapiro314UnicycleProblem
+sceneBox	CarGUI.java	/^    JComboBox sceneBox, carBox, gridBox, trackBox, accuracyBox, sensorBox;$/;"	f	class:CarGUI
+scenes	CarGUI.java	/^    String[] scenes = {"Scene 1", "Scene 2", "Scene 3", "Scene 4", "Scene 5"};$/;"	f	class:CarGUI
+sensorBox	CarGUI.java	/^    JComboBox sceneBox, carBox, gridBox, trackBox, accuracyBox, sensorBox;$/;"	f	class:CarGUI
+sensorPack	CarGUI.java	/^    SensorPack sensorPack = null;$/;"	f	class:CarGUI
+sensors	CarGUI.java	/^    String[] sensors = {"Ground-truth", "Basic-sensor"};$/;"	f	class:CarGUI
+sensors	SimpleCarController.java	/^    SensorPack sensors;$/;"	f	class:SimpleCarController
+sensors	jshapiro314UnicycleController.java	/^    SensorPack sensors;$/;"	f	class:jshapiro314UnicycleController
+setCar	CarGUI.java	/^    void setCar ()$/;"	m	class:CarGUI
+setScene	CarGUI.java	/^    void setScene ()$/;"	m	class:CarGUI
+slider1	CarGUI.java	/^    JSlider slider1, slider2;$/;"	f	class:CarGUI
+slider2	CarGUI.java	/^    JSlider slider1, slider2;$/;"	f	class:CarGUI
+solution	jshapiro314UnicycleController.java	/^    LinkedList<jshapiro314UnicycleState> solution;$/;"	f	class:jshapiro314UnicycleController
+sonarDistances	AdvSensorPack.java	/^    double[] sonarDistances;$/;"	f	class:AdvSensorPack
+sonarDistances	BasicSensorPack.java	/^    double[] sonarDistances;$/;"	f	class:BasicSensorPack
+sonarPoints	AdvSensorPack.java	/^    Point2D.Double[] sonarPoints;$/;"	f	class:AdvSensorPack
+sonarPoints	BasicSensorPack.java	/^    Point2D.Double[] sonarPoints;$/;"	f	class:BasicSensorPack
+stopAnimationThread	CarGUI.java	/^    void stopAnimationThread ()$/;"	m	class:CarGUI
+targetX	jshapiro314UnicycleProblem.java	/^    double targetX=0, targetY=0;$/;"	f	class:jshapiro314UnicycleProblem
+targetY	jshapiro314UnicycleProblem.java	/^    double targetX=0, targetY=0;$/;"	f	class:jshapiro314UnicycleProblem
+theta	AdvSensorPack.java	/^    double x, y, theta, time;$/;"	f	class:AdvSensorPack
+theta	BasicSensorPack.java	/^    double x, y, theta, time;$/;"	f	class:BasicSensorPack
+theta	GroundTruthSensor.java	/^    double x, y, theta, time;$/;"	f	class:GroundTruthSensor
+theta	jshapiro314UnicycleState.java	/^    private double theta = 0;$/;"	f	class:jshapiro314UnicycleState	file:
+thetaField	CarGUI.java	/^    JTextField xField, yField, thetaField, vField;$/;"	f	class:CarGUI
+time	AdvSensorPack.java	/^    double x, y, theta, time;$/;"	f	class:AdvSensorPack
+time	BasicSensorPack.java	/^    double x, y, theta, time;$/;"	f	class:BasicSensorPack
+time	GroundTruthSensor.java	/^    double x, y, theta, time;$/;"	f	class:GroundTruthSensor
+toString	State.java	/^    public abstract String toString ();$/;"	m	class:State
+toString	jshapiro314UnicycleState.java	/^   public String toString ()$/;"	m	class:jshapiro314UnicycleState
+topMessage	CarGUI.java	/^    String topMessage = "";$/;"	f	class:CarGUI
+trackBox	CarGUI.java	/^    JComboBox sceneBox, carBox, gridBox, trackBox, accuracyBox, sensorBox;$/;"	f	class:CarGUI
+trackPoints	CarGUI.java	/^    ArrayList<Point2D.Double> trackPoints = new ArrayList<Point2D.Double>();$/;"	f	class:CarGUI
+tracks	CarGUI.java	/^    String[] tracks = {"no tracks", "tracks"};$/;"	f	class:CarGUI
+updateSensors	AdvSensorPack.java	/^    void updateSensors ()$/;"	m	class:AdvSensorPack
+updateSensors	BasicSensorPack.java	/^    void updateSensors ()$/;"	m	class:BasicSensorPack
+useSliders	CarGUI.java	/^    boolean useSliders = true;$/;"	f	class:CarGUI
+vField	CarGUI.java	/^    JTextField xField, yField, thetaField, vField;$/;"	f	class:CarGUI
+vel	SimpleCarController.java	/^    double vel;       \/\/ Velocity.$/;"	f	class:SimpleCarController
+visitedStates	jshapiro314Planner.java	/^    LinkedList<jshapiro314UnicycleState> visitedStates;$/;"	f	class:jshapiro314Planner
+x	AdvSensorPack.java	/^    double x, y, theta, time;$/;"	f	class:AdvSensorPack
+x	BasicSensorPack.java	/^    double x, y, theta, time;$/;"	f	class:BasicSensorPack
+x	GroundTruthSensor.java	/^    double x, y, theta, time;$/;"	f	class:GroundTruthSensor
+x	jshapiro314UnicycleState.java	/^    private double x=-1, y=-1;$/;"	f	class:jshapiro314UnicycleState	file:
+xField	CarGUI.java	/^    JTextField xField, yField, thetaField, vField;$/;"	f	class:CarGUI
+y	AdvSensorPack.java	/^    double x, y, theta, time;$/;"	f	class:AdvSensorPack
+y	BasicSensorPack.java	/^    double x, y, theta, time;$/;"	f	class:BasicSensorPack
+y	GroundTruthSensor.java	/^    double x, y, theta, time;$/;"	f	class:GroundTruthSensor
+y	jshapiro314UnicycleState.java	/^    private double x=-1, y=-1;$/;"	f	class:jshapiro314UnicycleState	file:
+yField	CarGUI.java	/^    JTextField xField, yField, thetaField, vField;$/;"	f	class:CarGUI
