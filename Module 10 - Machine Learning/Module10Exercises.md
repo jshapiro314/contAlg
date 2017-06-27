@@ -49,7 +49,7 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
 
 9. What is the running time of K-Nearest-Neighbor in terms of M, the number of training samples, and K? Does d matter in the running time? What data structure is most appropriate for this computation?
 
-* **If you store the K nearest neighbors in a priority queue with the priority being the largest distance, for each training point only one comparison would need to be made instead of K (you only have to check to see if the current distance is < the largest distance currently in the priority queue). To remove the element in the priority queue has a time complexity of O(logN). To add a value to the priority queue also has a time complexity of O(logN). On the off chance all of our points are given to us from farthest away to closest (so at each step we must remove and add to the priority queue), the run time is as follows: O(M*2*log(K) + K). The + K comes from calculating the majority after running through everything.** A larger d will slightly increase the running time, since it requires more operations when calculating euclidean distance.**
+* **If you store the K nearest neighbors in a priority queue with the priority being the largest distance, for each training point only one comparison would need to be made instead of K (you only have to check to see if the current distance is < the largest distance currently in the priority queue). To remove the element in the priority queue has a time complexity of O(logN). To add a value to the priority queue also has a time complexity of O(logN). On the off chance all of our points are given to us from farthest away to closest (so at each step we must remove and add to the priority queue), the run time is as follows: O(M*2*log(K) + K). The + K comes from calculating the majority after running through everything. A larger d will slightly increase the running time, since it requires more operations when calculating euclidean distance.**
 
 10. Consider a database of $10^6$ greyscale images each of size 0.1 megabytes. For K = 10, what is the number of arithmetic operations (say, multiplications) for a single classification?
 
@@ -79,115 +79,53 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
 
 14. CODE: Write down the conditional pmf Pr[X = m|C = 1] by examining the code in DataGenerator.
 
+* **Pr[X = 0|C = 1] = 0**
+* **Pr[X = 1|C = 1] = 0.05**
+* **Pr[X = 2|C = 1] = 0.1**
+* **Pr[X = 3|C = 1] = 0.6**
+* **Pr[X = 4|C = 1] = 0.1**
+* **Pr[X = 5|C = 1] = 0.15**
+
 15. CODE: Implement the algorithm in DataExample2.java, which has the code for evaluation. Try a different algorithm to see if the error improves.
+
+* **Pr[E]=0.13099. If the classify code chose 0 or 1 based on their respective probabilities for 1, 2, and 3, there is a chance that the accuracy would increase. However, the classifier then has the ability to classify the same point in different classes, which is not what we want.**
 
 16. CODE: Copy the algorithm over to DataExample3.java, which estimates the error when x = 3.
     * What is the error?
     * Next, change Pr[C = 0] (which is now 0.4) to 0.9. What is the error now?
     * How would you change the algorithm to improve the error?
 
-17. For the case x = 3, compute Pr[X = x|C = 0], Pr[C = 0], Pr[X = x|C = 1], and Pr[C = 1] by hand when Pr[C = 0] = 0.4. Then, compute both when Pr[C = 0] = 0.9.
+* **The error is Pr[E3]=0.09967510726420475.**
+* **The error when Pr[C=0] = 0.9 is Pr[E3]=0.5937170010559663.**
+* **Instead of hard coding which class to return given the x value, I'd have the classifier itself determine the probabilities based on the training data.**
+
+17. For the case x = 3, compute Pr[X = x|C = 0]Pr[C = 0] and Pr[X = x|C = 1]Pr[C = 1] by hand when Pr[C = 0] = 0.4. Then, compute both when Pr[C = 0] = 0.9.
+
+* **When Pr[C = 0] = 0.4:**
+    * **Pr[X = 3|C = 0]Pr[C = 0] = 0.1 * 0.4 = 0.004**
+    * **Pr[X = 3|C = 1]Pr[C = 1] = 0.6 * 0.6 = 0.36**
+    * **When Pr[C = 0] = 0.9:**
+    * **Pr[X = 3|C = 0]Pr[C = 0] = 0.1 * 0.9 = 0.09**
+    * **Pr[X = 3|C = 1]Pr[C = 1] = 0.6 * 0.1 = 0.06**
 
 19. Why isn't E differentiable with respect to $w_i$?
 
+* **E is not continuous, so it is not differentiable.**
+
 20. Why?
+
+* **E is now differentiable because it is a continuous function.**
 
 23. CODE: Download and add code to Sigmoid.java to compute and display the sigmoid function in the range [-10,10]. You will also need Function.java and SimplePlotPanel.java. How could you make it approximate a step function even more closely?
 
+* **If you multiply -x in the denominator by a constant, the sigmoid will look more like a step function.**
+
 25. Determine weights for each of the three units above so that the result achieves the XOR function. Then, build a truth table and show how the combination results in computing XOR.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2. Why is this true? What is the minimum (unconstrained) value of f(x,y) = 3x + 4y?
-
-* **For any linear, unconstrained problem, the minimum will always be -$\infty$.**
-
-3. Go back to your calc book and find an example of a "hard to differentiate" function.
-
-* **Answer: $\frac{4x^2 + log(2^{tan(x^{sin(x)})})}{5x + cos(2^x)}$**
-
-4. What's an example of a function that's continuous but not differentiable? Consider the weird function f(x) where f(x) = 1 if x is rational and f(x) = 0 otherwise. Is this continuous? Differentiable?
-
-* **The absolute value function is not differentiable.**
-* **The weird function is not continuous and therefore not differentiable.**
-
-5. Consider the function $f(x) = \frac{x}{\mu_1 - \lambda x} + \frac{1 - x}{\mu_2 - \lambda (1 - x)}$
-    * Compute the derivative f'(x). Can you solve f'(x) = 0?
-
-* **Derivative below:**
-    * $f(x) = \frac{x}{\mu_1 - \lambda x} + \frac{1 - x}{\mu_2 - \lambda (1 - x)}$
-    * $\implies f'(x) = \frac{\mu_1 - \lambda * x + \lambda * x}{mu_1 - \lambda * x)^2} + \frac{-\mu_2 + \lambda - \lambda * x - \lambda - \lambda * x}{(\mu_2 - \lambda + \lambda * x)^2}$
-    * $\implies f'(x) = \frac{(\mu_1)(\mu_2 - \lambda + \lambda * x)^2 - (\mu_2)(\mu_1 - \lambda * x)^2}{(\mu_1 - \lambda * x)^2(\mu_2 - \lambda + \lambda * x)^2}$
-* **Solving for f'(x) = 0:**
-    * $\frac{(\mu_1)(\mu_2 - \lambda + \lambda * x)^2 - (\mu_2)(\mu_1 - \lambda * x)^2}{(\mu_1 - \lambda * x)^2(\mu_2 - \lambda + \lambda * x)^2} = 0$
-    * $\implies (\mu_1)(\mu_2 + \lambda (x - 1))^2 - (\mu_2)(\mu_1 - \lambda * x)^2 = 0$
-    * $\implies \mu_1\lambda^2 - \mu_1^2\mu_2 - 2\mu_1\lambda\mu_2 + \mu_1\mu_2^2 + x(4\mu_1\lambda\mu_2 - 2\mu_1\lmabda^2) + x^2(\mu_1\lambda^2 - \lambda^2\mu_2) = 0$
-    * ...skipping a few steps...
-    * $\implies x = \pm \sqrt{\frac{\mu_1\mu_2(\mu_1 - \lambda + \mu_2)^2}{\lambda^2(\mu_1 - \mu_2)^2}} - \frac{4\mu_1\lambda\mu_2 - 2\mu_1\lambda^2}{2(\mu_1\lambda^2 - \lambda^2\mu_2)}
-
-6. CODE: Download and execute BracketSearch.java.
-    * What is the running time in terms of M and N?
-    * If we keep MN constant (e.g., MN = 24), what values of M and N produce best results?
-
-* **The run time is O(MN)**
-* **For the function in BracketSearch, M = 12 and N = 2 produced best results, with a minimum found at 2.5001 (actual minimum at 2.5).**
-
-7. Draw an example of a function for which bracket-search fails miserably, that is, the true minimum is much lower than what's found by bracket search even for large M and N.
-
-* **Any function with many peaks and valleys will cause this to fail.**
-* **NEED TO DRAW SOMETHING HERE**
-
-8. What is the number of function evaluations in terms of M and N for the bracket-search algorithm?
-
-* **There are (M+1)N + 1 function evaluations.**
-
-9. What is the number of function evaluations in terms of M and N for the 2D bracket-search algorithm? How does this generalize to n dimensions?
-
-* **There are $((M+1)^2+1)N$ function evaluations for the 2D bracket-search algorithm.**
-* **There are $((M+1)^n+1)N$ function evaluations for the n-dimensional bracket-search algorithm.**
-
-10. CODE: Add code to MultiBracketSearch.java to find the minimum of:
-    $f(x_1,x_2) = (x_1 - 4.71)^2 + (x_2 - 3.2)^2 + 2(x_1 - 4.71)^2 * (x_2 - 3.2)^2$
-
-* **With M = 6 and N = 4, x1 = 4.691358024691359,  x2 = 3.2098765432098757, numFuncEvals=120**
-
-11. CODE: Modify BracketSearch2.java to use the proportional-difference stopping condition.
-
-* **With M = 10, N = 4, bestx = 4.72, bestf = 2.5001, prevBestf = 2.5080999999999998**
-
-16. CODE: Download and execute GradientDemo.java
-    * How many iterations does it take to get close to the optimum?
-    * What is the effect of using a small $\alpha$ (e.g., $\alpha$ = 0.001)?
-    * In the method nextStep(), print out the current value of x, and the value of xf'(x) before the update.
-    * Set $\alpha$ = 1 Explain what you observe.
-    * What happens when $\alpha$ = 10?
-
-* **It takes around 150 iterations to get close to the optimum.**
-* **A smaller alpha requires more iterations to get to the optimum.**
-* **Alpha is too large when set to 1 and jumps over the minimum, never able to find it. Its jumps are always consistent, so it alternates between the same values.**
-* **When alpha is set to 10, it also is never able to find the minimum. However, the jumps are not consistent and always moves farther away from the minimum.**
-
-17. CODE: Download GradientDemo2.java and examine the function being optimized.
-    * Fill in the code for computing the derivative.
-    * Try an initial value of x at 1.8. Does it converge?
-    * Next, try an initial value of x at 5.8. What is the gradient at the point of convergence?
-
-* **It converges at the global minimum with a value of x = 1.8.**
-* **When x = 5.8 it only finds a local minimum**
+* **![alt](./images/q25a.png)**
+* **The given explanation makes more sense with the image above.**
+* **The equation of line 1 is $2x_1 + 2x_2 = 1$. This produces a classification function $f_1(x_1,x_2) = 2x_1 + 2x_2 - 1$. The weights for this function are as follows: $w_1 = 2, w_2 = 2, w_3 = -1$. This is effectively an "or" classifier.**
+* **The equation of line 2 is $-2x_1 - 2x_2 = 3$. This produces a classification function $f_2(x_1,x_2) = -2x_1 - 2x_2 + 3$. The weights for this function are as follows: $w_1 = -2, w_2 = -2, w_3 = 3$. This is effectively a "nand" classifier.**
+* **Using the outputs of classification function 1 as $x_2$ and the output of classification function 2 as $x_1$ (in order to match the picture in the class notes), we can use a final classification function $f_3(x_1,x_2) = x_1 + x_2 - 1$. The weights for this function are as follows: $w_1 = w_2 = 1, w_3 = -1$. This is effectively an "and" classifier (assuming points on the line are classified as 0).**
+* **The Truth table is shown below:**
+* **![alt](./images/q25b.png)**

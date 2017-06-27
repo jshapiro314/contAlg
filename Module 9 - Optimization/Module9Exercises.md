@@ -28,9 +28,9 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
 * **Solving for f'(x) = 0:**
     * $\frac{(\mu_1)(\mu_2 - \lambda + \lambda * x)^2 - (\mu_2)(\mu_1 - \lambda * x)^2}{(\mu_1 - \lambda * x)^2(\mu_2 - \lambda + \lambda * x)^2} = 0$
     * $\implies (\mu_1)(\mu_2 + \lambda (x - 1))^2 - (\mu_2)(\mu_1 - \lambda * x)^2 = 0$
-    * $\implies \mu_1\lambda^2 - \mu_1^2\mu_2 - 2\mu_1\lambda\mu_2 + \mu_1\mu_2^2 + x(4\mu_1\lambda\mu_2 - 2\mu_1\lmabda^2) + x^2(\mu_1\lambda^2 - \lambda^2\mu_2) = 0$
+    * $\implies \mu_1\lambda^2 - \mu_1^2\mu_2 - 2\mu_1\lambda\mu_2 + \mu_1\mu_2^2 + x(4\mu_1\lambda\mu_2 - 2\mu_1\lambda^2) + x^2(\mu_1\lambda^2 - \lambda^2\mu_2) = 0$
     * ...skipping a few steps...
-    * $\implies x = \pm \sqrt{\frac{\mu_1\mu_2(\mu_1 - \lambda + \mu_2)^2}{\lambda^2(\mu_1 - \mu_2)^2}} - \frac{4\mu_1\lambda\mu_2 - 2\mu_1\lambda^2}{2(\mu_1\lambda^2 - \lambda^2\mu_2)}
+    * $\implies x = \pm \sqrt{\frac{\mu_1\mu_2(\mu_1 - \lambda + \mu_2)^2}{\lambda^2(\mu_1 - \mu_2)^2}} - \frac{4\mu_1\lambda\mu_2 - 2\mu_1\lambda^2}{2(\mu_1\lambda^2 - \lambda^2\mu_2)}$
 
 6. CODE: Download and execute BracketSearch.java.
     * What is the running time in terms of M and N?
@@ -42,7 +42,7 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
 7. Draw an example of a function for which bracket-search fails miserably, that is, the true minimum is much lower than what's found by bracket search even for large M and N.
 
 * **Any function with many peaks and valleys will cause this to fail.**
-* **NEED TO DRAW SOMETHING HERE**
+* **![alt](./images/q7.png)**
 
 8. What is the number of function evaluations in terms of M and N for the bracket-search algorithm?
 

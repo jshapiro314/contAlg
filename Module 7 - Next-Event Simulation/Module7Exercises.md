@@ -103,7 +103,7 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
 
 24. If the eventlist has n events, how long does it take for each operation (in order-notation)?
 
-* **If a linked list is being used...***
+* **If a linked list is being used...**
     * **Removing the first element takes O(1)**
     * **Inserting an event takes O(n)**
 

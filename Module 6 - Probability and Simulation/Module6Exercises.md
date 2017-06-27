@@ -40,6 +40,7 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
 
 13. CODE: Add code to Poisson.java to compute Pr[X = k] and plot a graph of Pr[X = k] vs. k when $\gamma$ = 2. Use the Taylor series for $e^x$ to prove that $\sum_{k}$ Pr[X = k] adds up to 1.
 
+* **![alt](./images/q13.png)**
 * **Answer:**
     * **$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ... + \frac{x^n}{n!} = \sum_{n=0}^{k}\frac{x^n}{n!}$**
     * **$\sum_{i=0}^{k}Pr[X = k] = \sum_{i=0}^{k}e^{-\gamma} * \frac{\gamma^i}{i!} = e^{-\gamma}\sum_{i=0}^{k}\frac{\gamma^i}{i!}$**
@@ -129,7 +130,7 @@ geometry: top=1in, bottom=1in, left=1in, right=1in
 44. Suppose X ~ Exponential($\gamma$) with CDF F(x). Write down an expression for $F^{-1}$(y), the inverse of F.
 
 * **Answer:**
-    * **$F(x) = 1-e^{-\gamma x} \implies F(x)-1 = -e^{-\gamma x} \implies 1-F(x) = e^{-\gamma x} \implies ln(1-F(x)) = -\gamma x \implies F^{-1}(y) = \frac{ln(1-y}{-\gamma} \blacksquare$**
+    * **$F(x) = 1-e^{-\gamma x} \implies F(x)-1 = -e^{-\gamma x} \implies 1-F(x) = e^{-\gamma x} \implies ln(1-F(x)) = -\gamma x \implies F^{-1}(y) = \frac{ln(1-y)}{-\gamma} \blacksquare$**
 
 46. CODE: Add code to DiscreteGenExample.java to implement the above generator, and to test it by building a histogram.
 
